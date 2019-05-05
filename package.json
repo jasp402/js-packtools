@@ -1,0 +1,31 @@
+{
+  "name": "js-packtools",
+  "version": "0.1.0",
+  "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasp402/js-packtools.git"
+  },
+  "keywords": [
+    "javascript",
+    "tools",
+    "js",
+    "tools",
+    "js",
+    "pack",
+    "tools",
+    "js",
+    "basic",
+    "tools"
+  ],
+  "author": "Jesús A. Pérez S.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasp402/js-packtools/issues"
+  },
+  "homepage": "https://github.com/jasp402/js-packtools#readme"
+}
