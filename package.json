@@ -4,7 +4,8 @@
   "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/jasp402/js-packtools#readme",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "standard-version": "^5.0.2"
   }
 }
