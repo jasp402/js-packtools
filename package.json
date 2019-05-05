@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/jasp402/js-packtools/issues"
   },
-  "homepage": "https://github.com/jasp402/js-packtools#readme"
+  "homepage": "https://github.com/jasp402/js-packtools#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
 }
