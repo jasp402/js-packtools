@@ -32,3 +32,54 @@
 </p>
 
 ***
+
+## What is JS PackTools?
+This is a useful repository. What started as a couple of ideas, quickly became a class that grouped several types of functionalities.
+The intention of this package is to group a set of aids and / or utilities to help routine jobs, especially related to webScraping or the data format.
+
+--- 
+
+Welcome to the **JS PackTools** documentation. It will help you to get started fast. If you run into problems you can find help and answers on our Gitter Channel or you can hit me on Twitter.
+
+
+## Installation
+>Download **JS PackTools** Usage **NPM** <br/>
+```npm
+npm i js-packtools --save-dev
+```
+
+>In Node.js:
+```javascript
+let jsPacktools = require("js-packtools");
+let utils = new jsPacktools();
+```
+
+>How use?
+```javascript
+console.log(utils.customDate()); 
+//should, current date, Example
+//05/05/2019 
+```
+
+Please review the [API Doc](https://jasp402.github.io/js-packtools/#/api) section to see all available options.
+
+## Contributing
+
+Thanks goes to these wonderful people (**contribute**) <br>
+Please read [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/) for details on our code of conduct, and the process for submitting pull requests to us.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/8978470?s=460&v=4" width="100px;"/><br /><sub>Jesús Pérez</sub>](http://jasp402.com/)<br />
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
+
+Credits: 
+
+## License
+This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License
+
+***
+**Copyright 2019** | All rights reserved to [**Jasp402**](http://jasp402.com/)
+***
+
