@@ -38,3 +38,20 @@ differenceDay(_startDate, _endDate);
 |----------:	|:-------:	|-------------	|:--------:	|
 | startDate 	| string  	| Start date  	|    YES      	|
 |   endDate 	| string  	| End Date    	|    YES    	|
+
+
+
+
+##stringToDateTime
+##validateYear
+##clearFolder
+##groupBy
+##endDate
+##saveProgressData
+##deleteScriptClone
+##log
+##logError
+##logExecution
+##getCookies
+##waitForExistPDF
+##csvToJson
