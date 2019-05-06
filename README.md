@@ -34,8 +34,7 @@
 ***
 
 ## What is JS PackTools?
-This is a useful repository. What started as a couple of ideas, quickly became a class that grouped several types of functionalities.
-The intention of this package is to group a set of aids and / or utilities to help routine jobs, especially related to webScraping or the data format.
+This is a repository of utilites. What started as a couple of ideas, quickly became a class that grouped several types of functionalities. The intention of this package is to group a set of helpers and/or utilities, to ease routine jobs, especially related to webScraping or the data format.
 
 --- 
 
