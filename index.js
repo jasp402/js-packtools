@@ -1,6 +1,31 @@
+/**
+ * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
+ * @module JS-PackTools | API Doc
+ * @version 0.1.9
+ */
+
 constant = require(__dirname+'/constants');
-_ = require('lodash');
+_        = require('lodash');
+
+/** utils*/
 class utils {
+    /**
+     * customDate
+     *
+     * ?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality.
+     * @param _date {string} [date={Object}] date or Object Date by Default is current date.
+     * @param _format {string} [format=mm/dd/yyyy] define the format that want to return.
+     * @param _addDay {int} [addDay=0] count of days that add to date o current date
+     * @param _type {boolean} [type=false] method to return {string} or {Object Date}
+     * @returns {string} if {type} is true
+     * @returns {Object} if {type} is false. Return {Object Date}
+     *
+     * @since 0.1.3
+     *
+     * @example
+     * customDate('05/01/2019', 'YYYY-mm-dd', 15, false); // => 2019-05-15
+     *
+     */
     customDate(_date, _format, _addDay, _type) {
         let date      = _date   ? new Date(_date + " 12:00:00") : new Date();
         let format    = _format || "mm/dd/yyyy";
@@ -9,12 +34,11 @@ class utils {
 
         date.setDate(date.getDate() + addDay);
 
-        let month = String(date.getMonth() + 1);
-        let day = String(date.getDate());
-        let year = String(date.getFullYear());
-
+        let month     = String(date.getMonth() + 1);
+        let day       = String(date.getDate());
+        let year      = String(date.getFullYear());
         if (month.length < 2) month = '0' + month;
-        if (day.length < 2) day = '0' + day;
+        if (day.length < 2) day     = '0' + day;
 
         let result = format.replace(/[a-zA-z]+/gi, (str) => {
             switch (str) {
@@ -38,17 +62,35 @@ class utils {
                     return str;
             }
         });
+
         result = result.replace(/~/g, '');
         return optReturn ? new Date(result + " 12:00:00") : result;
     }
-    differenceDay(_startDate, _endDate){
+
+    /**
+     * differenceDay
+     *
+     * ?> It's Return the number of days between 2 dates.
+     * @param _startDate {string} [date={Object}] date init.
+     * @param _endDate {string} [format=mm/dd/yyyy] date end.
+     * @returns {string} if {type} is true
+     * @returns {Object} if {type} is false. Return {Object Date}
+     *
+     * @since 0.1.3
+     *
+     * @example
+     * customDate('05/01/2019', 'YYYY-mm-dd', 15, false); // => 2019-05-15
+     *
+     */
+    differenceDay(_startDate, _endDate) {
         let aDate1 = _startDate.split('/');
         let aDate2 = _endDate.split('/');
-        let fDate1 = Date.UTC(aDate1[2],aDate1[0],aDate1[1]-1);
-        let fDate2 = Date.UTC(aDate2[2],aDate2[0],aDate2[1]-1);
+        let fDate1 = Date.UTC(aDate1[2], aDate1[0], aDate1[1] - 1);
+        let fDate2 = Date.UTC(aDate2[2], aDate2[0], aDate2[1] - 1);
         let dif = fDate2 - fDate1;
         return Math.floor(dif / (1000 * 60 * 60 * 24));
     }
+
     stringToDateTime(strTime){
         let date = new Date(Number(strTime));
         return (date instanceof Date && !isNaN(date)) ? {
@@ -170,4 +212,6 @@ class utils {
         }), {}));
     };
 }
+
+
 module.exports = utils;
