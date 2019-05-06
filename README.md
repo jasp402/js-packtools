@@ -19,9 +19,9 @@
 ***
 
 <p align="center">
-    <a href="https://webdriver.io">Homepage</a> |
-    <a href="https://webdriver.io/guide.html">Developer Guide</a> |
-    <a href="https://webdriver.io/docs/api.html">API Reference</a> |
+    <a href="https://jasp402.github.io/js-packtools/">Homepage</a> |
+    <a href="https://webdriver.io/guide.html">API Docs</a> |
+    <a href="https://webdriver.io/docs/api.html">help & Support</a> |
     <a href="https://github.com/webdriverio/webdriverio/blob/master/CONTRIBUTING.md">Contribute</a>
 </p>
 

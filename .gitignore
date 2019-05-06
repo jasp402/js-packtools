@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# JetBrain | IntelliJ IDEA | WebStorm 2018
+/.idea
