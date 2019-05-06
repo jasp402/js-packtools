@@ -42,16 +42,29 @@ differenceDay(_startDate, _endDate);
 
 
 
-##stringToDateTime
-##validateYear
-##clearFolder
-##groupBy
-##endDate
-##saveProgressData
-##deleteScriptClone
-##log
-##logError
-##logExecution
-##getCookies
-##waitForExistPDF
-##csvToJson
+
+## stringToDateTime
+
+## validateYear
+
+## clearFolder
+
+## groupBy
+
+## endDate
+
+## saveProgressData
+
+## deleteScriptClone
+
+## log
+
+## logError
+
+## logExecution
+
+## getCookies
+
+## waitForExistPDF
+
+## csvToJson
