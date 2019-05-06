@@ -6,7 +6,7 @@
 ```javascript
 customDate(date, format, addDay, type)
 ```
-[cinwell website](localhost:300/doc/example/customDate.html ':include :type=iframe width=100% height=400px')
+[runkit website](https://jasp402.github.io/js-packtools/examples/customDate.html ':include :type=iframe width=100%')
 
 
 
