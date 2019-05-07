@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.9](https://github.com/jasp402/js-packtools/compare/v0.1.8...v0.1.9) (2019-05-07)
+
+
+### Bug Fixes
+
+* load list of function in the class and API Doc. ([277ef89](https://github.com/jasp402/js-packtools/commit/277ef89))
+* update API Doc. ([807c1ed](https://github.com/jasp402/js-packtools/commit/807c1ed))
+* update doc/index.html ([063e26f](https://github.com/jasp402/js-packtools/commit/063e26f))
+* update Documentation ([2dba3c9](https://github.com/jasp402/js-packtools/commit/2dba3c9))
+* update README.md. ([b04a028](https://github.com/jasp402/js-packtools/commit/b04a028))
+
+
+
 ## [0.1.8](https://github.com/jasp402/js-packtools/compare/v0.1.7...v0.1.8) (2019-05-06)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "js-packtools",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
   "main": "index.js",
   "scripts": {
