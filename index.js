@@ -4,8 +4,8 @@
  * @version 0.1.9
  */
 
-constant = require(__dirname+'/constants');
-_        = require('lodash');
+const constant = require(__dirname+'/constants');
+const _        = require('lodash');
 
 /** utils*/
 class utils {
