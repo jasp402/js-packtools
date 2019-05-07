@@ -7,6 +7,11 @@ describe('TEST # 1 - Test of integrity all functions', function () {
         assert.ok(typeof u.customDate === 'function');
         assert.ok(typeof u.differenceDay === 'function');
     });
+
+    it('should, Current Date in format string',function () {
+        console.log(u.customDate());
+        assert.ok(typeof u.customDate() === 'string');
+    })
 });
 
 
