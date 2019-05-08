@@ -1,6 +1,24 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.13](https://github.com/jasp402/js-packtools/compare/v0.1.8...v0.1.13) (2019-05-08)
+
+
+### Bug Fixes
+
+* add const require ([43c83d5](https://github.com/jasp402/js-packtools/commit/43c83d5))
+* add dependency lodash@4.17.11 in package.json ([96478d4](https://github.com/jasp402/js-packtools/commit/96478d4))
+* add objectToDate ([79b21e3](https://github.com/jasp402/js-packtools/commit/79b21e3))
+* load list of function in the class and API Doc. ([277ef89](https://github.com/jasp402/js-packtools/commit/277ef89))
+* refactorized differenceDay() ([8ba4c35](https://github.com/jasp402/js-packtools/commit/8ba4c35))
+* update API Doc. ([807c1ed](https://github.com/jasp402/js-packtools/commit/807c1ed))
+* update doc/index.html ([063e26f](https://github.com/jasp402/js-packtools/commit/063e26f))
+* update Documentation ([2dba3c9](https://github.com/jasp402/js-packtools/commit/2dba3c9))
+* update README.md. ([b04a028](https://github.com/jasp402/js-packtools/commit/b04a028))
+* update test ([accbe9b](https://github.com/jasp402/js-packtools/commit/accbe9b))
+
+
 
 ## [0.1.12](https://github.com/jasp402/js-packtools/compare/v0.1.11...v0.1.12) (2019-05-08)
 
