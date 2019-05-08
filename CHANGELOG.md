@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/jasp402/js-packtools/compare/v0.1.13...v0.1.14) (2019-05-08)
+
+
+### Bug Fixes
+
+* added files to .gitignore ([adda3ce](https://github.com/jasp402/js-packtools/commit/adda3ce))
+* Removed favicon ([2e195a3](https://github.com/jasp402/js-packtools/commit/2e195a3))
+* update .gitignore ([11569cc](https://github.com/jasp402/js-packtools/commit/11569cc))
+
+
+
 ### [0.1.13](https://github.com/jasp402/js-packtools/compare/v0.1.8...v0.1.13) (2019-05-08)
 
 
