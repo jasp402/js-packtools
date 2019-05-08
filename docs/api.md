@@ -28,7 +28,7 @@
 <br>
 > [differenceDay](/api/differenceDay.md)
 <br>
-> [stringToDateTime](/api/stringToDateTime.md)
+> [objectToDate](/api/objectToDate.md)
 <br>
 > [validateYear](/api/validateYear.md)
 <br>

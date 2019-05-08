@@ -6,11 +6,12 @@
 
 const constant = require(__dirname+'/constants');
 const _        = require('lodash');
+const fs       = require('fs');
 
 /** utils*/
 class utils {
     /**
-     * customDate
+     * @function customDate
      *
      * ?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality.
      * @param _date {string} [date={Object}] date or Object Date by Default is current date.
@@ -68,7 +69,7 @@ class utils {
     }
 
     /**
-     * differenceDay
+     * @function differenceDay
      *
      * ?> It's Return the number of days between 2 dates.
      * @param _startDate {string} [date={Object}] date init.
@@ -91,37 +92,86 @@ class utils {
         return Math.floor(dif / (1000 * 60 * 60 * 24));
     }
 
-    stringToDateTime(strTime){
-        let date = new Date(Number(strTime));
+    /**
+     * @function objectToDate
+     *
+     * ?> Generate a object with date details
+     * @param strTime {string} date or UNIX date
+     * @returns {object} with details of date
+     *
+     * @since 0.1.11
+     *
+     * @example
+     * objectToDate('10/03/2019');
+     * // => {  year: 2019,
+     *          month: 10,
+     *          day: 3,
+     *          hour: 0,
+     *          minute: 0,
+     *          second: 0,
+     *          mlSecond: 0 }
+     *
+     */
+    objectToDate(strTime){
+        let date = new Date(Number(strTime) || strTime);
         return (date instanceof Date && !isNaN(date)) ? {
-            year:date.getFullYear(),
-            month:(date.getMonth() + 1),
-            day:date.getDate(),
-            hour:date.getHours(),
-            minute:date.getMinutes(),
-            second:date.getSeconds(),
+            year    :date.getFullYear(),
+            month   :(date.getMonth() + 1),
+            day     :date.getDate(),
+            hour    :date.getHours(),
+            minute  :date.getMinutes(),
+            second  :date.getSeconds(),
             mlSecond:date.getMilliseconds()
         }: date.toString() }
-    validateYear(date, yearCompare = new Date().getFullYear()){
 
+    /**
+     * @function validateYear
+     *
+     * ?> Can be current year or spend the year to validate
+     * @param date {string | object} current date
+     * @param yearCompare  {string | object} year to compare or current year
+     * @param operator  {string} operator to compare
+     * @returns {boolean}
+     *
+     * @since 0.1.11
+     *
+     * @example
+     * validateYear('10/03/2019', 2019); //=> true
+     *
+     */
+    validateYear(date, yearCompare = new Date().getFullYear(), operator = '='){
         let year;
+        let compare = Number(yearCompare);
         let result = true;
         if(!date) return false;
 
         if(typeof date === 'string'){
-            year = new Date(date + " 12:00:00").getFullYear();
+            year = new Date(date).getFullYear();
 
         }else if(typeof date === 'object'){
             if(Object.keys(date).length === 0) return false;
             year = date.getFullYear();
         }
 
-        if(year < yearCompare){
-            result =  false;
-        }
+        switch (operator){
+            case '=':
+                result = year === compare;
+                break;
+            case '!=':
+                result = year !== compare;
+                break;
+            case '<':
+                result = year < compare;
+                break;
+            case '>':
+                result = year > compare;
+                break;
 
+        }
         return result;
     }
+
+    /*
     clearFolder(pathScript){
         let dirScript = fs.readdirSync(pathScript);
         (dirScript.length > 0) && dirScript.forEach(file=>fs.unlinkSync(pathScript+'/'+file));
@@ -211,6 +261,7 @@ class utils {
             [next]: line.split('",')[index].replace(/\"/g,''),
         }), {}));
     };
+    */
 }
 
 
