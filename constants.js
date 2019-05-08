@@ -1,9 +1,11 @@
 'use strict';
 module.exports = Object.freeze({
     //global
-    PATH_LOG                : date => `${__dirname}/../data_donwload/${date}/`,
+    GENERAL_PATH_FULL           : (name,date) => `${__dirname}/${name}/${date}/`,
+    GENERAL_PATH                : name => `${__dirname}/${name}/`,
 
     //Errors
+    ERROR_CONSTRUCTOR          : `Unexpected error, the constructor expected an object as a parameter`,
     ERROR_INVALID_DATE          : date => `Error with Date, this invalid date or unknown format. ${date}`,
 
     //Utility

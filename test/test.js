@@ -3,6 +3,7 @@ const utils = require('../index');
 let u = new utils();
 
 describe('TEST # 1 - Test of integrity all functions', function () {
+
     it('should, check all defined functions', function () {
         assert.ok(typeof u.customDate    === 'function');
         assert.ok(typeof u.differenceDay === 'function');
@@ -60,6 +61,7 @@ describe('TEST # 1 - Test of integrity all functions', function () {
         assert.equal(u.validateYear('05/01/2010', '2010', '!='), false);
         assert.equal(u.validateYear('05/01/2011', '2010', '!='), true);
     });
+
 });
 
 
