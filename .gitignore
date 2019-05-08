@@ -1,3 +1,4 @@
+command
 # Logs
 logs
 *.log
@@ -62,3 +63,4 @@ typings/
 
 # JetBrain | IntelliJ IDEA | WebStorm 2018
 /.idea
+package-lock.json
