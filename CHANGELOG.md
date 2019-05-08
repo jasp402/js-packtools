@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.12](https://github.com/jasp402/js-packtools/compare/v0.1.11...v0.1.12) (2019-05-08)
+
+
+### Bug Fixes
+
+* add objectToDate ([79b21e3](https://github.com/jasp402/js-packtools/commit/79b21e3))
+* update test ([accbe9b](https://github.com/jasp402/js-packtools/commit/accbe9b))
+
+
+
 ## [0.1.11](https://github.com/jasp402/js-packtools/compare/v0.1.10...v0.1.11) (2019-05-07)
 
 
