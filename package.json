@@ -35,6 +35,7 @@
     "standard-version": "^5.0.2"
   },
   "dependencies": {
+    "imap-simple": "^4.3.0",
     "lodash": "^4.17.11"
   }
 }
