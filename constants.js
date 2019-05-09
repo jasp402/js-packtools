@@ -5,7 +5,7 @@ module.exports = Object.freeze({
     GENERAL_PATH                : name => `${__dirname}/${name}/`,
 
     //Errors
-    ERROR_CONSTRUCTOR          : `Unexpected error, the constructor expected an object as a parameter`,
+    ERROR_CONSTRUCTOR           : `Unexpected error, the constructor expected an object as a parameter`,
     ERROR_INVALID_DATE          : date => `Error with Date, this invalid date or unknown format. ${date}`,
 
     //Utility
