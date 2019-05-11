@@ -16,7 +16,10 @@
     </a>
     <a href="https://david-dm.org/jasp402/js-packtools">
         <img alt="Dependencies" src="https://david-dm.org/jasp402/js-packtools/status.svg">
-    </a>    
+    </a>
+    <a href="https://trello.com/b/FMUpri2i/js-packtools">
+            <img alt="Trello" src="https://img.shields.io/badge/project-on%20Trello-blue.svg">
+    </a>
     <a href="https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
         <img alt="Gitter" src="https://badges.gitter.im/js-packtools/community.svg">
     </a>
@@ -77,8 +80,5 @@ Credits:
 
 ## License
 This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License
-
-***
 **Copyright 2019** | All rights reserved to [**Jasp402**](http://jasp402.com/)
-***
 
