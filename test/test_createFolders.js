@@ -1,7 +1,7 @@
-const utils = require('../index');
-let u = new utils();
+const jsPackTools = require('../index');
+let u = new jsPackTools();
 
-describe('SUITE - function createFolders()', function () {
+describe('SUITE - createFolders()', function () {
 
     it('TEST # 1, create folder with sub-folder', function () {
         // Logic: create a folder with recursive date sub-folder
