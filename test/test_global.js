@@ -1,6 +1,6 @@
 const assert = require('assert');
-const utils = require('../index');
-let u = new utils();
+const jsPackTools = require('../index');
+let u = new jsPackTools();
 
 describe('TEST # 1 - Test of integrity all functions', function () {
 
