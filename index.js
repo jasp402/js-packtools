@@ -9,7 +9,6 @@ const _        = require('lodash');
 const fs       = require('fs');
 const assert   = require('assert');
 
-/** utils*/
 class jsPackTools {
     constructor(config){
         if(config) assert.ok(typeof config === 'object', constant.ERROR_CONSTRUCTOR);
