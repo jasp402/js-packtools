@@ -1,8 +1,25 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.1.16](https://github.com/jasp402/js-packtools/compare/v0.1.14...v0.1.16) (2019-05-09)
+## [0.1.17](https://github.com/jasp402/js-packtools/compare/v0.1.15...v0.1.17) (2019-05-12)
+
+
+### Bug Fixes
+
+* add badges of trello ([6b25965](https://github.com/jasp402/js-packtools/commit/6b25965))
+* add test_customDate.js ([b2a9bd5](https://github.com/jasp402/js-packtools/commit/b2a9bd5))
+* ClearFolder.js - add jsDoc ([d0f1869](https://github.com/jasp402/js-packtools/commit/d0f1869))
+* createFolders.js - add jsDoc ([ebc78a0](https://github.com/jasp402/js-packtools/commit/ebc78a0))
+* csvToJson.js ([54e3e30](https://github.com/jasp402/js-packtools/commit/54e3e30))
+* delete comment ([a1990ca](https://github.com/jasp402/js-packtools/commit/a1990ca))
+* refactor: delete spaces ([1295709](https://github.com/jasp402/js-packtools/commit/1295709))
+* refactor: index.js ([e5e5575](https://github.com/jasp402/js-packtools/commit/e5e5575))
+* Update in test. ([58fa373](https://github.com/jasp402/js-packtools/commit/58fa373))
+
+
+
+## [0.1.16](https://github.com/jasp402/js-packtools/compare/v0.1.14...v0.1.16) (2019-05-09)
 
 
 ### Bug Fixes
