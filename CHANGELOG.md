@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.18](https://github.com/jasp402/js-packtools/compare/v0.1.17...v0.1.18) (2019-05-12)
+
+
+### Bug Fixes
+
+* jasp402/js-packtools/clearFoder.js change in documentation jsDOC ([63b0e56](https://github.com/jasp402/js-packtools/commit/63b0e56))
+* test: validateDir() ([0bddd55](https://github.com/jasp402/js-packtools/commit/0bddd55))
+* update README.md ([71dec4b](https://github.com/jasp402/js-packtools/commit/71dec4b))
+
+
+
 ## [0.1.17](https://github.com/jasp402/js-packtools/compare/v0.1.15...v0.1.17) (2019-05-12)
 
 
