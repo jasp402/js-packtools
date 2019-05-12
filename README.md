@@ -79,6 +79,6 @@ Please read [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/) for det
 Credits: 
 
 ## License
-This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License
+This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License <br>
 **Copyright 2019** | All rights reserved to [**Jasp402**](http://jasp402.com/)
 
