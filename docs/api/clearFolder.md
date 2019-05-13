@@ -1,7 +1,7 @@
 ## clearFolder
 
 ```javascript
-clearFolder(_path) ⇒ void
+clearFolder(path) ⇒ object
 ```
 
 `Available since | 0.1.13`
@@ -17,4 +17,14 @@ clearFolder(_path) ⇒ void
 var jsPacktools = require("js-packtools")
 let u = new jsPacktools();
 u.clearFolder(__dirname+'data\');
+```
+
+`Return`
+
+```
+{
+  files: Array,     //array with name of files
+  deleted: NaN,     //number of files deleted
+  pending: NaN      //if result > 0 is error. Missing files for deleted.
+}
 ```
