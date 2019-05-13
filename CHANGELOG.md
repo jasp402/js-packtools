@@ -1,6 +1,23 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.19](https://github.com/jasp402/js-packtools/compare/v0.1.16...v0.1.19) (2019-05-13)
+
+
+### Bug Fixes
+
+* add badges of trello ([6b25965](https://github.com/jasp402/js-packtools/commit/6b25965))
+* ClearFolder complete code ([013be71](https://github.com/jasp402/js-packtools/commit/013be71))
+* constant not found ([92a736e](https://github.com/jasp402/js-packtools/commit/92a736e))
+* delete comment ([a1990ca](https://github.com/jasp402/js-packtools/commit/a1990ca))
+* jasp402/js-packtools/clearFoder.js change in documentation jsDOC ([63b0e56](https://github.com/jasp402/js-packtools/commit/63b0e56))
+* test: validateDir() ([0bddd55](https://github.com/jasp402/js-packtools/commit/0bddd55))
+* Update in test. ([58fa373](https://github.com/jasp402/js-packtools/commit/58fa373))
+* update Readme. Include table of the content ([08a159a](https://github.com/jasp402/js-packtools/commit/08a159a))
+* update README.md ([71dec4b](https://github.com/jasp402/js-packtools/commit/71dec4b))
+
+
 
 ## [0.1.18](https://github.com/jasp402/js-packtools/compare/v0.1.17...v0.1.18) (2019-05-12)
 
