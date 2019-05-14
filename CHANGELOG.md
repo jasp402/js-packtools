@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.20](https://github.com/jasp402/js-packtools/compare/v0.1.19...v0.1.20) (2019-05-14)
+
+
+### Bug Fixes
+
+* csvToJson.js - add comment about improvement ([3578c84](https://github.com/jasp402/js-packtools/commit/3578c84))
+* deleteFile.js - add jsDoc ([25591bc](https://github.com/jasp402/js-packtools/commit/25591bc))
+* test: ClearFolder() ([56f3a31](https://github.com/jasp402/js-packtools/commit/56f3a31))
+* Update Readme.md. fix table of content ([9832a7b](https://github.com/jasp402/js-packtools/commit/9832a7b))
+
+
+### Tests
+
+* test_differenceDay.js ([64083bb](https://github.com/jasp402/js-packtools/commit/64083bb))
+
+
+
 ### [0.1.19](https://github.com/jasp402/js-packtools/compare/v0.1.16...v0.1.19) (2019-05-13)
 
 
