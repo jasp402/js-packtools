@@ -70,7 +70,7 @@ This list of functions
 |-------------------|---------------------|-------|-------------------------------------------------------|
 | logError          | Global              | 0.1.x | Create a document with log error.                     |
 | logExecution      | Global              | 0.1.x | Used for tracking, create a document                  |
-| (customDate)[https://jasp402.github.io/js-packtools/#/api/customDate]        | Time                | 0.1.x | Customize the date                                    |
+| [customDate](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1.x | Customize the date                                    |
 | objectToDate      | Time                | 0.1.x | turn an assigned date into an object                  |
 | validateYear      | Time                | 0.1.x | Valid the year in a date                              |
 | increaseDays      | Time                | 0.1.x | Increase the count days in a date                     |
