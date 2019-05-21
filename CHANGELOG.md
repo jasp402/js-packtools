@@ -1,8 +1,24 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.1.20](https://github.com/jasp402/js-packtools/compare/v0.1.19...v0.1.20) (2019-05-14)
+## [0.1.21](https://github.com/jasp402/js-packtools/compare/v0.1.18...v0.1.21) (2019-05-21)
+
+
+### Bug Fixes
+
+* ClearFolder complete code ([013be71](https://github.com/jasp402/js-packtools/commit/013be71))
+* constant not found ([92a736e](https://github.com/jasp402/js-packtools/commit/92a736e))
+* csvToJson.js - add comment about improvement ([3578c84](https://github.com/jasp402/js-packtools/commit/3578c84))
+* deleteFile.js - add jsDoc ([25591bc](https://github.com/jasp402/js-packtools/commit/25591bc))
+* formatSeconds.js add jsDoc ([5f6b3f7](https://github.com/jasp402/js-packtools/commit/5f6b3f7))
+* test: ClearFolder() ([56f3a31](https://github.com/jasp402/js-packtools/commit/56f3a31))
+* update Readme. Include table of the content ([08a159a](https://github.com/jasp402/js-packtools/commit/08a159a))
+* Update Readme.md. fix table of content ([9832a7b](https://github.com/jasp402/js-packtools/commit/9832a7b))
+
+
+
+## [0.1.20](https://github.com/jasp402/js-packtools/compare/v0.1.19...v0.1.20) (2019-05-14)
 
 
 ### Bug Fixes
