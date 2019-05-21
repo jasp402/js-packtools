@@ -39,6 +39,8 @@
 
 > [clearFolder](/api/clearFolder.md)
 <br>
+> [createFolders](/api/createFolders.md)
+<br>
 > [saveProgressData](/api/saveProgressData.md)
 <br>
 > [deleteScriptClone](/api/deleteScriptClone.md)
