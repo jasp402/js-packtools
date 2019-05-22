@@ -13,10 +13,10 @@ class jsPackTools {
     constructor(config){
         if(config) assert.ok(typeof config === 'object', constant.ERROR_CONSTRUCTOR);
         this.c                = constant;
-        this.folderName       = config ? config.folderName : 'DATA';      //=> data_audit, data_download, docs, pdfs, trash...
-        this.folderAutoDate   = config ? config.folderAutoDate : true;        //=> true => /2019_01_01/
-        this.folderFromatDate = this.customDate('', config ? config.folderFormatDate : 'yyyy~_~mm~_~dd', 0, false); //=> 'yyyy_mm_dd';
-        this.logFormatDate    = this.customDate('', config ? config.logFormatDate : 'yyyy-mm-dd ~h:m:i', 0, false); //=> yyyy-mm-dd | hh:mm:sss
+        this.folderName       = config.folderName       ? config.folderName     : 'DATA';      //=> data_audit, data_download, docs, pdfs, trash...
+        this.folderAutoDate   = config.folderAutoDate   ? config.folderAutoDate : true;        //=> true => /2019_01_01/
+        this.folderFromatDate = this.customDate('', config.folderFormatDate ? config.folderFormatDate   : 'yyyy~_~mm~_~dd', 0, false); //=> 'yyyy_mm_dd';
+        this.logFormatDate    = this.customDate('', config.logFormatDate    ?  config.logFormatDate     : 'yyyy-mm-dd ~h:m:i', 0, false); //=> yyyy-mm-dd | hh:mm:sss
         this.finalPath        = this.folderName+'/'+this.folderFromatDate
     }
 }
