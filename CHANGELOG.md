@@ -1,6 +1,23 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.2.0](https://github.com/jasp402/js-packtools/compare/v0.1.20...v0.2.0) (2019-05-22)
+
+
+### Bug Fixes
+
+* add createFolders() in API functions ([4b663af](https://github.com/jasp402/js-packtools/commit/4b663af))
+* formatSeconds.js add jsDoc ([5f6b3f7](https://github.com/jasp402/js-packtools/commit/5f6b3f7))
+* the color parameter this bad assign ([98a6ff6](https://github.com/jasp402/js-packtools/commit/98a6ff6))
+* Update README.md ([b720c6a](https://github.com/jasp402/js-packtools/commit/b720c6a))
+
+
+### Features
+
+* changes in the logic of constructor ([fd24f72](https://github.com/jasp402/js-packtools/commit/fd24f72))
+
+
 
 ## [0.1.21](https://github.com/jasp402/js-packtools/compare/v0.1.18...v0.1.21) (2019-05-21)
 
