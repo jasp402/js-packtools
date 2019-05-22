@@ -13,10 +13,35 @@ class jsPackTools {
     constructor(config){
         if(config) assert.ok(typeof config === 'object', constant.ERROR_CONSTRUCTOR);
         this.c                = constant;
-        this.folderName       = config.folderName       ? config.folderName     : 'DATA';      //=> data_audit, data_download, docs, pdfs, trash...
-        this.folderAutoDate   = config.folderAutoDate   ? config.folderAutoDate : true;        //=> true => /2019_01_01/
-        this.folderFromatDate = this.customDate('', config.folderFormatDate ? config.folderFormatDate   : 'yyyy~_~mm~_~dd', 0, false); //=> 'yyyy_mm_dd';
-        this.logFormatDate    = this.customDate('', config.logFormatDate    ?  config.logFormatDate     : 'yyyy-mm-dd ~h:m:i', 0, false); //=> yyyy-mm-dd | hh:mm:sss
+
+        //=> data_audit, data_download, docs, pdfs, trash...
+        this.folderName       = config
+            ? (config.folderName !== undefined)
+                ? config.folderName
+                : 'DATA'
+            : 'DATA';
+
+        //=> true => /2019_01_01/
+        this.folderAutoDate   = config
+            ? (config.folderAutoDate !== undefined)
+                ? config.folderAutoDate
+                : true
+            : true;
+
+        //=> 'yyyy_mm_dd';
+        this.folderFromatDate = this.customDate('', config
+            ? (config.folderFormatDate !== undefined)
+                ?  config.folderFormatDate
+                : 'yyyy~_~mm~_~dd'
+            : 'yyyy~_~mm~_~dd', 0, false);
+
+        //=> yyyy-mm-dd | hh:mm:sss
+        this.logFormatDate    = this.customDate('', config
+            ? (config.logFormatDate !== undefined)
+                ?  config.logFormatDate
+                :  'yyyy-mm-dd ~h:m:i'
+            : 'yyyy-mm-dd ~h:m:i', 0, false);
+
         this.finalPath        = this.folderName+'/'+this.folderFromatDate
     }
 }
