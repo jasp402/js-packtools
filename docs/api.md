@@ -1,70 +1,57 @@
-# API Docs
+# API Doc
+#### JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
+<p>
+    <a href="https://www.npmjs.com/package/js-packtools">
+        <img alt="npm" src="https://img.shields.io/npm/v/js-packtools.svg">
+    </a>
+    <a href="https://travis-ci.org/jasp402/js-packtools">
+        <img alt="Build Status" src="https://travis-ci.org/jasp402/js-packtools.svg?branch=master">
+    </a>
+    <a href="https://david-dm.org/jasp402/js-packtools">
+        <img alt="Dependencies" src="https://david-dm.org/jasp402/js-packtools/status.svg">
+    </a>    
+    <a href="https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
+        <img alt="Gitter" src="https://badges.gitter.im/js-packtools/community.svg">
+    </a>
+</p>
+
+## Globals
+
+>[logError](/api/logError.md) 
+<br>
+>[logExecution](/api/logExecution.md)
 
 
-## customDate 
+## Time
 
-```javascript
-customDate(date, format, addDay, type);
-```
-?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
-
-`Available since | 0.1.0`
-
-
----
-
-| Argument |         Type         | Description                                     | Required |
-|---------:|:--------------------:|-------------------------------------------------|:--------:|
-|     date | string / Object Date | This is date o time to convert format                |    NO    |
-|   format | string               | this is format that you want return [Review Details]()          |    NO    |
-|   addDay | number               | Is number of de day that want increment         |    NO    |
-|     type | boolean              | Default: false, return string. else Object Date |    NO    |
-
-[runkit website](https://jasp402.github.io/js-packtools/examples/customDate.html ':include :type=iframe width=100%')
+> [customDate](/api/customDate.md)
+<br>
+> [differenceDay](/api/differenceDay.md)
+<br>
+> [objectToDate](/api/objectToDate.md)
+<br>
+> [validateYear](/api/validateYear.md)
+<br>
+> [endDate](/api/endDate.md)
 
 
-## differenceDay
+## Path and Files
 
-```javascript
-differenceDay(_startDate, _endDate);
-```
-?> Return the number of days between 2 dates.
-
-`Available since | 0.1.0`
-
----
-
-|  Argument 	|   Type  	| Description 	| Required 	|
-|----------:	|:-------:	|-------------	|:--------:	|
-| startDate 	| string  	| Start date  	|    YES      	|
-|   endDate 	| string  	| End Date    	|    YES    	|
+> [clearFolder](/api/clearFolder.md)
+<br>
+> [createFolders](/api/createFolders.md)
+<br>
+> [saveProgressData](/api/saveProgressData.md)
+<br>
+> [deleteScriptClone](/api/deleteScriptClone.md)
+<br>
+> [waitForExistPDF](/api/waitForExistPDF.md)
+<br>
+> [csvToJson](/api/csvToJson.md)
 
 
+## Arrays and Object format
+> [groupBy](/api/groupBy.md)
 
-
-
-## stringToDateTime
-
-## validateYear
-
-## clearFolder
-
-## groupBy
-
-## endDate
-
-## saveProgressData
-
-## deleteScriptClone
-
-## log
-
-## logError
-
-## logExecution
-
-## getCookies
-
-## waitForExistPDF
-
-## csvToJson
+## Services and Request
+> [getCookies](/api/getCookies.md)

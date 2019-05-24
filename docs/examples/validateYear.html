@@ -2,5 +2,10 @@
 <div id="my-element">
     var jsPacktools = require("js-packtools")
     let u = new jsPacktools();
-    u.differenceDay('05/01/2019','05/15/2019');
+
+    u.validateYear('05/01/2019'); //=> true
+
+    u.validateYear('05/01/2019', '2018'); //=> false
+
+    u.validateYear('05/01/2019', '2020', '<'); //=> true
 </div>

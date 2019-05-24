@@ -16,7 +16,10 @@
     </a>
     <a href="https://david-dm.org/jasp402/js-packtools">
         <img alt="Dependencies" src="https://david-dm.org/jasp402/js-packtools/status.svg">
-    </a>    
+    </a>
+    <a href="https://trello.com/b/FMUpri2i/js-packtools">
+            <img alt="Trello" src="https://img.shields.io/badge/project-on%20Trello-blue.svg">
+    </a>
     <a href="https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
         <img alt="Gitter" src="https://badges.gitter.im/js-packtools/community.svg">
     </a>
@@ -60,6 +63,31 @@ console.log(utils.customDate());
 //05/05/2019 
 ```
 
+## List of Content
+This list of functions
+
+| functions         | category            | since | description                                           |
+|-------------------|---------------------|-------|-------------------------------------------------------|
+| logError          | Global              | 0.1.x | Create a document with log error.                     |
+| logExecution      | Global              | 0.1.x | Used for tracking, create a document                  |
+| [customDate](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1.x | Customize the date                                    |
+| objectToDate      | Time                | 0.1.x | turn an assigned date into an object                  |
+| validateYear      | Time                | 0.1.x | Valid the year in a date                              |
+| increaseDays      | Time                | 0.1.x | Increase the count days in a date                     |
+| differenceDay     | Time                | 0.1.x | Count the difference of day between two date          |
+| formatSeconds     | Time                | 0.1.x | Get format simply and convert in miliseconds          |
+| generateRageDate  | Time                | 0.1.x | Split a date based in the count of day assign         |
+| createFolders     | Path and Files      | 0.1.x | Create folder in mode manual or automatic             |
+| validateDir       | Path and Files      | 0.1.x | Validate a path if exist and create in modo recursive |
+| clearFolder       | Path and Files      | 0.1.x | Delete all content                                    |
+| deleteScriptClone | Path and Files      |       | <<PENDING>>                                           |
+| csvToJson         | Path and Files      | 0.1.x | Convert a CSV to JSON                                 |
+| saveProgressData  | Path and Files      |       | <<PENDING>>                                           |
+| groupBy           | Arrays and Object   |       | <<PENDING>>                                           |
+| getCookies        | Service and Request |       | <<PENDING>>                                           |
+| waitForExistPDF   | Undefined           |       | <<PENDING>>                                           |
+
+
 Please review the [API Doc](https://jasp402.github.io/js-packtools/#/api) section to see all available options.
 
 ## Contributing
@@ -76,9 +104,6 @@ Please read [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/) for det
 Credits: 
 
 ## License
-This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License
-
-***
+This repository is under an [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE) License <br>
 **Copyright 2019** | All rights reserved to [**Jasp402**](http://jasp402.com/)
-***
 
