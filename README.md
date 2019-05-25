@@ -91,6 +91,9 @@ The functions of this pack are divided into categories. so that it is easier to 
 | :speech_balloon: getCookies        | Service and Request |       | <<PENDING>>                                           |
 | :speech_balloon: waitForExistPDF   | Undefined           |       | <<PENDING>>                                           |
 
+:seedling: **Completed** <br>
+:fire: **Developing** <br>
+:speech_balloon: **Under discussion** <br>
 
 Please review the [API Doc](https://jasp402.github.io/js-packtools/#/api) section to see all available options.
 
