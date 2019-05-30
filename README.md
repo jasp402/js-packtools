@@ -72,7 +72,7 @@ The functions of this pack are divided into categories. so that it is easier to 
 
 | functions         | category            | since | description                                           |
 |-------------------|---------------------|-------|-------------------------------------------------------|
-| :fire: logError          | Global              | 0.1.x | Create a document with log error.                     |
+| :seedling:  [**logError**](https://jasp402.github.io/js-packtools/#/api/logError)           | Global              | 0.1.x | Create a document with log error.                     |
 | :fire: logExecution      | Global              | 0.1.x | Used for tracking, create a document                  |
 | :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1.x | Customize the date                                    |
 | :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1.x | turn an assigned date into an object                  |
