@@ -1,6 +1,23 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.3.3](https://github.com/jasp402/js-packtools/compare/v0.2.2...v0.3.3) (2019-05-30)
+
+
+### Bug Fixes
+
+* add link to logError in README.md ([f2d330a](https://github.com/jasp402/js-packtools/commit/f2d330a))
+* Adjustment to documentation LogError.md ([040a62b](https://github.com/jasp402/js-packtools/commit/040a62b))
+* Update README.md adjust in Contributing ([f3c2318](https://github.com/jasp402/js-packtools/commit/f3c2318))
+* Update README.md show legend ([3d9da73](https://github.com/jasp402/js-packtools/commit/3d9da73))
+
+
+### Tests
+
+* logError , Doc: LogError ([42a7180](https://github.com/jasp402/js-packtools/commit/42a7180))
+
+
 
 ## [0.3.2](https://github.com/jasp402/js-packtools/compare/v0.3.1...v0.3.2) (2019-05-25)
 
