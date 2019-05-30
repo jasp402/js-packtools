@@ -36,11 +36,7 @@ class jsPackTools {
             : 'yyyy~_~mm~_~dd', 0, false);
 
         //=> yyyy-mm-dd | hh:mm:sss
-        this.logFormatDate    = this.customDate('', config
-            ? (config.logFormatDate !== undefined)
-                ?  config.logFormatDate
-                :  'yyyy-mm-dd ~h:m:i'
-            : 'yyyy-mm-dd ~h:m:i', 0, false);
+        this.logFormatDate    = config ? config.logFormatDate : 'yyyy-mm-dd ~h:m:i';
 
         this.finalPath        = this.folderName+'/'+this.folderFromatDate
     }
