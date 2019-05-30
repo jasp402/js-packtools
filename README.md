@@ -72,24 +72,22 @@ The functions of this pack are divided into categories. so that it is easier to 
 
 | functions         | category            | since | description                                           |
 |-------------------|---------------------|-------|-------------------------------------------------------|
-| :fire: logError          | Global              | 0.1.x | Create a document with log error.                     |
-| :fire: logExecution      | Global              | 0.1.x | Used for tracking, create a document                  |
-| :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1.x | Customize the date                                    |
-| :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1.x | turn an assigned date into an object                  |
-| :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1.x | Valid the year in a date                              |
-| :fire: increaseDays      | Time                | 0.1.x | Increase the count days in a date                     |
-| :seedling: [**differenceDay**](https://jasp402.github.io/js-packtools/#/api/differenceDay)     | Time                | 0.1.x | Count the difference of day between two date          |
-| :speech_balloon: formatSeconds     | Time                | 0.1.x | Get format simply and convert in miliseconds          |
-| :fire: generateRageDate  | Time                | 0.1.x | Split a date based in the count of day assign         |
-| :seedling: [**createFolders**](https://jasp402.github.io/js-packtools/#/api/createFolders)     | Path and Files      | 0.1.x | Create folder in mode manual or automatic             |
-| :fire: validateDir       | Path and Files      | 0.1.x | Validate a path if exist and create in modo recursive |
-| :seedling: [**clearFolder**](https://jasp402.github.io/js-packtools/#/api/clearFolder)       | Path and Files      | 0.1.x | Delete all content                                    |
-| :speech_balloon: deleteScriptClone | Path and Files      |       | <<PENDING>>                                           |
-| :fire: csvToJson         | Path and Files      | 0.1.x | Convert a CSV to JSON                                 |
-| :fire: saveProgressData  | Path and Files      |       | <<PENDING>>                                           |
-| :fire: groupBy           | Arrays and Object   |       | <<PENDING>>                                           |
-| :speech_balloon: getCookies        | Service and Request |       | <<PENDING>>                                           |
-| :speech_balloon: waitForExistPDF   | Undefined           |       | <<PENDING>>                                           |
+| :seedling:  [**logError**](https://jasp402.github.io/js-packtools/#/api/logError)           | Global              | 0.1 | Create a document with log error.                     |
+| :fire: logExecution      | Global              | 0.1 | Used for tracking, create a document                  |
+| :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1 | Customize the date                                    |
+| :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
+| :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |
+| :fire: increaseDays      | Time                | 0.1 | Increase the count days in a date                     |
+| :seedling: [**differenceDay**](https://jasp402.github.io/js-packtools/#/api/differenceDay)     | Time                | 0.1 | Count the difference of day between two date          |
+| :fire: generateRageDate  | Time                | 0.1 | Split a date based in the count of day assign         |
+| :seedling: [**createFolders**](https://jasp402.github.io/js-packtools/#/api/createFolders)     | Path and Files      | 0.1 | Create folder in mode manual or automatic             |
+| :fire: validateDir       | Path and Files      | 0.1 | Validate a path if exist and create in modo recursive |
+| :seedling: [**clearFolder**](https://jasp402.github.io/js-packtools/#/api/clearFolder)       | Path and Files      | 0.1 | Delete all content                                    |
+| :fire: deleteFile | Path and Files      | -.-.- | Confirm if file exists and delete                                           |
+| :fire: csvToJson         | Path and Files      | 0.1 | Convert a CSV to JSON                                 |
+| :fire: saveProgressData  | Path and Files      | -.-      | <<PENDING>>                                           |
+| :fire: groupBy           | Arrays and Object   | -.-      | <<PENDING>>                                           |
+
 
 :seedling: **Completed** <br>
 :fire: **Developing** <br>

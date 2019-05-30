@@ -1,17 +1,17 @@
 ## LogError
 
 ```javascript
-logError(path, [auto=folderAutoDate]) ⇒ Boolean
+logError(message, [color=Red]) ⇒ void
 ```
 
 `Available since | 0.1.13`
 
-?> This create a folder whit sub-folder of date by default.
+?> This create a file with message that you assign and include time stamp.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| path | <code>string</code> | <code></code> |  Dir of folder to create |
-| auto | <code>Boolean</code> | <code>&quot;{true}&quot;</code> |  If false, create subfolder with date |
+| message | <code>string</code> | <code></code> |  Message with description the error |
+| color | <code>string</code> | <code>red | green | blue | lime | violet | </code> | Change the color of letters that shows on the screen. |
 
 ```js
 //Example NodeJs
