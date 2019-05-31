@@ -10,7 +10,10 @@ describe('SUITE - logError()', function () {
     });
     it('TEST #2 , create file  simple',function(){
         //logic: create a  file
-        u.logError('Test #2');
+        setTimeout(function () {
+            u.logError('Test #2');
+        }, 3500);
+
     })
 
     
