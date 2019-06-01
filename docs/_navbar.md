@@ -4,4 +4,4 @@
     * [v.0](/)
 * Languages
     * [:us: english](/en/)
-    * [:es: Español](/es/)
+    * [:es: Spanish](/es/)
