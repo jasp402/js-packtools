@@ -17,21 +17,19 @@
 </style>
 </head>
 <body>
+  <nav>
+  </nav>
   <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
-        homepage: 'https://raw.githubusercontent.com/jasp402/js-packtools/master/README.md',
-        name: 'js-packTools',
+        homepage: '/en/README.md', //'https://raw.githubusercontent.com/jasp402/js-packtools/master/README.md',
+        name: 'JS PackTools',
         repo: 'https://github.com/jasp402/js-packtools',
         loadSidebar: true,
         subMaxLevel: 2,
-        alias: {
-            '/.*/_sidebar.md': '/_sidebar.md',
-        },
-        search: 'auto', // default
-        search : [
-            '/api',       // => /guide.md
-        ],
+
+        loadNavbar: true,
+
 
         // complete configuration parameters
         search: {

@@ -1,5 +1,5 @@
-# API Doc
-#### JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
+# API Documentación
+JS-PackTools. Es una pequeña cada de herramienta para desarrolladores `JavaScript` y `NodeJs` especificamente para proyectos WebScraping. Con utilidades como formatear fechas y texto.
 <p>
     <a href="https://www.npmjs.com/package/js-packtools">
         <img alt="npm" src="https://img.shields.io/npm/v/js-packtools.svg">
@@ -17,41 +17,41 @@
 
 ## Globals
 
->[logError](/api/logError.md) 
+>[logError](/api/v1/logError.md)
 <br>
->[logExecution](/api/logExecution.md)
+>[logExecution](/api/v1/logExecution.md)
 
 
 ## Time
 
-> [customDate](/api/customDate.md)
+> [customDate](/api/v1/customDate.md)
 <br>
-> [differenceDay](/api/differenceDay.md)
+> [differenceDay](/api/v1/differenceDay.md)
 <br>
-> [objectToDate](/api/objectToDate.md)
+> [objectToDate](/api/v1/objectToDate.md)
 <br>
-> [validateYear](/api/validateYear.md)
+> [validateYear](/api/v1/validateYear.md)
 <br>
-> [endDate](/api/endDate.md)
+> [endDate](/api/v1/endDate.md)
 
 
 ## Path and Files
 
-> [clearFolder](/api/clearFolder.md)
+> [clearFolder](/api/v1/clearFolder.md)
 <br>
-> [createFolders](/api/createFolders.md)
+> [createFolders](/api/v1/createFolders.md)
 <br>
-> [saveProgressData](/api/saveProgressData.md)
+> [saveProgressData](/api/v1/saveProgressData.md)
 <br>
-> [deleteScriptClone](/api/deleteScriptClone.md)
+> [deleteScriptClone](/api/v1/deleteScriptClone.md)
 <br>
-> [waitForExistPDF](/api/waitForExistPDF.md)
+> [waitForExistPDF](/api/v1/waitForExistPDF.md)
 <br>
-> [csvToJson](/api/csvToJson.md)
+> [csvToJson](/api/v1/csvToJson.md)
 
 
 ## Arrays and Object format
-> [groupBy](/api/groupBy.md)
+> [groupBy](/api/v1/groupBy.md)
 
 ## Services and Request
-> [getCookies](/api/getCookies.md)
+> [getCookies](/api/v1/getCookies.md)
