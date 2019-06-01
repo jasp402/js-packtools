@@ -1,8 +1,25 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.4.1](https://github.com/jasp402/js-packtools/compare/v0.4.0...v0.4.1) (2019-05-31)
+# [0.5.0](https://github.com/jasp402/js-packtools/compare/v0.3.2...v0.5.0) (2019-06-01)
+
+
+### Bug Fixes
+
+* add link to logError in README.md ([f2d330a](https://github.com/jasp402/js-packtools/commit/f2d330a))
+* Adjustment to documentation LogError.md ([040a62b](https://github.com/jasp402/js-packtools/commit/040a62b))
+* Update README.md removed "speech_balloon" icons ([d4d5675](https://github.com/jasp402/js-packtools/commit/d4d5675))
+
+
+### Features
+
+* Change all the documentation. ([9117d12](https://github.com/jasp402/js-packtools/commit/9117d12))
+* Update in Constructor. Update in variable `logFormatDate` set only format in string ([6a29a07](https://github.com/jasp402/js-packtools/commit/6a29a07))
+
+
+
+## [0.4.1](https://github.com/jasp402/js-packtools/compare/v0.4.0...v0.4.1) (2019-05-31)
 
 
 ### Tests
