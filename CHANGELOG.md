@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.4](https://github.com/jasp402/js-packtools/compare/v0.7.3...v0.7.4) (2019-06-06)
+
+
+### Bug Fixes
+
+* update README.md translate to Spanish ([9aef4e1](https://github.com/jasp402/js-packtools/commit/9aef4e1))
+
+
+
 ## [0.7.3](https://github.com/jasp402/js-packtools/compare/v0.6.1...v0.7.3) (2019-06-06)
 
 
