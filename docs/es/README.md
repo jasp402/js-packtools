@@ -38,8 +38,8 @@
 
 ## Que es JS PackTools?
 Este es un repositorio de utilidades. Lo que comenzó como un par de ideas, rápidamente se convirtió en una clase que agrupaba varios tipos de funcionalidades. La intención de este paquete es agrupar un conjunto de ayudantes y / o utilidades, para facilitar los trabajos de rutina, especialmente relacionados con webScraping o el formato de datos.
----
 
+---
 
 Bienvenido a la documentación ** JS PackTools **. Te ayudará a empezar rápido. Si tiene problemas, puede encontrar ayuda y respuestas en nuestro canal de Gitter.
 
@@ -68,7 +68,8 @@ utils.createFolders("backups")
 
 ## Lista de contenido
 Las funciones de este paquete se dividen en categorías. para que sea más fácil encontrar una función que esté fuera de línea con sus necesidades.
-| Funciones         | Categoria            | Desde | Descripcion                                           |
+
+|   Funciones       |     Categoria       |   Desde |     Descripcion                                     |
 |-------------------|---------------------|-------|-------------------------------------------------------|
 | :seedling:  [**logError**](https://jasp402.github.io/js-packtools/#/api/logError)           | Global              | 0.1 | Create a document with log error.                     |
 | :seedling: [**logExecution**](https://jasp402.github.io/js-packtools/#/api/logExecution)      | Global              | 0.1 | Used for tracking, create a document                  |
