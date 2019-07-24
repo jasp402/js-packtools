@@ -17,41 +17,41 @@
 
 ## Globals
 
->[logError](/api/v1/logError.md)
+>[logError](/en/api/v1/logError.md)
 <br>
->[logExecution](/api/v1/logExecution.md)
+>[logExecution](/en/api/v1/logExecution.md)
 
 
 ## Time
 
-> [customDate](/api/v1/customDate.md)
+> [customDate](/en/api/v1/customDate.md)
 <br>
-> [differenceDay](/api/v1/differenceDay.md)
+> [differenceDay](/en/api/v1/differenceDay.md)
 <br>
-> [objectToDate](/api/v1/objectToDate.md)
+> [objectToDate](/en/api/v1/objectToDate.md)
 <br>
-> [validateYear](/api/v1/validateYear.md)
+> [validateYear](/en/api/v1/validateYear.md)
 <br>
-> [endDate](/api/v1/endDate.md)
+> [endDate](/en/api/v1/endDate.md)
 
 
 ## Path and Files
 
-> [clearFolder](/api/v1/clearFolder.md)
+> [clearFolder](/en/api/v1/clearFolder.md)
 <br>
-> [createFolders](/api/v1/createFolders.md)
+> [createFolders](/en/api/v1/createFolders.md)
 <br>
-> [saveProgressData](/api/v1/saveProgressData.md)
+> [saveProgressData](/en/api/v1/saveProgressData.md)
 <br>
-> [deleteScriptClone](/api/v1/deleteScriptClone.md)
+> [deleteScriptClone](/en/api/v1/deleteScriptClone.md)
 <br>
-> [waitForExistPDF](/api/v1/waitForExistPDF.md)
+> [waitForExistPDF](/en/api/v1/waitForExistPDF.md)
 <br>
-> [csvToJson](/api/v1/csvToJson.md)
+> [csvToJson](/en/api/v1/csvToJson.md)
 
 
 ## Arrays and Object format
-> [groupBy](/api/v1/groupBy.md)
+> [groupBy](/en/api/v1/groupBy.md)
 
 ## Services and Request
-> [getCookies](/api/v1/getCookies.md)
+> [getCookies](/en/api/v1/getCookies.md)
