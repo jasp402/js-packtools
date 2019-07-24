@@ -1,17 +1,40 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.7.3](https://github.com/jasp402/js-packtools/compare/v0.7.2...v0.7.3) (2019-07-24)
+## [0.8.1](https://github.com/jasp402/js-packtools/compare/v0.8.0...v0.8.1) (2019-07-14)
+
+
+
+# [0.8.0](https://github.com/jasp402/js-packtools/compare/v0.7.4...v0.8.0) (2019-07-14)
+
+
+### Features
+
+* add function parseDate ([dd977ec](https://github.com/jasp402/js-packtools/commit/dd977ec))
+
+
+
+## [0.7.4](https://github.com/jasp402/js-packtools/compare/v0.7.3...v0.7.4) (2019-06-06)
 
 
 ### Bug Fixes
 
-* adjust links in documentation ([0b6122d](https://github.com/jasp402/js-packtools/commit/0b6122d))
+* update README.md translate to Spanish ([9aef4e1](https://github.com/jasp402/js-packtools/commit/9aef4e1))
 
 
 
-### [0.7.2](https://github.com/jasp402/js-packtools/compare/v0.7.1...v0.7.2) (2019-06-03)
+## [0.7.3](https://github.com/jasp402/js-packtools/compare/v0.6.1...v0.7.3) (2019-06-06)
+
+
+### Bug Fixes
+
+* error with variable logFormatDate in constructor ([a3915ab](https://github.com/jasp402/js-packtools/commit/a3915ab))
+* README.md translate to Spanish ([373ae6a](https://github.com/jasp402/js-packtools/commit/373ae6a))
+
+
+
+## [0.7.2](https://github.com/jasp402/js-packtools/compare/v0.7.1...v0.7.2) (2019-06-03)
 
 
 ### Bug Fixes
