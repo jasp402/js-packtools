@@ -1,6 +1,22 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.9.0](https://github.com/jasp402/js-packtools/compare/v0.7.3...v0.9.0) (2019-07-24)
+
+
+### Bug Fixes
+
+* correction in function parseDate ([1e06ba7](https://github.com/jasp402/js-packtools/commit/1e06ba7))
+* README.md translate to Spanish ([373ae6a](https://github.com/jasp402/js-packtools/commit/373ae6a))
+* update README.md translate to Spanish ([9aef4e1](https://github.com/jasp402/js-packtools/commit/9aef4e1))
+
+
+### Features
+
+* add function parseDate ([dd977ec](https://github.com/jasp402/js-packtools/commit/dd977ec))
+
+
 
 ## [0.8.1](https://github.com/jasp402/js-packtools/compare/v0.8.0...v0.8.1) (2019-07-14)
 
