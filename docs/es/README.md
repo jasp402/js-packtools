@@ -37,7 +37,7 @@
 ***
 
 ## Que es JS PackTools?
-Este es un repositorio de utilidades. Lo que comenzó como un par de ideas, rápidamente se convirtió en una clase que agrupaba varios tipos de funcionalidades. La intención de este paquete es agrupar un conjunto de ayudantes y / o utilidades, para facilitar los trabajos de rutina, especialmente relacionados con webScraping o el formato de datos.
+Este es un repositorio de utilidades. Lo que comenzó como un par de ideas, rápidamente se convirtió en una clase que agrupaba varios tipos de funcionalidades. La intención de este paquete es agrupar un conjunto de ayudantes y/o utilidades, para facilitar los trabajos de rutina, especialmente relacionados con webScraping.
 
 ---
 
@@ -71,8 +71,8 @@ Las funciones de este paquete se dividen en categorías. para que sea más fáci
 
 |   Funciones       |     Categoria       |   Desde |     Descripcion                                     |
 |-------------------|---------------------|-------|-------------------------------------------------------|
-| :seedling:  [**logError**](https://jasp402.github.io/js-packtools/#/api/logError)           | Global              | 0.1 | Create a document with log error.                     |
-| :seedling: [**logExecution**](https://jasp402.github.io/js-packtools/#/api/logExecution)      | Global              | 0.1 | Used for tracking, create a document                  |
+| :seedling:  [**writeLogError**](https://jasp402.github.io/js-packtools/#/api/writeLogError)           | Global              | 0.1 | Create a document with log error.                     |
+| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/api/logExecution)      | Global              | 0.1 | Used for tracking, create a document                  |
 | :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1 | Customize the date                                    |
 | :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
 | :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |
@@ -95,7 +95,7 @@ Las funciones de este paquete se dividen en categorías. para que sea más fáci
 Por favor revise la [Documentación API](https://jasp402.github.io/js-packtools/#/api) Sección para ver todas las opciones disponibles.
 
 ## Contribuyentes
-Echa un vistazo a nuestro documento de  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/) para empezar a configurar el repositorio.
+Echa un vistazo a nuestro documento de  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/contribute) para empezar a configurar el repositorio.
 
 Si buscas algo para aportar. Puede revisar nuestro proyecto en [Trello](https://trello.com/b/FMUpri2i/js-packtools) en el tablero "* Features *".  También puede comunicarse con nuestro canal de [Gitter](https://gitter.im/js-packtools/community) si tiene alguna pregunta sobre dónde comenzar a contribuir.
 
