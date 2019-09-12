@@ -16,7 +16,7 @@ deleteFile(path) ⇒ boolean
 let jsPacktools = require("js-packtools");
 let u = new jsPacktools();
 
-    u.logExecution('testing');
+    u.writeLog('testing');
     u.deleteFile(__dirname+'/../DATA/'+u.folderFromatDate+'/logExecution.log');
 ```
 

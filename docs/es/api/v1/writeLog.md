@@ -1,7 +1,7 @@
-## LogExecution
+## WriteLog
 
 ```javascript
-logExecution(path, [auto=folderAutoDate]) ⇒ Boolean
+writeLog(path, [auto=folderAutoDate]) ⇒ Boolean
 ```
 
 `Available since | 0.1.13`
@@ -17,7 +17,7 @@ logExecution(path, [auto=folderAutoDate]) ⇒ Boolean
 //Example NodeJs
 var jsPacktools = require("js-packtools")
 let u = new jsPacktools();
-u.logExecution('Resgister new Execution');
+u.writeLog('Resgister new Execution');
 ```
 
 `Return`

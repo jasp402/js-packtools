@@ -17,9 +17,9 @@ JS-PackTools. Es una pequeña cada de herramienta para desarrolladores `JavaScri
 
 ## Globals
 
->[logError](/api/v1/writeLogError.md)
+>[writeLogError](/api/v1/writeLogError.md)
 <br>
->[logExecution](/api/v1/writeLog.md)
+>[WriteLog](/api/v1/writeLog.md)
 
 
 ## Time

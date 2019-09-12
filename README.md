@@ -72,8 +72,8 @@ The functions of this pack are divided into categories. so that it is easier to 
 
 | functions         | category            | since | description                                           |
 |-------------------|---------------------|-------|-------------------------------------------------------|
-| :seedling:  [**logError**](https://jasp402.github.io/js-packtools/#/api/logError)           | Global              | 0.1 | Create a document with log error.                     |
-| :seedling: [**logExecution**](https://jasp402.github.io/js-packtools/#/api/logExecution)      | Global              | 0.1 | Used for tracking, create a document                  |
+| :seedling:  [**writeLogError**](https://jasp402.github.io/js-packtools/#/api/writeLogError)           | Global              | 0.1 | Create a document with log error.                     |
+| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/api/writeLog)      | Global              | 0.1 | Used for tracking, create a document                  |
 | :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1 | Customize the date                                    |
 | :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
 | :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |

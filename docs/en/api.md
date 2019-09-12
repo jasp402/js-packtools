@@ -17,9 +17,9 @@
 
 ## Globals
 
->[logError](/en/api/v1/logError.md)
+>[writeLogError](/en/api/v1/writeLogError.md)
 <br>
->[logExecution](/en/api/v1/logExecution.md)
+>[writeLog](/en/api/v1/writeLog.md)
 
 
 ## Time

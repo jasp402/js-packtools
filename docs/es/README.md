@@ -72,7 +72,7 @@ Las funciones de este paquete se dividen en categorías. para que sea más fáci
 |   Funciones       |     Categoria       |   Desde |     Descripcion                                     |
 |-------------------|---------------------|-------|-------------------------------------------------------|
 | :seedling:  [**writeLogError**](https://jasp402.github.io/js-packtools/#/api/writeLogError)           | Global              | 0.1 | Create a document with log error.                     |
-| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/api/logExecution)      | Global              | 0.1 | Used for tracking, create a document                  |
+| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/api/writeLog)      | Global              | 0.1 | Used for tracking, create a document                  |
 | :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1 | Customize the date                                    |
 | :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
 | :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |
