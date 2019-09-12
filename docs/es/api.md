@@ -17,41 +17,41 @@ JS-PackTools. Es una pequeña cada de herramienta para desarrolladores `JavaScri
 
 ## Globals
 
->[writeLogError](/api/v1/writeLogError.md)
+>[writeLogError](/es/api/v1/writeLogError.md)
 <br>
->[WriteLog](/api/v1/writeLog.md)
+>[WriteLog](/es/api/v1/writeLog.md)
 
 
 ## Time
 
-> [customDate](/api/v1/customDate.md)
+> [customDate](/es/api/v1/customDate.md)
 <br>
-> [differenceDay](/api/v1/differenceDay.md)
+> [differenceDay](/es/api/v1/differenceDay.md)
 <br>
-> [objectToDate](/api/v1/objectToDate.md)
+> [objectToDate](/es/api/v1/objectToDate.md)
 <br>
-> [validateYear](/api/v1/validateYear.md)
+> [validateYear](/es/api/v1/validateYear.md)
 <br>
-> [endDate](/api/v1/endDate.md)
+> [endDate](/es/api/v1/endDate.md)
 
 
 ## Path and Files
 
-> [clearFolder](/api/v1/clearFolder.md)
+> [clearFolder](/es/api/v1/clearFolder.md)
 <br>
-> [createFolders](/api/v1/createFolders.md)
+> [createFolders](/es/api/v1/createFolders.md)
 <br>
-> [saveProgressData](/api/v1/saveProgressData.md)
+> [saveProgressData](/es/api/v1/saveProgressData.md)
 <br>
-> [deleteScriptClone](/api/v1/deleteScriptClone.md)
+> [deleteScriptClone](/es/api/v1/deleteScriptClone.md)
 <br>
-> [waitForExistPDF](/api/v1/waitForExistPDF.md)
+> [waitForExistPDF](/es/api/v1/waitForExistPDF.md)
 <br>
-> [csvToJson](/api/v1/csvToJson.md)
+> [csvToJson](/es/api/v1/csvToJson.md)
 
 
 ## Arrays and Object format
-> [groupBy](/api/v1/groupBy.md)
+> [groupBy](/es/api/v1/groupBy.md)
 
 ## Services and Request
-> [getCookies](/api/v1/getCookies.md)
+> [getCookies](/es/api/v1/getCookies.md)
