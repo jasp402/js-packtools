@@ -28,10 +28,10 @@
 ***
 
 <p align="center">
-    <a href="https://jasp402.github.io/js-packtools/#/">Getting Started</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/api">API Docs</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/help">help & Support</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/donate">Contribute</a>
+    <a href="https://jasp402.github.io/js-packtools/#/en/">Getting Started</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/api">API Docs</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/help">help & Support</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/donate">Contribute</a>
 </p>
 
 ***
@@ -93,10 +93,10 @@ The functions of this pack are divided into categories. so that it is easier to 
 :fire: **Developing** <br>
 :speech_balloon: **Under discussion** <br>
 
-Please review the [API Doc](https://jasp402.github.io/js-packtools/#/api) section to see all available options.
+Please review the [API Doc](https://jasp402.github.io/js-packtools/#/en/api) section to see all available options.
 
 ## Contributing
-Check out our [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/) to get started with setting up the repo.
+Check out our [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/en/) to get started with setting up the repo.
 
 If you are looking for something to contribute. You can review our project in [Trello](https://trello.com/b/FMUpri2i/js-packtools) on the "*Features*" board. You can also contact our [Gitter](https://gitter.im/js-packtools/community) channel if you have any questions about where to start contributing.
 
