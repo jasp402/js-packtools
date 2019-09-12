@@ -71,17 +71,17 @@ Las funciones de este paquete se dividen en categorías. para que sea más fáci
 
 |   Funciones       |     Categoria       |   Desde |     Descripcion                                     |
 |-------------------|---------------------|-------|-------------------------------------------------------|
-| :seedling:  [**writeLogError**](https://jasp402.github.io/js-packtools/#/api/writeLogError)           | Global              | 0.1 | Create a document with log error.                     |
-| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/api/writeLog)      | Global              | 0.1 | Used for tracking, create a document                  |
-| :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/api/customDate)        | Time                | 0.1 | Customize the date                                    |
-| :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
-| :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |
+| :seedling:  [**writeLogError**](https://jasp402.github.io/js-packtools/#/es/api/writeLogError)           | Global              | 0.1 | Create a document with log error.                     |
+| :seedling: [**writeLog**](https://jasp402.github.io/js-packtools/#/es/api/writeLog)      | Global              | 0.1 | Used for tracking, create a document                  |
+| :seedling: [**customDate**](https://jasp402.github.io/js-packtools/#/es/api/customDate)        | Time                | 0.1 | Customize the date                                    |
+| :seedling: [**objectToDate**](https://jasp402.github.io/js-packtools/#/es/api/objectToDate)      | Time                | 0.1 | turn an assigned date into an object                  |
+| :seedling: [**validateYear**](https://jasp402.github.io/js-packtools/#/es/api/validateYear)      | Time                | 0.1 | Valid the year in a date                              |
 | :fire: increaseDays      | Time                | 0.1 | Increase the count days in a date                     |
-| :seedling: [**differenceDay**](https://jasp402.github.io/js-packtools/#/api/differenceDay)     | Time                | 0.1 | Count the difference of day between two date          |
+| :seedling: [**differenceDay**](https://jasp402.github.io/js-packtools/#/es/api/differenceDay)     | Time                | 0.1 | Count the difference of day between two date          |
 | :fire: generateRageDate  | Time                | 0.1 | Split a date based in the count of day assign         |
-| :seedling: [**createFolders**](https://jasp402.github.io/js-packtools/#/api/createFolders)     | Path and Files      | 0.1 | Create folder in mode manual or automatic             |
+| :seedling: [**createFolders**](https://jasp402.github.io/js-packtools/#/es/api/createFolders)     | Path and Files      | 0.1 | Create folder in mode manual or automatic             |
 | :fire: validateDir       | Path and Files      | 0.1 | Validate a path if exist and create in modo recursive |
-| :seedling: [**clearFolder**](https://jasp402.github.io/js-packtools/#/api/clearFolder)       | Path and Files      | 0.1 | Delete all content                                    |
+| :seedling: [**clearFolder**](https://jasp402.github.io/js-packtools/#/es/api/clearFolder)       | Path and Files      | 0.1 | Delete all content                                    |
 | :fire: deleteFile | Path and Files      | -.-.- | Confirm if file exists and delete                                           |
 | :fire: csvToJson         | Path and Files      | 0.1 | Convert a CSV to JSON                                 |
 | :fire: saveProgressData  | Path and Files      | -.-      | <<PENDING>>                                           |
@@ -92,10 +92,10 @@ Las funciones de este paquete se dividen en categorías. para que sea más fáci
 :fire: **En desarrollo** <br>
 :speech_balloon: **Bajo discución** <br>
 
-Por favor revise la [Documentación API](https://jasp402.github.io/js-packtools/#/api) Sección para ver todas las opciones disponibles.
+Por favor revise la [Documentación API](https://jasp402.github.io/js-packtools/#/es/api) Sección para ver todas las opciones disponibles.
 
 ## Contribuyentes
-Echa un vistazo a nuestro documento de  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/contribute) para empezar a configurar el repositorio.
+Echa un vistazo a nuestro documento de  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/es/contribute) para empezar a configurar el repositorio.
 
 Si buscas algo para aportar. Puede revisar nuestro proyecto en [Trello](https://trello.com/b/FMUpri2i/js-packtools) en el tablero "* Features *".  También puede comunicarse con nuestro canal de [Gitter](https://gitter.im/js-packtools/community) si tiene alguna pregunta sobre dónde comenzar a contribuir.
 
