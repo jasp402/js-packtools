@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.4](https://github.com/jasp402/js-packtools/compare/v0.10.3...v0.10.4) (2019-09-12)
+
+
+### Bug Fixes
+
+* Update links of /EN to /ES and load homePage in language Spanish ([516b542](https://github.com/jasp402/js-packtools/commit/516b542))
+
+
+
 ### [0.10.3](https://github.com/jasp402/js-packtools/compare/v0.10.2...v0.10.3) (2019-09-12)
 
 
