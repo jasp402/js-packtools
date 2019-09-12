@@ -4,6 +4,6 @@ Si cree que **js-packTools** es útil para usted o valoras mi trabajo, regalame 
 Este muy agradecido contigo, tanto que estaras en mi lista **sponsors**
 
 
-###Lista de sponsors 
+### Lista de sponsors 
 
 :pensive: *Aun no tenemos donantes, reliza una donación y forma parte desta lista* 

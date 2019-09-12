@@ -28,10 +28,10 @@
 ***
 
 <p align="center">
-    <a href="https://jasp402.github.io/js-packtools/#/">Guía de inicio</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/api">API Documentación</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/help">Ayuda & Soporte</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/donate">Contribuir</a>
+    <a href="https://jasp402.github.io/js-packtools/#/es/">Guía de inicio</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/es/api">API Documentación</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/es/help">Ayuda & Soporte</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/es/donate">Contribuir</a>
 </p>
 
 ***
@@ -41,7 +41,7 @@ Este es un repositorio de utilidades. Lo que comenzó como un par de ideas, ráp
 
 ---
 
-Bienvenido a la documentación ** JS PackTools **. Te ayudará a empezar rápido. Si tiene problemas, puede encontrar ayuda y respuestas en nuestro canal de Gitter.
+Bienvenido a la documentación **JS PackTools**. Te ayudará a empezar rápido. Si tiene problemas, puede encontrar ayuda y respuestas en nuestro canal de Gitter.
 
 ## Instalación
 Download **JS PackTools** Usage **NPM** <br/>
