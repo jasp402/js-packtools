@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.8](https://github.com/jasp402/js-packtools/compare/v0.10.7...v0.10.8) (2019-10-30)
+
+
+### Bug Fixes
+
+* change const `c` for `constant` ([e352433](https://github.com/jasp402/js-packtools/commit/e352433))
+* Fixed spelling error in the constructor `folderFormatDate =\= folderFormatDate` ([ed73eef](https://github.com/jasp402/js-packtools/commit/ed73eef))
+* Fixed spelling error in the constructor `folderFormatDate =\= folderFormatDate` in createFolders ([17c176c](https://github.com/jasp402/js-packtools/commit/17c176c))
+* Fixed variables name ([bcb2343](https://github.com/jasp402/js-packtools/commit/bcb2343))
+* write head for documentation ([4da22d6](https://github.com/jasp402/js-packtools/commit/4da22d6))
+
+
+
 ### [0.10.7](https://github.com/jasp402/js-packtools/compare/v0.10.6...v0.10.7) (2019-09-12)
 
 
