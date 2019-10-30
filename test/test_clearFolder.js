@@ -8,7 +8,7 @@ describe('SUITE - clearFolder()', function () {
         u.writeLog('testing');
 
         // Logic: just delete the contents of a folder without deleting the container folder
-        u.clearFolder(__dirname+'/../DATA/'+u.folderFromatDate+'/');
+        u.clearFolder(u.getFinalPath());
     });
 
 });
