@@ -18,8 +18,8 @@ class jsPackTools {
         this.folderAutoDate     = ("folderAutoDate"    in config) ? config.folderAutoDate           : true;                 //=> true => /2019_01_01/
         this.nameWriteLog       = ("nameWriteLog"      in config) ? config.nameWriteLog+'.log'      : 'logExecution.log';
         this.nameWriteLogError  = ("nameWriteLogError" in config) ? config.nameWriteLogError+'.log' : 'logError.log';
-        this.folderFromatDate   = ("folderFromatDate"  in config) ? this.customDate(null,config.folderFormatDate, 0, false) : this.customDate(null,'yyyy~_~mm~_~dd', 0, false); //=> 'yyyy_mm_dd';
-        this.finalPath          = this.folderName+'/'+this.folderFromatDate
+        this.folderFormatDate   = ("folderFormatDate"  in config) ? this.customDate(null,config.folderFormatDate, 0, false) : this.customDate(null,'yyyy~_~mm~_~dd', 0, false); //=> 'yyyy_mm_dd';
+        this.finalPath          = this.folderName+'/'+this.folderFormatDate
     }
 }
 
