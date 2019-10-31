@@ -16,6 +16,7 @@ const csvToJson = require('./lib/csvToJson');
 const customDate = require('./lib/customDate');
 const deleteFile = require('./lib/deleteFile');
 const differenceDay = require('./lib/differenceDay');
+const everyOrNone = require('./lib/everyOrNone');
 const formatSeconds = require('./lib/formatSeconds');
 const generateRageDate = require('./lib/generateRageDate');
 const getCookies = require('./lib/getCookies');
@@ -51,6 +52,7 @@ class jsPackTools extends parameters {
     get customDate() { return customDate.bind(this) }
     get deleteFile() { return deleteFile.bind(this) }
     get differenceDay() { return differenceDay.bind(this) }
+    get everyOrNone() { return everyOrNone.bind(this) }
     get formatSeconds() { return formatSeconds.bind(this) }
     get generateRageDate() { return generateRageDate.bind(this) }
     get getCookies() { return getCookies.bind(this) }
@@ -66,6 +68,143 @@ class jsPackTools extends parameters {
     get writeLog() { return writeLog.bind(this) }
     get writeLogError() { return writeLogError.bind(this) }
     get _log() { return _log.bind(this) }
+
+    info() {
+        let arMethods = [ { name: 'clearFolders',
+            type: '{file}',
+            description: 'This simply clear the content a folder.',
+            version: '0.1.13' },
+            { name:
+                    'createFolders - This create a folder whit sub-folder of date by default.',
+                type: null,
+                description: null,
+                version: '0.1.13' },
+            { name:
+                    'csvToJson - This read a document CSV and convert in a Object Javascript (JSON)',
+                type: null,
+                description: null,
+                version: '0.1.13' },
+            { name:
+                    'customDate - It\'s a date control. Without parameters give the current date, use the parameters to customize its functionality.',
+                type: null,
+                description: null,
+                version: '0.1.3' },
+            { name: 'deleteFile - Check if the file exists before deleting',
+                type: null,
+                description: null,
+                version: '0.1.19' },
+            { name:
+                    'differenceDay - It\'s Return the number of days between 2 dates.',
+                type: null,
+                description: null,
+                version: '0.1.3' },
+            { name:
+                    'everyOrNone (all) - This snippet returns true if the predicate function returns true for all elements in a collection and false otherwise.',
+                type: null,
+                description: null,
+                version: '1.0.0' },
+            { name: 'formatSeconds - This only format a value float',
+                type: null,
+                description: null,
+                version: '0.1.20' },
+            { name: null, type: null, description: null, version: null },
+            { name: null, type: null, description: null, version: null },
+            { name:
+                    'getFinalPath - Create structure of folders with parameters in constructor.',
+                type: null,
+                description: null,
+                version: '1.0.0' },
+            { name: null, type: null, description: null, version: null },
+            { name: null, type: null, description: null, version: null },
+            { name: 'objectToDate - Generate a object with date details',
+                type: null,
+                description: null,
+                version: '0.1.11' },
+            { name:
+                    'customDate - Using a sting and a format transform the string in date.',
+                type: null,
+                description: null,
+                version: '0.7.4' },
+            { name: null, type: null, description: null, version: null },
+            { name: null, type: null, description: null, version: null },
+            { name:
+                    'validateYear - Can be current year or spend the year to validate',
+                type: null,
+                description: null,
+                version: '0.1.11' },
+            { name: null, type: null, description: null, version: null },
+            { name: 'writeLog - write file .log in folder default of class.',
+                type: null,
+                description: null,
+                version: '1.0.0' },
+            { name: null, type: null, description: null, version: null },
+            { name:
+                    'log - It integrates the functions registry of errors and registry of execution for the document of registry in his project.',
+                type: null,
+                description: null,
+                version: '0.1.13' } ];
+        return new Proxy(arMethods,
+            {
+                get: function(obj, prop) {
+                    // The default behavior to return the value; prop is usually an integer
+                    if (prop in obj) {
+                        return obj[prop];
+                    }
+
+                    // Get the number of products; an alias of products.length
+                    if (prop === 'number') {
+                        return obj.length;
+                    }
+
+                    let result, types = {};
+
+                    for (let product of obj) {
+                        if (product.name === prop) {
+                            result = product;
+                        }
+                        if (types[product.type]) {
+                            types[product.type].push(product);
+                        } else {
+                            types[product.type] = [product];
+                        }
+                    }
+
+                    // Get a product by name
+                    if (result) {
+                        return result;
+                    }
+
+                    if (prop === 'names') {
+                        return Object.keys(obj).map(items=>obj[items].name).filter(Boolean);
+                    }
+
+                    // Get products by type
+                    if (prop in types) {
+                        return types[prop];
+                    }
+
+                    // Get product types
+                    if (prop === 'types') {
+                        return Object.keys(types);
+                    }
+
+                    return undefined;
+                }
+            });
+    }
+
+
+
 }
+
+// let u  = new jsPackTools().info();
+
+// console.log(u.names); // { name: 'Firefox', type: 'browser' }
+//console.log(products['Firefox']); // { name: 'Firefox', type: 'browser' }
+//console.log(products['Chrome']); // undefined
+//console.log(products.browser); // [{ name: 'Firefox', type: 'browser' }, { name: 'SeaMonkey', type: 'browser' }]
+//console.log(products.types); // ['browser', 'mailer']
+//console.log(products.number); // 3
+
 
 module.exports = jsPackTools;
