@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/jasp402/js-packtools/compare/v0.10.10...v0.11.0) (2019-11-01)
+
+
+### Features
+
+* **new-version:** Refactorization absolute ([7d27c9e](https://github.com/jasp402/js-packtools/commit/7d27c9e))
+
+
+### BREAKING CHANGES
+
+* **new-version:** new structure of jsDoc in all function.
+
+
+
 ### [0.10.10](https://github.com/jasp402/js-packtools/compare/v0.10.9...v0.10.10) (2019-10-31)
 
 
