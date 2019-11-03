@@ -11,7 +11,7 @@ describe('SUITE - writeLog()', function () {
 
     it('TEST # 2, type string with color red', function () {
         // Logic: create un new file
-        u.writeLog('string with color', u.c.COLOR.red);
+        u.writeLog('string with color', u.constant.COLOR.red);
     });
 
     it('TEST # 3, type string with timeOut', function () {
