@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.3.0](https://github.com/jasp402/js-packtools/compare/v1.2.0...v1.3.0) (2019-11-03)
+
+
+### Bug Fixes
+
+* text formatting ([4f88582](https://github.com/jasp402/js-packtools/commit/4f88582))
+
+
+### Features
+
+* New function allEqual(). This snippet checks whether all elements of the array are equal. ([bf9cfd0](https://github.com/jasp402/js-packtools/commit/bf9cfd0))
+* New function allEqual(). This snippet checks whether all elements of the array are equal. ([62f9079](https://github.com/jasp402/js-packtools/commit/62f9079))
+
+
+
 # [1.2.0](https://github.com/jasp402/js-packtools/compare/v1.1.1...v1.2.0) (2019-11-03)
 
 
