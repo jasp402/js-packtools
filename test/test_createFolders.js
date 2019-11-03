@@ -10,7 +10,7 @@ describe('SUITE - createFolders()', function () {
 
     it('TEST # 2, create folder simple', function () {
         // Logic: create a folder {see: config at constructor}
-        u.createFolders(false);
+        u.createFolders("Avengers",false);
     });
 
 });
