@@ -18,12 +18,12 @@ let params     = 'class parameters {\n' +
     '    constructor(config={}){\n' +
     '        assert.ok(typeof config === \'object\', constant.ERROR_CONSTRUCTOR);\n' +
     '        this.constant           = constant;\n' +
-    '        this.folderName         = ("folderName"        in config) ? config.folderName               : \'DATA\';               //=> data_audit, data_download, docs, pdfs, trash...\n' +
-    '        this.folderWithDate     = ("folderAutoDate"    in config) ? config.folderWithDate           : true;                 //=> true => /2019_01_01/\n' +
-    '        this.folderFormatDate   = ("folderFormatDate"  in config) ? config.folderFormatDate         : \'yyyy~_~mm~_~dd\';     //=> \'yyyy_mm_dd\';\n' +
-    '        this.nameWriteLog       = ("nameWriteLog"      in config) ? config.nameWriteLog+\'.log\'      : \'logExecution.log\';\n' +
-    '        this.nameWriteLogError  = ("nameWriteLogError" in config) ? config.nameWriteLogError+\'.log\' : \'logError.log\';\n' +
-    '        this.logFormatDate      = ("logFormatDate"     in config) ? config.logFormatDate            : \'yyyy-mm-dd ~h:m:i\';  //=> yyyy-mm-dd | hh:mm:sss\n' +
+    '        this.folderName         = ("folderName"        in config) ? config.folderName                  : \'DATA\';                 //=> data_audit, data_download, docs, pdfs, trash...\n' +
+    '        this.folderWithDate     = ("folderWithDate"    in config) ? Boolean(config.folderWithDate)     : true;                     //=> true => /2019_01_01/\n' +
+    '        this.folderFormatDate   = ("folderFormatDate"  in config) ? config.folderFormatDate            : \'yyyy~_~mm~_~dd\';       //=> \'yyyy_mm_dd\';\n' +
+    '        this.nameWriteLog       = ("nameWriteLog"      in config) ? config.nameWriteLog+\'.log\'       : \'logExecution.log\';\n' +
+    '        this.nameWriteLogError  = ("nameWriteLogError" in config) ? config.nameWriteLogError+\'.log\'  : \'logError.log\';\n' +
+    '        this.logFormatDate      = ("logFormatDate"     in config) ? config.logFormatDate               : \'yyyy-mm-dd ~h:m:i\';    //=> yyyy-mm-dd | hh:mm:sss\n' +
     '    }\n' +
     '}\n';
 let classBuild = `class jsPackTools extends parameters { \n`;
@@ -50,7 +50,7 @@ fs.readdirSync(__dirname+'/lib').forEach(modules => {
      category:    data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ',''):null,
      description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ',''):null,
      version:     data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ',''):null,
-     test:        arTest[module]||null//arTest.filter(value=>!!value[module])[0]
+     test:        arTest[module.replace('_','')]||null//arTest.filter(value=>!!value[module])[0]
     });
 
 });
@@ -95,8 +95,6 @@ index += classBuild;
 index += 'module.exports = jsPackTools;\n';
 
 fs.writeFile("./index.js", index, function(err) {
-    if(err) {
-        return console.log(err);
-    }
+    if(err) return console.log(err);
     console.log("Generate index.js!");
 });
