@@ -29,6 +29,15 @@ let params     = 'class parameters {\n' +
 let classBuild = `class jsPackTools extends parameters { \n`;
 let importMod  = '';
 let arMethods  = [];
+
+let arTest = {};
+fs.readdirSync(__dirname+'/test').forEach(modules => {
+    let module   = modules.split('.').shift().split('_')[1];
+    arTest[module] = './test/'+modules;
+});
+
+//console.log(arTest);
+
 fs.readdirSync(__dirname+'/lib').forEach(modules => {
     let module   = modules.split('.').shift();
     let space    = module.length <= 4 ? "\t\t\t\t" : module.length <= 8 ? "\t\t\t" : module.length < 13 ? "\t\t" : "\t";
@@ -41,6 +50,7 @@ fs.readdirSync(__dirname+'/lib').forEach(modules => {
      category:    data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ',''):null,
      description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ',''):null,
      version:     data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ',''):null,
+     test:        arTest[module]||null//arTest.filter(value=>!!value[module])[0]
     });
 
 });
@@ -58,6 +68,7 @@ classBuild += 'info() {\n' +
     '                    }\n' +
     '                    if (result) { return result }\n' +
     '                    if (prop === \'names\') { return Object.keys(obj).map(items=>obj[items].name).filter(Boolean) }\n' +
+    '                    if (prop === \'tests\') { return Object.keys(obj).map(items=>obj[items].test).filter(Boolean) }\n' +
     '                    if (prop in categories) { return categories[prop] }\n' +
     '                    if (prop === \'categories\') { return Object.keys(categories) }\n' +
     '                    return undefined;\n' +
@@ -68,12 +79,12 @@ classBuild += '}\n';
 
 
 
-console.log(header(pjson.version, new Date()));
-console.log(importMod);
-console.log('const sourceLib \t\t = '+JSON.stringify(arMethods)+'\n');
-console.log(params);
-console.log(classBuild);
-console.log('module.exports = jsPackTools;\n');
+//console.log(header(pjson.version, new Date()));
+//console.log(importMod);
+//console.log('const sourceLib \t\t = '+JSON.stringify(arMethods)+'\n');
+//console.log(params);
+//console.log(classBuild);
+//console.log('module.exports = jsPackTools;\n');
 
 let index = '';
 index += header(pjson.version, new Date());
