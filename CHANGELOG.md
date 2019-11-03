@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1](https://github.com/jasp402/js-packtools/compare/v1.1.0...v1.1.1) (2019-11-03)
+
+
+### Bug Fixes
+
+* correct minor in test and function CreateFolders ([ad9934c](https://github.com/jasp402/js-packtools/commit/ad9934c))
+
+
+
 # [1.1.0](https://github.com/jasp402/js-packtools/compare/v1.0.1...v1.1.0) (2019-11-03)
 
 
