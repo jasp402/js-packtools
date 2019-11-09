@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/jasp402/js-packtools/compare/v1.4.1...v1.5.0) (2019-11-09)
+
+
+### Bug Fixes
+
+* ignore data folder  add command file ([75de623](https://github.com/jasp402/js-packtools/commit/75de623))
+
+
+### Features
+
+* refactoring compiler.js - Part 1 ([8fd724f](https://github.com/jasp402/js-packtools/commit/8fd724f))
+
+
+
 ### [1.4.1](https://github.com/jasp402/js-packtools/compare/v1.4.0...v1.4.1) (2019-11-05)
 
 
