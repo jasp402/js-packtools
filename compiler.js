@@ -52,75 +52,72 @@ function _renderClassMain() {
     });
 }
 function _renderDocumentation(){
-    let docs  = fs.readdirSync(__dirname+'/lib').map(modules =>{
+    const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
         const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
-
-        (data.match(/@param.*/g) ? data.match(/@param.*/g):['empty']).map(param=>{
+        const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
             let tmp = {};
-            param = param.replace('@param','');
+            param = param.replace('@param', '');
 
-            if(param.indexOf('{array}')>-1){
+            if (param.indexOf('{array}') > -1) {
                 tmp['type'] = '[array]';
-                param = param.replace('{array}','');
+                param = param.replace('{array}', '');
             }
-            if(param.indexOf('{string}')>-1){
+            if (param.indexOf('{string}') > -1) {
                 tmp['type'] = '[string]';
-                param = param.replace('{string}','');
+                param = param.replace('{string}', '');
             }
-            if(param.indexOf('{boolean}')>-1){
+            if (param.indexOf('{boolean}') > -1) {
                 tmp['type'] = '[boolean]';
-                param = param.replace('{boolean}','');
+                param = param.replace('{boolean}', '');
             }
-            if(param.indexOf('{number}')>-1){
+            if (param.indexOf('{number}') > -1) {
                 tmp['type'] = '[number]';
-                param = param.replace('{number}','');
+                param = param.replace('{number}', '');
             }
-            if(param.indexOf('{string | object}')>-1){
+            if (param.indexOf('{string | object}') > -1) {
                 tmp['type'] = '[string | object]';
-                param = param.replace('{string | object}','');
+                param = param.replace('{string | object}', '');
             }
-            if(param.indexOf('{object}')>-1){
+            if (param.indexOf('{string|Date}') > -1) {
+                tmp['type'] = '[string|Date]';
+                param = param.replace('{string|Date}', '');
+            }
+            if (param.indexOf('{object}') > -1) {
                 tmp['type'] = '[object]';
-                param = param.replace('{object}','');
+                param = param.replace('{object}', '');
             }
-            if(param.indexOf('{function|boolean}')>-1){
+            if (param.indexOf('{function|boolean}') > -1) {
                 tmp['type'] = '[function|boolean]';
-                param = param.replace('{function|boolean}','');
+                param = param.replace('{function|boolean}', '');
             }
-            if(param.indexOf('{int}')>-1){
+            if (param.indexOf('{int}') > -1) {
                 tmp['type'] = '[int]';
-                param = param.replace('{int}','');
+                param = param.replace('{int}', '');
             }
 
-            tmp['name']  = param.split('-')[0].replace(/\s+/g,'');
-            console.log(tmp);
-
+            tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
+            tmp['description'] = param.split('-').pop().trim();
+            return tmp;
         });
-
-
         return {
-            name : modules.split('.').shift(),
-            version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ',''):null,
-            arParams: data.match(/@param.*/g) ? data.match(/@param.*/g):[],
+            name: modules.split('.').shift(),
+            version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ', '') : null,
+            arParams: params,
         }
     });
 
-
-/*
     docs.forEach(doc=>{
         const {name, version, arParams} = doc;
         const _cd_ = '\`\`\`';
         let write = `## ${name} \` Version: ${version} \` \n\n`;
-        write += `${_cd_}javascript\n ${name}() \n${_cd_}`;
-
-        console.log(arParams.length);
+        write += `${_cd_}javascript\n ${name}(${arParams.map(param=>param.name).join(', ')}) \n${_cd_}`;
 
         fs.writeFile(`./DATA/${name}.md`, write, function(err) {
             if(err) return console.log(err);
             console.log("Generate Documentation.js!");
         });
     });
-    */
+
 }
 
 // _renderClassMain();
