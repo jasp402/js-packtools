@@ -1,6 +1,15 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.4.1](https://github.com/jasp402/js-packtools/compare/v1.4.0...v1.4.1) (2019-11-05)
+
+
+### Bug Fixes
+
+* removed dependency `imap-simple`. ([c8822b4](https://github.com/jasp402/js-packtools/commit/c8822b4))
+
+
 
 # [1.4.0](https://github.com/jasp402/js-packtools/compare/v1.3.0...v1.4.0) (2019-11-03)
 
