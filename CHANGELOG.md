@@ -1,6 +1,15 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.6.1](https://github.com/jasp402/js-packtools/compare/v1.6.0...v1.6.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* add dayOfYear() in class JS-PackTools ([74e5bf6](https://github.com/jasp402/js-packtools/commit/74e5bf6))
+
+
 
 # [1.6.0](https://github.com/jasp402/js-packtools/compare/v1.5.0...v1.6.0) (2019-11-11)
 
