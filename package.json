@@ -1,13 +1,12 @@
 {
   "name": "js-packtools",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha",
     "release": "standard-version",
-    "docsify":"docsify serve ./docs"
-
+    "docsify": "docsify serve ./docs"
   },
   "repository": {
     "type": "git",

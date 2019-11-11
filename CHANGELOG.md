@@ -1,6 +1,23 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+# [1.6.0](https://github.com/jasp402/js-packtools/compare/v1.5.0...v1.6.0) (2019-11-11)
+
+
+### Bug Fixes
+
+* add documentation in folder english ([ac856dc](https://github.com/jasp402/js-packtools/commit/ac856dc))
+* update compiler.js and add documentation in folder english ([185bfed](https://github.com/jasp402/js-packtools/commit/185bfed))
+* working in compiler.js create function render documentation ([627cd92](https://github.com/jasp402/js-packtools/commit/627cd92))
+* working in compiler.js Optimization of documentation ([f01a823](https://github.com/jasp402/js-packtools/commit/f01a823))
+
+
+### Features
+
+* unos detalles pendiente para haerlo un sabado o dimingo add funtionality dayOfYear.js ([c8436de](https://github.com/jasp402/js-packtools/commit/c8436de))
+
+
 
 ## [1.5.0](https://github.com/jasp402/js-packtools/compare/v1.4.1...v1.5.0) (2019-11-09)
 
