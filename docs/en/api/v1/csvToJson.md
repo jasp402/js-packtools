@@ -1,21 +1,24 @@
-## csvToJson
+## csvToJson 
+  ```javascript
+ csvToJson(_csv) ⇒ string 
+``` 
 
-```javascript
-csvToJson(csv) ⇒ object
-```
+ ` Version: 1.0.0 ` 
+` Category: convert ` 
 
-`Available since | 0.1.13`
+### Description 
 
-?>  This read a document CSV and convert in a Object Javascript (JSON)
+?> This read a document CSV and convert in a Object Javascript (JSON). 
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| csv | <code>string</code> | <code></code> |  document csv in string |
+### Implementation 
 
-```js
-//Example NodeJs
-let file = fs.readFileSync(__dirname+'/test_csv.csv', 'utf-8');
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **_csv** | `string` | `` | __csv_ | 
 
-let objCSV = JSON.parse(u.csvToJson(file));
-assert.ok(objCSV[13].functions === 'csvToJson');
-```
+### Example 
+
+ ```javascript 
+  
+ ```  
+

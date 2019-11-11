@@ -1,30 +1,24 @@
-## clearFolder
+## clearFolder 
+  ```javascript
+ clearFolder(path) ⇒ object 
+``` 
 
-```javascript
-clearFolder(path) ⇒ object
-```
+ ` Version: 1.0.0 ` 
+` Category: Path/Files ` 
 
-`Available since | 0.1.13`
+### Description 
 
-?> This simply clear the content a folder..
+?> This simply clear the content a folder. 
 
-| Param | Type | Description |
-| --- | --- | --- |
-| path | <code>string</code> | path of folder to delete content |
+### Implementation 
 
-```js
-//Example NodeJs
-var jsPacktools = require("js-packtools")
-let u = new jsPacktools();
-u.clearFolder(__dirname+'data\');
-```
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **path** | `string` | `` | _path_ | 
 
-`Return`
+### Example 
 
-```
-{
-  files: Array,     //array with name of files
-  deleted: NaN,     //number of files deleted
-  pending: NaN      //if result > 0 is error. Missing files for deleted.
-}
-```
+ ```javascript 
+  
+ ```  
+

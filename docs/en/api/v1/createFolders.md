@@ -1,25 +1,25 @@
-## createFolders
+## createFolders 
+  ```javascript
+ createFolders(path, withDate) ⇒ boolean 
+``` 
 
-```javascript
-createFolders(path, [auto=folderAutoDate]) ⇒ Boolean
-```
+ ` Version: 1.0.0 ` 
+` Category: Path/Files ` 
 
-`Available since | 0.1.13`
+### Description 
 
-?> This create a folder whit sub-folder of date by default.
+?> This create a folder whit sub-folder of date by default if param `withDate` is True. 
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| path | <code>string</code> | <code></code> |  Dir of folder to create |
-| auto | <code>Boolean</code> | <code>&quot;{true}&quot;</code> |  If false, create subfolder with date |
+### Implementation 
 
-```js
-//Example NodeJs
-var jsPacktools = require("js-packtools")
-let u = new jsPacktools();
-u.createFolders(__dirname+'downloads\');
-```
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **path** | `string` | `` | _path_ | 
+| **withDate** | `boolean` | `` | _> constructor_ | 
 
-`Return`
+### Example 
 
-If create directories return 'true' else 'false'
+ ```javascript 
+  
+ ```  
+

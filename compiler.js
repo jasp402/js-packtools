@@ -53,68 +53,99 @@ function _renderClassMain() {
 }
 function _renderDocumentation(){
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
+
+        const getType = (str) =>  {
+            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void'];
+            return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
+        };
+
         const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
         const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
             let tmp = {};
             param = param.replace('@param', '');
 
             if (param.indexOf('{array}') > -1) {
-                tmp['type'] = '[array]';
+                tmp['type'] = 'array';
                 param = param.replace('{array}', '');
             }
             if (param.indexOf('{string}') > -1) {
-                tmp['type'] = '[string]';
+                tmp['type'] = 'string';
                 param = param.replace('{string}', '');
             }
             if (param.indexOf('{boolean}') > -1) {
-                tmp['type'] = '[boolean]';
+                tmp['type'] = 'boolean';
                 param = param.replace('{boolean}', '');
             }
             if (param.indexOf('{number}') > -1) {
-                tmp['type'] = '[number]';
+                tmp['type'] = 'number';
                 param = param.replace('{number}', '');
             }
             if (param.indexOf('{string | object}') > -1) {
-                tmp['type'] = '[string | object]';
+                tmp['type'] = 'string | object';
                 param = param.replace('{string | object}', '');
             }
             if (param.indexOf('{string|Date}') > -1) {
-                tmp['type'] = '[string|Date]';
+                tmp['type'] = 'string|Date';
                 param = param.replace('{string|Date}', '');
             }
             if (param.indexOf('{object}') > -1) {
-                tmp['type'] = '[object]';
+                tmp['type'] = 'object';
                 param = param.replace('{object}', '');
             }
             if (param.indexOf('{function|boolean}') > -1) {
-                tmp['type'] = '[function|boolean]';
+                tmp['type'] = 'function|boolean';
                 param = param.replace('{function|boolean}', '');
             }
             if (param.indexOf('{int}') > -1) {
-                tmp['type'] = '[int]';
+                tmp['type'] = 'int';
                 param = param.replace('{int}', '');
             }
 
             tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
-            tmp['description'] = param.split('-').pop().trim();
+            tmp['description'] = param.indexOf("~") > -1 ? param.split('~').pop().trim() : param.split('-').pop().trim();
+            tmp['default'] = param.indexOf("~")>-1 ? param.split('-').pop().split('~')[0] : "";
             return tmp;
         });
+        const returns = (data.match(/@returns.*/g) ? data.match(/@returns.*/g) : ['empty']).map(re=>{
+            let tmp = {};
+            re = re.replace('@returns', '');
+            tmp['type'] = getType(re)[0];
+            tmp['description'] = re.indexOf('-')>-1 ? re.split('-')[1] : '';
+            return tmp;
+        });
+
         return {
             name: modules.split('.').shift(),
             version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ', '') : null,
+            category: data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ', '') : null,
+            description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ', '') : null,
+            example: data.match(/@example.*/g) ? data.match(/@example.*/g)[0].replace('@example ', '') : null,
             arParams: params,
+            returns: returns[0],
         }
     });
 
     docs.forEach(doc=>{
-        const {name, version, arParams} = doc;
+        const {name, version, arParams, returns, category, description, example} = doc;
+        console.log(arParams);
         const _cd_ = '\`\`\`';
-        let write = `## ${name} \` Version: ${version} \` \n\n`;
-        write += `${_cd_}javascript\n ${name}(${arParams.map(param=>param.name).join(', ')}) \n${_cd_}`;
+        let write = `## ${name} \n  `;
+        write += `${_cd_}javascript\n ${name}(${arParams.map(param=>param.name).join(', ')}) ⇒ ${returns.type} \n${_cd_} \n\n `;
+        write += `\` Version: ${version} \` \n`;
+        write += `\` Category: ${category} \` \n\n`;
+        write += `### Description \n\n`;
+        write += `?> ${description} \n\n`;
+        write += `### Implementation \n\n`;
+        write += `| Param | Type | Default value | Description | \n`;
+        write += `| --- | --- | --- | --- | \n`;
+        write += arParams.map(param=>`| **${param.name}** | \`${param.type}\` | \`${param.default}\` | _${param.description}_ | `).join('\n');
+        write += `\n\n`;
+        write += `### Example \n\n`;
+        write += ` \`\`\`javascript \n ${example ? example.replace(/\\n/g,"\n") : ""} \n \`\`\`  \n\n`;
 
-        fs.writeFile(`./DATA/${name}.md`, write, function(err) {
+        fs.writeFile(`./docs/en/api/v1/${name}.md`, write, function(err) {
             if(err) return console.log(err);
-            console.log("Generate Documentation.js!");
+            //console.log("Generate Documentation.js!");
         });
     });
 

@@ -1,32 +1,24 @@
-## objectToDate
+## objectToDate 
+  ```javascript
+ objectToDate(strTime) ⇒ object 
+``` 
 
-```javascript
-objectToDate(strTime) ⇒  Object
-```
-`Available since | 0.1.11`
+ ` Version: 1.0.0 ` 
+` Category: Time/Date ` 
 
-?> Return a object with date split details
+### Description 
 
+?> Generate a object with date details. 
 
-| Param | Type | Description |
-| --- | --- | --- |
-| strTime | <code>string</code> | date or UNIX date |
+### Implementation 
 
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **strTime** | `string` | `` | _strTime_ | 
 
-```js
-//Example NodeJs
-var jsPacktools = require("js-packtools")
-let u = new jsPacktools();
-u.objectToDate('05/01/2019');
- // {
-    year: 2019,
-    month: 10,
-    day: 3,
-    hour: 0,
-    minute: 0,
-    second: 0,
-    mlSecond: 0
-    }
-```
+### Example 
 
-[runkit website](https://jasp402.github.io/js-packtools/examples/objectToDate.html ':include :type=iframe width=100% height=100%')
+ ```javascript 
+  
+ ```  
+
