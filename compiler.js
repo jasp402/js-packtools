@@ -151,5 +151,5 @@ function _renderDocumentation(){
 
 }
 
-// _renderClassMain();
+_renderClassMain();
 _renderDocumentation();
