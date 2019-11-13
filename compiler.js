@@ -51,7 +51,7 @@ function _renderClassMain() {
         console.log("Generate index.js!");
     });
 }
-function _renderDocumentation(){
+function _renderAPIDoc(){
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
         const getType = (str) =>  {
@@ -124,7 +124,6 @@ function _renderDocumentation(){
             returns: returns[0],
         }
     });
-
     docs.forEach(doc=>{
         const {name, version, arParams, returns, category, description, example} = doc;
         console.log(arParams);
@@ -148,8 +147,192 @@ function _renderDocumentation(){
             //console.log("Generate Documentation.js!");
         });
     });
+}
+function _renderCategory(){
+    const jsPackTools = require("./index");
+    let utils = new jsPackTools();
+    const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
+
+        const getType = (str) =>  {
+            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void'];
+            return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
+        };
+
+        const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
+        const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
+            let tmp = {};
+            param = param.replace('@param', '');
+
+            if (param.indexOf('{array}') > -1) {
+                tmp['type'] = 'array';
+                param = param.replace('{array}', '');
+            }
+            if (param.indexOf('{string}') > -1) {
+                tmp['type'] = 'string';
+                param = param.replace('{string}', '');
+            }
+            if (param.indexOf('{boolean}') > -1) {
+                tmp['type'] = 'boolean';
+                param = param.replace('{boolean}', '');
+            }
+            if (param.indexOf('{number}') > -1) {
+                tmp['type'] = 'number';
+                param = param.replace('{number}', '');
+            }
+            if (param.indexOf('{string | object}') > -1) {
+                tmp['type'] = 'string | object';
+                param = param.replace('{string | object}', '');
+            }
+            if (param.indexOf('{string|Date}') > -1) {
+                tmp['type'] = 'string|Date';
+                param = param.replace('{string|Date}', '');
+            }
+            if (param.indexOf('{object}') > -1) {
+                tmp['type'] = 'object';
+                param = param.replace('{object}', '');
+            }
+            if (param.indexOf('{function|boolean}') > -1) {
+                tmp['type'] = 'function|boolean';
+                param = param.replace('{function|boolean}', '');
+            }
+            if (param.indexOf('{int}') > -1) {
+                tmp['type'] = 'int';
+                param = param.replace('{int}', '');
+            }
+
+            tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
+            tmp['description'] = param.indexOf("~") > -1 ? param.split('~').pop().trim() : param.split('-').pop().trim();
+            tmp['default'] = param.indexOf("~")>-1 ? param.split('-').pop().split('~')[0] : "";
+            return tmp;
+        });
+        const returns = (data.match(/@returns.*/g) ? data.match(/@returns.*/g) : ['empty']).map(re=>{
+            let tmp = {};
+            re = re.replace('@returns', '');
+            tmp['type'] = getType(re)[0];
+            tmp['description'] = re.indexOf('-')>-1 ? re.split('-')[1] : '';
+            return tmp;
+        });
+
+        return {
+            name: modules.split('.').shift(),
+            version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ', '') : null,
+            category: data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ', '') : null,
+            description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ', '') : null,
+            example: data.match(/@example.*/g) ? data.match(/@example.*/g)[0].replace('@example ', '') : null,
+            arParams: params,
+            returns: returns[0],
+        }
+    });
+    let categories = utils.groupBy(docs,"category");
+
+    let write = constant.HEADER_API_DOC+"\n\n";
+    Object.keys(categories).map(categoryKey=>{
+        write += `>## ${categoryKey} \n\n`;
+        write += `| Functions Name | version | Category | Description |\n`;
+        write += `|---|---|---|---|\n`;
+        categories[categoryKey].map(fn=>{
+            let suspensive = fn.description.length > 70 ? "..." : "";
+            write += `|:seedling:  [**${fn.name}**](/en/api/v1/${fn.name}.md)  | ${fn.version} | ${fn.category} | <sub>${fn.description.slice(0,70)}${suspensive}</sub> |\n`;
+        });
+    });
+""
+    fs.writeFile(`./docs/en/api.md`, write, function(err) {
+        if(err) return console.log(err);
+        //console.log("Generate Documentation.js!");
+    });
 
 }
+function _renderListOfContent(){
+    const jsPackTools = require("./index");
+    let utils = new jsPackTools();
+    const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
-_renderClassMain();
-_renderDocumentation();
+        const getType = (str) =>  {
+            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void'];
+            return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
+        };
+
+        const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
+        const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
+            let tmp = {};
+            param = param.replace('@param', '');
+
+            if (param.indexOf('{array}') > -1) {
+                tmp['type'] = 'array';
+                param = param.replace('{array}', '');
+            }
+            if (param.indexOf('{string}') > -1) {
+                tmp['type'] = 'string';
+                param = param.replace('{string}', '');
+            }
+            if (param.indexOf('{boolean}') > -1) {
+                tmp['type'] = 'boolean';
+                param = param.replace('{boolean}', '');
+            }
+            if (param.indexOf('{number}') > -1) {
+                tmp['type'] = 'number';
+                param = param.replace('{number}', '');
+            }
+            if (param.indexOf('{string | object}') > -1) {
+                tmp['type'] = 'string | object';
+                param = param.replace('{string | object}', '');
+            }
+            if (param.indexOf('{string|Date}') > -1) {
+                tmp['type'] = 'string|Date';
+                param = param.replace('{string|Date}', '');
+            }
+            if (param.indexOf('{object}') > -1) {
+                tmp['type'] = 'object';
+                param = param.replace('{object}', '');
+            }
+            if (param.indexOf('{function|boolean}') > -1) {
+                tmp['type'] = 'function|boolean';
+                param = param.replace('{function|boolean}', '');
+            }
+            if (param.indexOf('{int}') > -1) {
+                tmp['type'] = 'int';
+                param = param.replace('{int}', '');
+            }
+
+            tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
+            tmp['description'] = param.indexOf("~") > -1 ? param.split('~').pop().trim() : param.split('-').pop().trim();
+            tmp['default'] = param.indexOf("~")>-1 ? param.split('-').pop().split('~')[0] : "";
+            return tmp;
+        });
+        const returns = (data.match(/@returns.*/g) ? data.match(/@returns.*/g) : ['empty']).map(re=>{
+            let tmp = {};
+            re = re.replace('@returns', '');
+            tmp['type'] = getType(re)[0];
+            tmp['description'] = re.indexOf('-')>-1 ? re.split('-')[1] : '';
+            return tmp;
+        });
+
+        return {
+            name: modules.split('.').shift(),
+            version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ', '') : null,
+            category: data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ', '') : null,
+            description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ', '') : null,
+            example: data.match(/@example.*/g) ? data.match(/@example.*/g)[0].replace('@example ', '') : null,
+            arParams: params,
+            returns: returns[0],
+        }
+    });
+    let categories = utils.groupBy(docs,"category");
+
+    write = `| Functions Name | version | Category | Description |\n`;
+    write += `|---|---|---|---|\n`;
+    Object.keys(categories).map(categoryKey=>{
+        categories[categoryKey].map(fn=>{
+            let suspensive = fn.description.length > 70 ? "..." : "";
+            write += `|:seedling:  [**${fn.name}**](/en/api/v1/${fn.name}.md)  | ${fn.version} | ${fn.category} | <sub>${fn.description.slice(0,70)}${suspensive}</sub> |\n`;
+        });
+    });
+
+    console.log(write);
+
+
+}
+//_renderClassMain();
+//_renderAPIDoc();
+_renderCategory();
+_renderListOfContent();
