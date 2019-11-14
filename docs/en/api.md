@@ -30,6 +30,7 @@
 |:seedling:  [**createFolders**](/en/api/v1/createFolders.md)  | 1.0.0 | Path/Files | <sub>This create a folder whit sub-folder of date by default if param `with...</sub> |
 |:seedling:  [**deleteFile**](/en/api/v1/deleteFile.md)  | 1.0.0 | Path/Files | <sub>Check if the file exists before deleting</sub> |
 |:seedling:  [**getFinalPath**](/en/api/v1/getFinalPath.md)  | 1.0.0 | Path/Files | <sub>Create structure of folders with parameters in constructor.</sub> |
+|:seedling:  [**renameFiles**](/en/api/v1/renameFiles.md)  | 1.0.0 | Path/Files | <sub>This function rename a batch of files with current date or token uniqu...</sub> |
 |:seedling:  [**validateDir**](/en/api/v1/validateDir.md)  | 1.0.0 | Path/Files | <sub>Validate if there is a route. if not, create this route.</sub> |
 >## convert 
 

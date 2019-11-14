@@ -100,6 +100,10 @@ function _renderAPIDoc(){
                 tmp['type'] = 'int';
                 param = param.replace('{int}', '');
             }
+            if (param.indexOf('{null}') > -1) {
+                tmp['type'] = 'null';
+                param = param.replace('{null}', '');
+            }
 
             tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
             tmp['description'] = param.indexOf("~") > -1 ? param.split('~').pop().trim() : param.split('-').pop().trim();
@@ -332,7 +336,8 @@ function _renderListOfContent(){
 
 
 }
+
 //_renderClassMain();
-//_renderAPIDoc();
-_renderCategory();
-_renderListOfContent();
+_renderAPIDoc();
+//_renderCategory();
+//_renderListOfContent();
