@@ -6,7 +6,13 @@ describe('SUITE - differenceDay()', function () {
 
     it('TEST # 1, Show the difference of days between two dates.', function () {
         //Logic: start day should greater than end day return positive else negative
-        assert.ok(u.differenceDay('05/01/2019','05/15/2019') === 15);
+    //    assert.ok(u.differenceDay('2019-11-22 14:37:49',new Date()) === 15);
+
+        let startDate = new Date('2019-11-22 14:37:49');
+        let endDate = new Date();
+        console.log('start', startDate, 'end', endDate);
+    console.log(u.differenceDay(startDate,endDate));
+
     });
 
     it('TEST # 2, Ignore init date', function () {
