@@ -66,8 +66,7 @@ get writeLog() { return writeLog.bind(this) }
 get writeLogError() { return writeLogError.bind(this) }
 get _log() { return _log.bind(this) }
 info() {
-        let arMethods = sourceLib;
-        return new Proxy(arMethods,{
+        return new Proxy(sourceLib,{
                 get: function(obj, prop) {
                     let result, categories = {};
                     if (prop in obj) { return obj[prop] }
