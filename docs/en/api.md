@@ -22,6 +22,11 @@
 |:seedling:  [**allEqual**](/en/api/v1/allEqual.md)  | 1.0.0 | Arrays/Object | <sub>This snippet checks whether all elements of the array are equal.</sub> |
 |:seedling:  [**everyOrNone**](/en/api/v1/everyOrNone.md)  | 1.0.0 | Arrays/Object | <sub>This snippet returns true if the predicate function returns true for a...</sub> |
 |:seedling:  [**groupBy**](/en/api/v1/groupBy.md)  | 1.0.0 | Arrays/Object | <sub>Sort the object by placing the value of the assigned property as key</sub> |
+>## String 
+
+| Functions Name | version | Category | Description |
+|---|---|---|---|
+|:seedling:  [**capitalLetter**](/en/api/v1/capitalLetter.md)  | 1.0.0 | String | <sub>capitalize the first letter of a sentence.</sub> |
 >## Path/Files 
 
 | Functions Name | version | Category | Description |

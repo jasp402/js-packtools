@@ -336,8 +336,14 @@ function _renderListOfContent(){
 
 
 }
+/* Compile index.js with new features added in the lib folder */
+// _renderClassMain();
 
-//_renderClassMain();
-_renderAPIDoc();
-//_renderCategory();
-//_renderListOfContent();
+/* Update all documentation in /docs/en/api/v1/  */
+//_renderAPIDoc();
+
+/* Generate category in ./docs/en/api.md */
+// _renderCategory();
+
+/* Generate list of content for README.md */
+_renderListOfContent();
