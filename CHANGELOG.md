@@ -1,8 +1,26 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.7.1](https://github.com/jasp402/js-packtools/compare/v1.7.0...v1.7.1) (2019-12-07)
+# [1.9.0](https://github.com/jasp402/js-packtools/compare/v1.7.1...v1.9.0) (2019-12-16)
+
+
+### Features
+
+* new function capitalLetter.js ([a9dd8c7](https://github.com/jasp402/js-packtools/commit/a9dd8c73d3fac417fd3e9cbe4f152496547acbd1))
+
+
+
+# [1.8.0](https://github.com/jasp402/js-packtools/compare/v1.7.1...v1.8.0) (2019-12-16)
+
+
+### Features
+
+* new function capitalLetter.js ([a9dd8c7](https://github.com/jasp402/js-packtools/commit/a9dd8c73d3fac417fd3e9cbe4f152496547acbd1))
+
+
+
+## [1.7.1](https://github.com/jasp402/js-packtools/compare/v1.7.0...v1.7.1) (2019-12-07)
 
 
 ### Bug Fixes
