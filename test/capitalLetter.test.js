@@ -8,4 +8,8 @@ describe('SUITE - capitalLetter()', function () {
         assert.equal(u.capitalLetter('hello word'), 'Hello word');
     });
 
+    it('TEST # 1, Capitalize all words', function () {
+        assert.equal(u.capitalLetter('this a demo', true), 'This A Demo');
+    });
+
 });
