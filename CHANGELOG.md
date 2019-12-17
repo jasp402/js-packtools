@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.1](https://github.com/jasp402/js-packtools/compare/v1.9.0...v1.9.1) (2019-12-17)
+
+
+### Bug Fixes
+
+* update function capitalLetter.js ([6f5a9b7](https://github.com/jasp402/js-packtools/commit/6f5a9b7cc5778166d9db57df0d0870c5803dbb09))
+
+
+
 # [1.9.0](https://github.com/jasp402/js-packtools/compare/v1.7.1...v1.9.0) (2019-12-16)
 
 
