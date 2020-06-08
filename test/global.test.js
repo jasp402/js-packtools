@@ -16,10 +16,10 @@ describe('TEST # 1 - Test of integrity all functions', function () {
     it('Test, function differenceDay()',function () {
         // Logic: count number of day between [startDate & enDate], then return: number.
         // Logic: while that {StartDate} greater than {endDate} result is positive else is negative.
-        assert.strictEqual(u.differenceDay('01/01/2019', '01/17/2019'), '17');
-        assert.strictEqual(u.differenceDay('05/01/2019', '01/17/2019'), '-103');
+        assert.strictEqual(u.differenceDay('01/01/2019', '01/17/2019'), 17);
+        assert.strictEqual(u.differenceDay('05/01/2019', '01/17/2019'), -103);
         // Logic: if {initDate} is false then not include init date and return -1 day. By default TRUE
-        assert.strictEqual(u.differenceDay('01/01/2019', '01/17/2019', false), '16');
+        assert.strictEqual(u.differenceDay('01/01/2019', '01/17/2019', false), 16);
     });
 
     it('Test, function objectToDate()',function () {
