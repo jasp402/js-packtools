@@ -6,6 +6,6 @@ let u = new jsPackTools({
 });
 describe('SUITE - getFinalPath()', function () {
     it('TEST # 1, return path', function () {
-        assert.equal(u.getFinalPath(), "test/");
+        assert.strictEqual(u.getFinalPath(), "test/");
     });
 });
