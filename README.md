@@ -4,7 +4,7 @@
     </a>
 </p>
 <p align="center">
-    :pineapple: Una pequeña coleción de herramientas para proyectos Javascript y NodeJs.
+    🍍 Una pequeña coleción de herramientas para proyectos Javascript y NodeJs.
 </p>
 
 <p align="center">
