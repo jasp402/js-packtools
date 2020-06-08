@@ -36,7 +36,8 @@ describe('TEST # 1 - Test of integrity all functions', function () {
 
     it('Test, function validateYear()',function () {
         // Logic: if [date] is equal to current year, then is: true
-        assert.equal(u.validateYear('05/01/2019'), true);
+        let date = u.customDate(null, 'mm/dd/yyyy');
+        assert.equal(u.validateYear(date), true);
         assert.equal(u.validateYear('05/01/1994'), false);
         // Logic: if [date] is equal to set year [yearCompare], then is: true
         assert.equal(u.validateYear('05/01/2019', '2019'), true);

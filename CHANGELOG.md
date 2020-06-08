@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.3](https://github.com/jasp402/js-packtools/compare/v1.9.1...v1.9.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+* debug error, test logError ([7c43e0d](https://github.com/jasp402/js-packtools/commit/7c43e0db544a369b49b345437e74fb7f0e32689c))
+
+
+
 ## [1.9.2](https://github.com/jasp402/js-packtools/compare/v1.9.1...v1.9.2) (2020-06-08)
 
 
