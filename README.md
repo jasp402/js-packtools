@@ -4,7 +4,7 @@
     </a>
 </p>
 <p align="center">
-    🍍 Una pequeña coleción de herramientas para proyectos Javascript y NodeJs.
+    🍍 A small collection of tools for the development of javascript & NodeJS.
 </p>
 
 <p align="center">
@@ -28,10 +28,10 @@
 ***
 
 <p align="center">
-    <a href="https://jasp402.github.io/js-packtools/#/es/">Guía de inicio</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/es/api">API Documentación</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/es/help">Ayuda & Soporte</a> |
-    <a href="https://jasp402.github.io/js-packtools/#/es/donate">Contribuir</a>
+    <a href="https://jasp402.github.io/js-packtools/#/en/">Getting Started</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/api">API Docs</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/help">help & Support</a> |
+    <a href="https://jasp402.github.io/js-packtools/#/en/donate">Contribute</a>
 </p>
 
 ***
