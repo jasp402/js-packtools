@@ -1,23 +1,24 @@
-## deleteFile
+## deleteFile 
+  ```javascript
+ deleteFile(path) ⇒ string 
+``` 
 
-```javascript
-deleteFile(path) ⇒ boolean
-```
-`Available since | 0.1.19`
+ ` Version: 1.0.0 ` 
+` Category: Path/Files ` 
 
-?> It's Check if the file exists before deleting.
+### Description 
 
-| Param | Type | Description |
-| --- | --- | --- |
-| path | <code>string</code> | Path of file to delete. |
+?> Check if the file exists before deleting 
 
-```js
-//Example NodeJs
-let jsPacktools = require("js-packtools");
-let u = new jsPacktools();
+### Implementation 
 
-    u.logExecution('testing');
-    u.deleteFile(__dirname+'/../DATA/'+u.folderFromatDate+'/logExecution.log');
-```
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **path** | `string` | `` | _Message to save in log_ | 
 
+### Example 
+
+ ```javascript 
+  
+ ```  
 

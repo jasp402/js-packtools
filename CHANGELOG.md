@@ -2,6 +2,390 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.4](https://github.com/jasp402/js-packtools/compare/v1.9.1...v1.9.4) (2020-06-08)
+
+
+### Bug Fixes
+
+* debug error, global.test.js. validate year is outdated year. ([bde6eb6](https://github.com/jasp402/js-packtools/commit/bde6eb68ed5c388f073143adc4f47dfdfced4766))
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+* debug error, test logError ([7c43e0d](https://github.com/jasp402/js-packtools/commit/7c43e0db544a369b49b345437e74fb7f0e32689c))
+* Update Replace "assert.equal" with "assert.strictEqual" [more info](https://github.com/googleapis/gapic-generator/issues/2154) ([8756e00](https://github.com/jasp402/js-packtools/commit/8756e00f50618f165814581bb5a2800fc0983434))
+
+
+
+## [1.9.3](https://github.com/jasp402/js-packtools/compare/v1.9.1...v1.9.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+* debug error, test logError ([7c43e0d](https://github.com/jasp402/js-packtools/commit/7c43e0db544a369b49b345437e74fb7f0e32689c))
+
+
+
+## [1.9.2](https://github.com/jasp402/js-packtools/compare/v1.9.1...v1.9.2) (2020-06-08)
+
+
+### Bug Fixes
+
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+
+
+
+## [1.9.1](https://github.com/jasp402/js-packtools/compare/v1.9.0...v1.9.1) (2019-12-17)
+
+
+### Bug Fixes
+
+* update function capitalLetter.js ([6f5a9b7](https://github.com/jasp402/js-packtools/commit/6f5a9b7cc5778166d9db57df0d0870c5803dbb09))
+
+
+
+# [1.9.0](https://github.com/jasp402/js-packtools/compare/v1.7.1...v1.9.0) (2019-12-16)
+
+
+### Features
+
+* new function capitalLetter.js ([a9dd8c7](https://github.com/jasp402/js-packtools/commit/a9dd8c73d3fac417fd3e9cbe4f152496547acbd1))
+
+
+
+# [1.8.0](https://github.com/jasp402/js-packtools/compare/v1.7.1...v1.8.0) (2019-12-16)
+
+
+### Features
+
+* new function capitalLetter.js ([a9dd8c7](https://github.com/jasp402/js-packtools/commit/a9dd8c73d3fac417fd3e9cbe4f152496547acbd1))
+
+
+
+## [1.7.1](https://github.com/jasp402/js-packtools/compare/v1.7.0...v1.7.1) (2019-12-07)
+
+
+### Bug Fixes
+
+* Update order to test ([19da1b9](https://github.com/jasp402/js-packtools/commit/19da1b9))
+
+
+
+# [1.7.0](https://github.com/jasp402/js-packtools/compare/v1.6.2...v1.7.0) (2019-11-14)
+
+
+### Features
+
+* add new function renameFiles() ([c3c4009](https://github.com/jasp402/js-packtools/commit/c3c4009))
+
+
+
+## [1.6.2](https://github.com/jasp402/js-packtools/compare/v1.6.1...v1.6.2) (2019-11-13)
+
+
+### Bug Fixes
+
+* Update render.js and update documentation ([34ef5e9](https://github.com/jasp402/js-packtools/commit/34ef5e9))
+
+
+
+## [1.6.1](https://github.com/jasp402/js-packtools/compare/v1.6.0...v1.6.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* add dayOfYear() in class JS-PackTools ([74e5bf6](https://github.com/jasp402/js-packtools/commit/74e5bf6))
+
+
+
+# [1.6.0](https://github.com/jasp402/js-packtools/compare/v1.5.0...v1.6.0) (2019-11-11)
+
+
+### Bug Fixes
+
+* add documentation in folder english ([ac856dc](https://github.com/jasp402/js-packtools/commit/ac856dc))
+* update compiler.js and add documentation in folder english ([185bfed](https://github.com/jasp402/js-packtools/commit/185bfed))
+* working in compiler.js create function render documentation ([627cd92](https://github.com/jasp402/js-packtools/commit/627cd92))
+* working in compiler.js Optimization of documentation ([f01a823](https://github.com/jasp402/js-packtools/commit/f01a823))
+
+
+### Features
+
+* unos detalles pendiente para haerlo un sabado o dimingo add funtionality dayOfYear.js ([c8436de](https://github.com/jasp402/js-packtools/commit/c8436de))
+
+
+
+## [1.5.0](https://github.com/jasp402/js-packtools/compare/v1.4.1...v1.5.0) (2019-11-09)
+
+
+### Bug Fixes
+
+* ignore data folder  add command file ([75de623](https://github.com/jasp402/js-packtools/commit/75de623))
+
+
+### Features
+
+* refactoring compiler.js - Part 1 ([8fd724f](https://github.com/jasp402/js-packtools/commit/8fd724f))
+
+
+
+### [1.4.1](https://github.com/jasp402/js-packtools/compare/v1.4.0...v1.4.1) (2019-11-05)
+
+
+### Bug Fixes
+
+* removed dependency `imap-simple`. ([c8822b4](https://github.com/jasp402/js-packtools/commit/c8822b4))
+
+
+
+# [1.4.0](https://github.com/jasp402/js-packtools/compare/v1.3.0...v1.4.0) (2019-11-03)
+
+
+### Bug Fixes
+
+* correction in constructor params folderAutoDate change for folderWithDate. ([6bc447d](https://github.com/jasp402/js-packtools/commit/6bc447d))
+
+
+### Features
+
+* add test in object of method info() ([33ff837](https://github.com/jasp402/js-packtools/commit/33ff837))
+* completed test for: ([a18c7f1](https://github.com/jasp402/js-packtools/commit/a18c7f1))
+
+
+
+# [1.3.0](https://github.com/jasp402/js-packtools/compare/v1.2.0...v1.3.0) (2019-11-03)
+
+
+### Bug Fixes
+
+* text formatting ([4f88582](https://github.com/jasp402/js-packtools/commit/4f88582))
+
+
+### Features
+
+* New function allEqual(). This snippet checks whether all elements of the array are equal. ([bf9cfd0](https://github.com/jasp402/js-packtools/commit/bf9cfd0))
+* New function allEqual(). This snippet checks whether all elements of the array are equal. ([62f9079](https://github.com/jasp402/js-packtools/commit/62f9079))
+
+
+
+# [1.2.0](https://github.com/jasp402/js-packtools/compare/v1.1.1...v1.2.0) (2019-11-03)
+
+
+### Bug Fixes
+
+* correction variable c for constant ([76068bb](https://github.com/jasp402/js-packtools/commit/76068bb))
+* Removed console.log in getFinalPath. ([d3bd1a4](https://github.com/jasp402/js-packtools/commit/d3bd1a4))
+
+
+### Features
+
+* writeLogError add throw Exception. update test for WriteLogError ([e0c8f70](https://github.com/jasp402/js-packtools/commit/e0c8f70))
+
+
+
+## [1.1.1](https://github.com/jasp402/js-packtools/compare/v1.1.0...v1.1.1) (2019-11-03)
+
+
+### Bug Fixes
+
+* correct minor in test and function CreateFolders ([ad9934c](https://github.com/jasp402/js-packtools/commit/ad9934c))
+
+
+
+# [1.1.0](https://github.com/jasp402/js-packtools/compare/v1.0.1...v1.1.0) (2019-11-03)
+
+
+### Features
+
+* compiler automatically generates the index.js file ([4654bf0](https://github.com/jasp402/js-packtools/commit/4654bf0))
+
+
+
+## [1.0.1](https://github.com/jasp402/js-packtools/compare/v0.11.0...v1.0.1) (2019-11-01)
+
+
+
+## [0.11.0](https://github.com/jasp402/js-packtools/compare/v0.10.10...v0.11.0) (2019-11-01)
+
+
+### Features
+
+* **new-version:** Refactorization absolute ([7d27c9e](https://github.com/jasp402/js-packtools/commit/7d27c9e))
+
+
+### BREAKING CHANGES
+
+* **new-version:** new structure of jsDoc in all function.
+
+
+
+### [0.10.10](https://github.com/jasp402/js-packtools/compare/v0.10.9...v0.10.10) (2019-10-31)
+
+
+
+### [0.10.9](https://github.com/jasp402/js-packtools/compare/v0.10.8...v0.10.9) (2019-10-30)
+
+
+
+### [0.10.8](https://github.com/jasp402/js-packtools/compare/v0.10.7...v0.10.8) (2019-10-30)
+
+
+### Bug Fixes
+
+* change const `c` for `constant` ([e352433](https://github.com/jasp402/js-packtools/commit/e352433))
+* Fixed spelling error in the constructor `folderFormatDate =\= folderFormatDate` ([ed73eef](https://github.com/jasp402/js-packtools/commit/ed73eef))
+* Fixed spelling error in the constructor `folderFormatDate =\= folderFormatDate` in createFolders ([17c176c](https://github.com/jasp402/js-packtools/commit/17c176c))
+* Fixed variables name ([bcb2343](https://github.com/jasp402/js-packtools/commit/bcb2343))
+* write head for documentation ([4da22d6](https://github.com/jasp402/js-packtools/commit/4da22d6))
+
+
+
+### [0.10.7](https://github.com/jasp402/js-packtools/compare/v0.10.6...v0.10.7) (2019-09-12)
+
+
+### Bug Fixes
+
+* Update links fix issue [#24](https://github.com/jasp402/js-packtools/issues/24) -part[#3](https://github.com/jasp402/js-packtools/issues/3) ([aa7ddd9](https://github.com/jasp402/js-packtools/commit/aa7ddd9))
+
+
+
+### [0.10.6](https://github.com/jasp402/js-packtools/compare/v0.10.5...v0.10.6) (2019-09-12)
+
+
+### Bug Fixes
+
+* Update links fix issue [#24](https://github.com/jasp402/js-packtools/issues/24) -part[#2](https://github.com/jasp402/js-packtools/issues/2) ([d46a743](https://github.com/jasp402/js-packtools/commit/d46a743))
+
+
+
+### [0.10.5](https://github.com/jasp402/js-packtools/compare/v0.10.4...v0.10.5) (2019-09-12)
+
+
+### Bug Fixes
+
+* Update links fix issue [#24](https://github.com/jasp402/js-packtools/issues/24) ([a322144](https://github.com/jasp402/js-packtools/commit/a322144))
+
+
+
+### [0.10.4](https://github.com/jasp402/js-packtools/compare/v0.10.3...v0.10.4) (2019-09-12)
+
+
+### Bug Fixes
+
+* Update links of /EN to /ES and load homePage in language Spanish ([516b542](https://github.com/jasp402/js-packtools/commit/516b542))
+
+
+
+### [0.10.3](https://github.com/jasp402/js-packtools/compare/v0.10.2...v0.10.3) (2019-09-12)
+
+
+### Bug Fixes
+
+* travis-ci.org TypeError: u.logExecution is not a function ([6dcae85](https://github.com/jasp402/js-packtools/commit/6dcae85))
+
+
+
+### [0.10.2](https://github.com/jasp402/js-packtools/compare/v0.10.1...v0.10.2) (2019-09-11)
+
+
+### Bug Fixes
+
+* adjust in the documentation ([310c6a5](https://github.com/jasp402/js-packtools/commit/310c6a5))
+
+
+
+### [0.10.1](https://github.com/jasp402/js-packtools/compare/v0.10.0...v0.10.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* add test for generateRageDate ([32fe42d](https://github.com/jasp402/js-packtools/commit/32fe42d))
+
+
+
+## [0.10.0](https://github.com/jasp402/js-packtools/compare/v0.9.0...v0.10.0) (2019-09-10)
+
+
+### Features
+
+* refactoring of the logExecution and LogError function. (Change to writeLog and writeLogError). ([cbf24fb](https://github.com/jasp402/js-packtools/commit/cbf24fb))
+
+
+
+## [0.9.0](https://github.com/jasp402/js-packtools/compare/v0.7.3...v0.9.0) (2019-07-24)
+
+
+### Bug Fixes
+
+* correction in function parseDate ([1e06ba7](https://github.com/jasp402/js-packtools/commit/1e06ba7))
+* README.md translate to Spanish ([373ae6a](https://github.com/jasp402/js-packtools/commit/373ae6a))
+* update README.md translate to Spanish ([9aef4e1](https://github.com/jasp402/js-packtools/commit/9aef4e1))
+
+
+### Features
+
+* add function parseDate ([dd977ec](https://github.com/jasp402/js-packtools/commit/dd977ec))
+
+
+
+## [0.8.1](https://github.com/jasp402/js-packtools/compare/v0.8.0...v0.8.1) (2019-07-14)
+
+
+
+# [0.8.0](https://github.com/jasp402/js-packtools/compare/v0.7.4...v0.8.0) (2019-07-14)
+
+
+### Features
+
+* add function parseDate ([dd977ec](https://github.com/jasp402/js-packtools/commit/dd977ec))
+
+
+
+## [0.7.4](https://github.com/jasp402/js-packtools/compare/v0.7.3...v0.7.4) (2019-06-06)
+
+
+### Bug Fixes
+
+* update README.md translate to Spanish ([9aef4e1](https://github.com/jasp402/js-packtools/commit/9aef4e1))
+
+
+
+## [0.7.3](https://github.com/jasp402/js-packtools/compare/v0.6.1...v0.7.3) (2019-06-06)
+
+
+### Bug Fixes
+
+* error with variable logFormatDate in constructor ([a3915ab](https://github.com/jasp402/js-packtools/commit/a3915ab))
+* README.md translate to Spanish ([373ae6a](https://github.com/jasp402/js-packtools/commit/373ae6a))
+
+
+
+## [0.7.2](https://github.com/jasp402/js-packtools/compare/v0.7.1...v0.7.2) (2019-06-03)
+
+
+### Bug Fixes
+
+* error with variable logFormatDate in constructor ([a3915ab](https://github.com/jasp402/js-packtools/commit/a3915ab))
+
+
+
+### [0.7.1](https://github.com/jasp402/js-packtools/compare/v0.7.0...v0.7.1) (2019-06-03)
+
+
+
+## [0.7.0](https://github.com/jasp402/js-packtools/compare/v0.4.1...v0.7.0) (2019-06-03)
+
+
+### Bug Fixes
+
+* adjustment with lenguage function ([447bc08](https://github.com/jasp402/js-packtools/commit/447bc08))
+
+
+### Features
+
+* add new files in docs/ ([5d21634](https://github.com/jasp402/js-packtools/commit/5d21634))
+* Change all the documentation. ([9117d12](https://github.com/jasp402/js-packtools/commit/9117d12))
+
+
+
 ## [0.6.1](https://github.com/jasp402/js-packtools/compare/v0.6.0...v0.6.1) (2019-06-01)
 
 

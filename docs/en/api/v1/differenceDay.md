@@ -1,23 +1,26 @@
-## differenceDay
+## differenceDay 
+  ```javascript
+ differenceDay(_startDate, _endDate, _initDate) ⇒ object 
+``` 
 
-```javascript
-differenceDay(startDate, endDate) ⇒ string | Object
-```
+ ` Version: 1.0.0 ` 
+` Category: Time/Date ` 
 
-`Available since | 0.1.0`
+### Description 
 
-?> Return the number of days between 2 dates.
+?> This simply clear the content a folder. 
 
-| Param | Type | Description |
-| --- | --- | --- |
-| _startDate | <code>string</code> |  [format=mm/dd/yyyy] date init. |
-| _endDate | <code>string</code> | [format=mm/dd/yyyy] date end. |
+### Implementation 
 
-```js
-//Example NodeJs
-var jsPacktools = require("js-packtools")
-let u = new jsPacktools();
-u.differenceDay('05/01/2019','05/15/2019'); // => 14
-```
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **_startDate** | `string` | `` | __startDate_ | 
+| **_endDate** | `string` | `` | _[format=mm/dd/yyyy] date end._ | 
+| **_initDate** | `boolean` | `` | _[boolean=true] include init date._ | 
 
-[runkit website](https://jasp402.github.io/js-packtools/examples/differenceDay.html ':include :type=iframe width=100% height=100%')
+### Example 
+
+ ```javascript 
+  
+ ```  
+

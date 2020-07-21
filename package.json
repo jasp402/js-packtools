@@ -1,11 +1,12 @@
 {
   "name": "js-packtools",
-  "version": "0.6.1",
+  "version": "1.9.4",
   "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha",
-    "release": "standard-version"
+    "release": "standard-version",
+    "docsify": "docsify serve ./docs"
   },
   "repository": {
     "type": "git",
@@ -32,10 +33,9 @@
   "devDependencies": {
     "assert": "^1.5.0",
     "mocha": "^6.1.4",
-    "standard-version": "^5.0.2"
+    "standard-version": "^8.0.1"
   },
   "dependencies": {
-    "imap-simple": "^4.3.0",
     "lodash": "^4.17.11"
   }
 }

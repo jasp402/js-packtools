@@ -1,24 +1,29 @@
 ## customDate 
+  ```javascript
+ customDate(_date, _format, _addDay, _type) ⇒ string|Object 
+``` 
 
-```javascript
-customDate([date], [format], [addDay], [type]) ⇒ string | Object
-```
-`Available since | 0.1.0`
+ ` Version: 1.0.0 ` 
+` Category: Time/Date ` 
+
+### Description 
 
 ?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [date] | <code>string</code> | <code>&quot;{Object}&quot;</code> | date or Object Date by Default is current date. |
-| [format] | <code>string</code> | <code>&quot;mm/dd/yyyy&quot;</code> | define the format that want to return. |
-| [addDay] | <code>int</code> | <code>0</code> | count of days that add to date o current date |
-| [type] | <code>boolean</code> | <code>false</code> | method to return {string} or {Object Date} |
+### Implementation 
 
-```js
-//Example NodeJs
-    var jsPacktools = require("js-packtools")
-    let u = new jsPacktools();
-    u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15
-```
+| Param | Type | Default value | Description | 
+| --- | --- | --- | --- | 
+| **_date** | `string` | ` new Date() ` | _date or Object Date by Default is current date._ | 
+| **_format** | `string` | ` mm/dd/yyyy ` | _define the format that want to return._ | 
+| **_addDay** | `int` | ` 0 ` | _count of days that add to date o current date_ | 
+| **_type** | `boolean` | ` false ` | _method to return  or {Object Date}_ | 
 
-[runkit website](https://jasp402.github.io/js-packtools/examples/customDate.html ':include :type=iframe width=100% height=100%')
+### Example 
+
+ ```javascript 
+ var jsPackTools = require("js-packtools"); 
+ let u = new jsPackTools(); 
+ u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15 
+ ```  
+
