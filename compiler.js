@@ -41,10 +41,10 @@ function _renderClassMain() {
 
     index += `${constant.HEADER_CLASS(pjson.version, new Date())}`;
     index += importMod;
-    index += 'const sourceLib \t\t = '+JSON.stringify(arMethods)+';\n';
+    index += 'const sourceLib \t\t = '+JSON.stringify(arMethods, null, ' ')+';\n';
     index += constant.PARAMS_CLASS;
     index += classBuild;
-    index += 'module.exports = jsPackTools;\n';
+    index += 'module.exports = (params) => new jsPackTools(params);\n';
 
     fs.writeFile("./index.js", index, function(err) {
         if(err) return console.log(err);
@@ -153,8 +153,7 @@ function _renderAPIDoc(){
     });
 }
 function _renderCategory(){
-    const jsPackTools = require("./index");
-    let utils = new jsPackTools();
+    const utils = require("./index")();
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
         const getType = (str) =>  {
@@ -247,8 +246,7 @@ function _renderCategory(){
 
 }
 function _renderListOfContent(){
-    const jsPackTools = require("./index");
-    let utils = new jsPackTools();
+    const utils = require("./index")();
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
         const getType = (str) =>  {
@@ -340,7 +338,7 @@ function _renderListOfContent(){
 // _renderClassMain();
 
 /* Update all documentation in /docs/en/api/v1/  */
-//_renderAPIDoc();
+// _renderAPIDoc();
 
 /* Generate category in ./docs/en/api.md */
 // _renderCategory();
