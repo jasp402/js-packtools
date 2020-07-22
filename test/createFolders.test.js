@@ -1,16 +1,18 @@
-const jsPackTools = require('../index');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
+const fs          = require('fs');
 
-describe('SUITE - createFolders()', function () {
+const FOLDER_NAME = 'TestFolder';
 
-    it('TEST # 1, create folder with sub-folder', function () {
-        // Logic: create a folder with recursive date sub-folder
-        u.createFolders();
+describe('SUITE - createFolders()',  ()=> {
+    after('delete folders', () => {
+        fs.rmdirSync(`${__dirname}/../${FOLDER_NAME}`);
     });
 
-    it('TEST # 2, create folder simple', function () {
+    it('TEST # 1, create folder simple',  () => {
         // Logic: create a folder {see: config at constructor}
-        u.createFolders("Avengers",false);
+        jsPackTools.createFolders(FOLDER_NAME);
+        assert.ok(fs.existsSync(FOLDER_NAME));
     });
 
 });

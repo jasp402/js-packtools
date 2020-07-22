@@ -1,11 +1,11 @@
-const jsPackTools = require('../index');
-const assert = require('assert');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
 
-describe('SUITE - formatSeconds()', function () {
+describe('SUITE - formatSeconds()', () => {
 
-    it('TEST # 1, Parse number', function () {
-        console.log(u.formatSeconds('0.45'));
+    it('TEST # 1, Parse number', () => {
+        assert.strictEqual(jsPackTools.formatSeconds(0.45), '000.450')
     });
 
 });
+//ToDO - Correct this function

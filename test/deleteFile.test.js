@@ -1,14 +1,23 @@
-const jsPackTools = require('../index');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
+const fs          = require('fs');
 
-describe('SUITE - deleteFile()', function () {
+const PATH = jsPackTools.getFinalPath()+'logExecution.log';
 
-    it('TEST # 1, Delete a file from the given route', function () {
-        //Logic: create file writeLog.log
-        u.writeLog('testing');
+describe('SUITE - deleteFile()',  () => {
+    before('create file with writeLog.log', () => {
+        jsPackTools.writeLog('testing');
+    });
 
+    after('delete folders', () => {
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/').slice(0, -1).join('/')}`);
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/')[0]}`);
+    });
+
+    it('TEST # 1, Delete a file from the given route',  () => {
         // Logic: just delete the contents of a folder without deleting the container folder
-        u.deleteFile(__dirname+'/../DATA/'+u.folderFromatDate+'/logExecution.log');
+        jsPackTools.deleteFile(`${__dirname}/../${PATH}`);
+        assert.strictEqual(fs.existsSync(PATH), false);
     });
 
 });

@@ -1,23 +1,28 @@
+const jsPackTools = require('../index')();
 const assert = require('assert');
-const jsPackTools = require('../index');
-let u = new jsPackTools();
 
-describe('SUITE - customDate()', function () {
-    it('TEST # 1, return type', function () {
+describe('SUITE - customDate()',  () => {
+    it('TEST # 1, customDate return type string',  () => {
         // Logic: custom date, add format, increment day or show how string or Object Date
-        assert.strictEqual(typeof u.customDate(), 'string');
-        assert.strictEqual(typeof u.customDate(false, false, false, true), 'object');
+        assert.strictEqual(typeof jsPackTools.customDate(), 'string');
     });
 
-    it('TEST # 2, change format', function () {
+    it('TEST # 2, customDate return type Object Date', () => {
+        assert.strictEqual(typeof jsPackTools.customDate(false, false, false, true), 'object');
+    });
+
+    it('TEST # 3, change format', () => {
         // Logic: change format
-        assert.strictEqual(u.customDate('05/01/2019', 'yyyy-mm-dd'), '2019-05-01');
+        assert.strictEqual(jsPackTools.customDate('05/01/2019', 'yyyy-mm-dd'), '2019-05-01');
     });
 
-    it('TEST # 3, increment day', function () {
+    it('TEST # 4, increment day return format yyyy-mm-dd and value type string', () => {
         // Logic: change format + add days
-        assert.strictEqual(u.customDate('05/01/2019', 'yyyy-mm-dd', 15), '2019-05-16');
+        assert.strictEqual(jsPackTools.customDate('02/01/1989', 'yyyy-mm-dd', 14), '1989-02-15');
         // Logic: change format + add days + change out to object date
-        assert.strictEqual(typeof u.customDate('05/01/2019', 'yyyy-mm-dd', 15, true), 'object');
     });
+
+    it('TEST # 5, increment day return format yyyy-mm-dd and value type Object Date', ()=>{
+        assert.strictEqual(jsPackTools.customDate('02/01/1989', 'yyyy-mm-dd', 14, true).toISOString(), '1989-02-15T17:00:00.000Z');
+    })
 });

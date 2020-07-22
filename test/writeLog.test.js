@@ -1,39 +1,51 @@
-const assert = require('assert');
-const jsPackTools = require('../index');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
+const fs          = require('fs');
 
-describe('SUITE - writeLog()', function () {
+const PATH     = jsPackTools.getFinalPath();
+const FILE_LOG = 'logExecution.log';
+let file       = '';
 
-    it('TEST # 1, type string', function () {
-        // Logic: create un new file
-        u.writeLog('string');
+describe('SUITE - writeLog()', () => {
+    before('Create logs', () => {
+        jsPackTools.writeLog('string');
+        jsPackTools.writeLog('string with color', jsPackTools.constant.COLOR.red);
+        jsPackTools.writeLog(123);
+        jsPackTools.writeLog(['a', 'b', 1, true]);
+        jsPackTools.writeLog({key: 'value'});
+
+        file = fs.readFileSync(`${PATH}/${FILE_LOG}`, 'utf-8');
     });
 
-    it('TEST # 2, type string with color red', function () {
-        // Logic: create un new file
-        u.writeLog('string with color', u.constant.COLOR.red);
+    after('delete folders and files', () => {
+        fs.unlinkSync(`${PATH}/${FILE_LOG}`);
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/').slice(0, -1).join('/')}`);
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/')[0]}`);
     });
 
-    it('TEST # 3, type string with timeOut', function () {
+    it('TEST # 1, type string', () => {
         // Logic: create un new file
-        setTimeout(function () {
-            u.writeLog('string with delay to 3seg.');
-        }, 3500);
+        assert.strictEqual(file.split('\n')[0].split(' - ')[1].trim(), '[Str] | string');
     });
 
-    it('TEST # 4, type number', function () {
+    it('TEST # 2, type string with color red', () => {
         // Logic: create un new file
-        u.writeLog(123);
+        assert.strictEqual(file.split('\n')[1].split(' - ')[1].trim(), '[Str] | string with color');
     });
 
-    it('TEST # 5, type array', function () {
+    it('TEST # 3, type number', () => {
         // Logic: create un new file
-        u.writeLog(['a','b', 1, true]);
+        assert.strictEqual(file.split('\n')[2].split(' - ')[1].trim(), '[Num] | 123');
     });
 
-    it('TEST # 6, type Object', function () {
+    it('TEST # 4, type array', () => {
         // Logic: create un new file
-        u.writeLog({key:'value'});
+        assert.strictEqual(file.split('\n')[3].split(' - ')[1].trim(), '[Arr] | ["a","b",1,true]');
+    });
+
+    it('TEST # 5, type Object', () => {
+        // Logic: create un new file
+        assert.strictEqual(file.split('\n')[4].split(' - ')[1].trim(), '[obj] | {"key":"value"}');
     });
 
 });

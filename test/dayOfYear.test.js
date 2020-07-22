@@ -1,10 +1,10 @@
-const assert = require('assert');
-const jsPackTools = require('../index');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
 
-describe('SUITE - MediTooc()', function () {
-    it('TEST # 1, get number of day', function () {
-        // Logic: custom date, add format, increment day or show how string or Object Date
-        console.log(u.dayOfYear("02/15/1989"));
+describe('SUITE - dayOfYear()',  () => {
+    it('TEST # 1, get number of day from 02/15/1989',  () => {
+        // Logic: get date to -5 day to current date and calculate date transcurred
+        let lastWeek = jsPackTools.customDate(null, null, -5);
+        assert.strictEqual(jsPackTools.dayOfYear(lastWeek), 5);
     });
 });

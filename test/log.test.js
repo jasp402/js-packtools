@@ -1,14 +1,20 @@
-const jsPackTools = require('../index');
-const assert = require('assert');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
+const fs          = require('fs');
 
-describe('SUITE - _log()', function () {
-    it('TEST # 1, create file log from contructor _log()', function () {
+const PATH     = jsPackTools.getFinalPath();
+const FILE_LOG = 'constructor.log';
 
-        let path = u.getFinalPath();
-        let fileLog = 'constructor.log';
+describe('SUITE - _log()',  () => {
+    after('delete folders', () => {
+        fs.unlinkSync(`${PATH}/${FILE_LOG}`);
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/').slice(0, -1).join('/')}`);
+        fs.rmdirSync(`${__dirname}/../${PATH.split('/')[0]}`);
+    });
 
-        u.createFolders(path);
-        u._log("message",fileLog);
+    it('TEST # 1, create file log from contructor _log()',  () => {
+       // jsPackTools.createFolders(path);
+        jsPackTools._log("message", FILE_LOG);
+        assert.ok(fs.existsSync(`${PATH}/${FILE_LOG}`))
     });
 });

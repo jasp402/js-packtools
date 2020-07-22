@@ -1,11 +1,13 @@
-const jsPackTools = require('../index');
+const customOptions = {
+    folderName    : "test",
+    folderWithDate: false
+};
+const jsPackTools = require('../index')(customOptions);
 const assert = require('assert');
-let u = new jsPackTools({
-    folderName:"test",
-    folderWithDate:false
-});
-describe('SUITE - getFinalPath()', function () {
-    it('TEST # 1, return path', function () {
-        assert.strictEqual(u.getFinalPath(), "test/");
+
+
+describe('SUITE - getFinalPath()', () => {
+    it('TEST # 1, return path', () => {
+        assert.strictEqual(jsPackTools.getFinalPath(), "test/");
     });
 });

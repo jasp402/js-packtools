@@ -1,23 +1,19 @@
-const jsPackTools = require('../index');
+const jsPackTools = require('../index')();
 const assert = require('assert');
-let u = new jsPackTools();
 
-describe('SUITE - differenceDay()', function () {
+const startDate = new Date('2001-09-11');
+const endDate   = new Date('2019-09-11');
 
-    it('TEST # 1, Show the difference of days between two dates.', function () {
+describe('SUITE - differenceDay()',  () => {
+
+    it('TEST # 1, Show the difference of days between two dates.',  ()=> {
         //Logic: start day should greater than end day return positive else negative
-    //    assert.ok(u.differenceDay('2019-11-22 14:37:49',new Date()) === 15);
-
-        let startDate = new Date('2019-11-22 14:37:49');
-        let endDate = new Date();
-        console.log('start', startDate, 'end', endDate);
-    console.log(u.differenceDay(startDate,endDate));
-
+    assert.strictEqual(jsPackTools.differenceDay(startDate,endDate),6575)
     });
 
-    it('TEST # 2, Ignore init date', function () {
+    it('TEST # 2, Ignore init date',  () => {
         //Logic: count init date? (by default true), if is false -> ignore init date
-        assert.ok(u.differenceDay('05/01/2019', '05/15/2019', false) === 14);
+        assert.strictEqual(jsPackTools.differenceDay(startDate, endDate, false), 6574);
     });
 
 });

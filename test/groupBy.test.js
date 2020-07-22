@@ -1,24 +1,25 @@
-const jsPackTools = require('../index');
-const assert = require('assert');
-let u = new jsPackTools();
+const jsPackTools = require('../index')();
+const assert      = require('assert');
 
-describe('SUITE - groupBy()', function () {
-    it('TEST # 1, decomposes a date on an object', function () {
-       let ObjectPeople = [{
-           name : "patrick",
-           age : 20,
-           gender : "woman"
-       },
-           {
-               name : "Richart",
-               age : 19,
-               gender : "man"
-           },
-           {
-               name : "Michell",
-               age : 21,
-               gender : "woman"
-           }];
-        console.log(u.groupBy(ObjectPeople, "gender"));
+const OBJECT_PEOPLES = [
+    {
+        name  : "patrick",
+        age   : 20,
+        gender: "woman"
+    },
+    {
+        name  : "Richart",
+        age   : 19,
+        gender: "man"
+    },
+    {
+        name  : "Michell",
+        age   : 21,
+        gender: "woman"
+    }];
+
+describe('SUITE - groupBy()',  () => {
+    it('TEST # 1, decomposes a date on an object',  () => {
+        assert.strictEqual(JSON.stringify(Object.keys(jsPackTools.groupBy(OBJECT_PEOPLES, "gender"))), JSON.stringify(['woman','man']))
     });
 });
