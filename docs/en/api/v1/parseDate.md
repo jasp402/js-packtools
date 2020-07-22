@@ -3,7 +3,7 @@
  parseDate(_sDate, _sFormat, _bType) ⇒ object 
 ``` 
 
- ` Version: 1.0.0 ` 
+ ` Version: 1.0.1 ` 
 ` Category: Time/Date ` 
 
 ### Description 

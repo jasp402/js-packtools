@@ -26,7 +26,8 @@
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|:seedling:  [**capitalLetter**](/en/api/v1/capitalLetter.md)  | 1.0.0 | String | <sub>capitalize the first letter of a sentence.</sub> |
+|:seedling:  [**capitalLetter**](/en/api/v1/capitalLetter.md)  | 1.1.0 | String | <sub>capitalize the first letter of a sentence.</sub> |
+|:seedling:  [**modStart**](/en/api/v1/modStart.md)  | 1.0.1 | String | <sub>Using a string to create a new string with new size.</sub> |
 >## Path/Files 
 
 | Functions Name | version | Category | Description |
@@ -53,7 +54,7 @@
 |:seedling:  [**generateRageDate**](/en/api/v1/generateRageDate.md)  | 1.0.0 | Time/Date | <sub>This function allows you to separate a given date in the number of day...</sub> |
 |:seedling:  [**increaseDays**](/en/api/v1/increaseDays.md)  | 1.0.0 | Time/Date | <sub>Add days to date, can defined a maxDate.</sub> |
 |:seedling:  [**objectToDate**](/en/api/v1/objectToDate.md)  | 1.0.0 | Time/Date | <sub>Generate a object with date details.</sub> |
-|:seedling:  [**parseDate**](/en/api/v1/parseDate.md)  | 1.0.0 | Time/Date | <sub>Using a string and a format transform the string in date.</sub> |
+|:seedling:  [**parseDate**](/en/api/v1/parseDate.md)  | 1.0.1 | Time/Date | <sub>Using a string and a format transform the string in date.</sub> |
 |:seedling:  [**validateYear**](/en/api/v1/validateYear.md)  | 1.0.0 | Time/Date | <sub>Can be current year or spend the year to validate</sub> |
 >## global 
 
