@@ -22,7 +22,4 @@ describe('SUITE - customDate()',  () => {
         // Logic: change format + add days + change out to object date
     });
 
-    it('TEST # 5, increment day return format yyyy-mm-dd and value type Object Date', ()=>{
-        assert.strictEqual(jsPackTools.customDate('02/01/1989', 'yyyy-mm-dd', 14, true).toISOString(), '1989-02-15T17:00:00.000Z');
-    })
 });
