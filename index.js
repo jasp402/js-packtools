@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.0.0 | last Update: Thu Jul 23 2020 18:14:39 GMT-0500 (GMT-05:00)
+ * {@version 2.1.0 | last Update: Thu Jul 23 2020 18:14:39 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			 = require(__dirname+'/constants');
