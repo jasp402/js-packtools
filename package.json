@@ -31,9 +31,8 @@
   },
   "homepage": "https://github.com/jasp402/js-packtools#readme",
   "devDependencies": {
-    "assert": "^1.5.0",
-    "mocha": "^6.1.4",
-    "standard-version": "^8.0.1"
+    "mocha": "^8.0.1",
+    "standard-version": "^8.0.2"
   },
   "dependencies": {}
 }
