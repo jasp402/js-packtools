@@ -26,6 +26,7 @@ const modStart 			 = require('./lib/modStart');
 const objectToDate 		 = require('./lib/objectToDate');
 const parseDate 		 = require('./lib/parseDate');
 const renameFiles 		 = require('./lib/renameFiles');
+const timeToDate      = require('./lib/timeToDate');
 const validateDir 		 = require('./lib/validateDir');
 const validateYear 		 = require('./lib/validateYear');
 const writeLog 			 = require('./lib/writeLog');
@@ -213,7 +214,7 @@ class parameters {
         this.nameWriteLogError = ("nameWriteLogError" in config)    ? config.nameWriteLogError + '.log' : 'logError.log';
         this.logFormatDate     = ("logFormatDate" in config)        ? config.logFormatDate              : 'yyyy-mm-dd ~h:m:i';    //=> yyyy-mm-dd | hh:mm:sss
     }
-}class jsPackTools extends parameters { 
+}class jsPackTools extends parameters {
 get allEqual() { return allEqual.bind(this) }
 get capitalLetter() { return capitalLetter.bind(this) }
 get clearFolder() { return clearFolder.bind(this) }
@@ -233,6 +234,7 @@ get modStart() { return modStart.bind(this) }
 get objectToDate() { return objectToDate.bind(this) }
 get parseDate() { return parseDate.bind(this) }
 get renameFiles() { return renameFiles.bind(this) }
+get timeToDate() { return timeToDate.bind(this) }
 get validateDir() { return validateDir.bind(this) }
 get validateYear() { return validateYear.bind(this) }
 get writeLog() { return writeLog.bind(this) }
