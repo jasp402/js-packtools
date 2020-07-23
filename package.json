@@ -1,6 +1,6 @@
 {
   "name": "js-packtools",
-  "version": "1.9.5",
+  "version": "2.0.0",
   "description": ":notebook_with_decorative_cover: A small collection of tools for the development of javascript.",
   "main": "index.js",
   "scripts": {
@@ -35,6 +35,5 @@
     "mocha": "^6.1.4",
     "standard-version": "^8.0.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
