@@ -50,7 +50,7 @@
 |:seedling:  [**customDate**](/en/api/v1/customDate.md)  | 1.0.0 | Time/Date | <sub>It's a date control. Without parameters give the current date, use the...</sub> |
 |:seedling:  [**dayOfYear**](/en/api/v1/dayOfYear.md)  | 1.0.0 | Time/Date | <sub>This snippet gets the day of the year from a Date object.</sub> |
 |:seedling:  [**differenceDay**](/en/api/v1/differenceDay.md)  | 1.0.0 | Time/Date | <sub>This simply clear the content a folder.</sub> |
-|:seedling:  [**formatSeconds**](/en/api/v1/formatSeconds.md)  | 1.0.0 | Time/Date | <sub>This only format a value float</sub> |
+|:seedling:  [**formatSeconds**](/en/api/v1/formatSeconds.md)  | 1.0.1 | Time/Date | <sub>This only format a value float</sub> |
 |:seedling:  [**generateRageDate**](/en/api/v1/generateRageDate.md)  | 1.0.0 | Time/Date | <sub>This function allows you to separate a given date in the number of day...</sub> |
 |:seedling:  [**increaseDays**](/en/api/v1/increaseDays.md)  | 1.0.0 | Time/Date | <sub>Add days to date, can defined a maxDate.</sub> |
 |:seedling:  [**objectToDate**](/en/api/v1/objectToDate.md)  | 1.0.0 | Time/Date | <sub>Generate a object with date details.</sub> |
