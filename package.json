@@ -36,6 +36,5 @@
     "standard-version": "^8.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
   }
 }
