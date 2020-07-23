@@ -1,20 +1,29 @@
+const pjson = require('./package.json');
+const fs    = require('fs');
+
+let constant = {
+    // --- Compiler
+    HEADER_API_DOC    : fs.readFileSync(`${__dirname}/docs/components/_header_api_doc.md`, 'utf-8'),
+    TITLE_CLASS       : `class jsPackTools extends parameters { \n`,
+    HEADER_CLASS      : (version, date) => fs.readFileSync(`${__dirname}/template/header.js`, 'utf-8').replace('#version#', version).replace('#date#', date),
+    PARAMS_CLASS      : fs.readFileSync(`${__dirname}/template/constructor.js`, 'utf-8'),
+    PROXY_CLASS       : fs.readFileSync(`${__dirname}/template/fn_proxy.js`, 'utf-8').replace('function', ''),
+};
+
 /**
  * @function compiler - It's a utilitary for create dynamically structure of class for JS-PackTools.
  * @returns {void}
  * @since 1.0.0
  */
-
-let pjson    = require('./package.json');
-let constant = require('./constants');
-const fs     = require('fs');
-
 function _renderClassMain() {
     let classBuild = '';
     let importMod  = '';
-    let index = '';
-    let arTest = {};
+    let index      = '';
+    let arTest     = {};
     let arMethods  = [];
     classBuild = constant.TITLE_CLASS;
+    importMod   += 'const constant \t\t\t = require(__dirname+\'/constants\');\n';
+    importMod   += 'const assert \t\t\t = require(\'assert\');\n';
     fs.readdirSync(__dirname+'/test').forEach(modules => {
         let module   = modules.split('.').shift().split('_')[1];
         arTest[module] = './test/'+modules;
@@ -334,6 +343,7 @@ function _renderListOfContent(){
 
 
 }
+
 /* Compile index.js with new features added in the lib folder */
 // _renderClassMain();
 
