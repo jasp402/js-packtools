@@ -8,4 +8,3 @@ describe('SUITE - formatSeconds()', () => {
     });
 
 });
-//ToDO - Correct this function
