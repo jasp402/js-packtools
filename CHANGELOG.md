@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/jasp402/js-packtools/compare/v2.1.1...v2.1.2) (2020-07-23)
+
+
+### Bug Fixes
+
+* MochaJS version 8.0 causes error with Travis-CI ([dffe6cd](https://github.com/jasp402/js-packtools/commit/dffe6cd2a185d63f6c1e051de8bee4e8bee5d297))
+
 ### [2.1.1](https://github.com/jasp402/js-packtools/compare/v2.1.0...v2.1.1) (2020-07-23)
 
 
