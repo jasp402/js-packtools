@@ -67,3 +67,4 @@ typings/
 /compiler.js
 /template
 /docs/components
+yarn.lock
