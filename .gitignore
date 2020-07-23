@@ -64,3 +64,6 @@ typings/
 /.idea
 /package-lock.json
 /DATA
+/compiler.js
+/template
+/docs/components
