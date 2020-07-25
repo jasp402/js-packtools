@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.5](https://github.com/jasp402/js-packtools/compare/v2.2.4...v2.2.5) (2020-07-25)
+
+
+### Bug Fixes
+
+* update on README.md categories with emoji ([22b14aa](https://github.com/jasp402/js-packtools/commit/22b14aafc8cf7cb45a7b1a2e27f686bcf54300e8))
+
 ### [2.2.4](https://github.com/jasp402/js-packtools/compare/v2.2.3...v2.2.4) (2020-07-25)
 
 
