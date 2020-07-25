@@ -112,8 +112,7 @@ In Js-PackTools each function fulfills a specific objective, but it can solve hu
 Each function has its section in the documentation that will allow you to know in detail what the possibilities of said function are.
 
 For example, the [validateYear()](https://jasp402.github.io/js-packtools/#/en/api/v1/validateYear) function can have many implications. (see image)
-![carbon (2)](https://user-images.githubusercontent.com/8978470/88459325-261c7880-ce5a-11ea-903d-2d537c446885.png)
-
+![carbon (4)](https://user-images.githubusercontent.com/8978470/88460379-72b78200-ce61-11ea-9ecf-6b77b517d770.png)
 
 ## Content list
 The functions of this package are divided into categories. to make it easier to find a function that is out of line with your needs.
