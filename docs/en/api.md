@@ -55,12 +55,8 @@
 |:seedling:  [**increaseDays**](/en/api/v1/increaseDays.md)  | 1.0.0 | Time/Date | <sub>Add days to date, can defined a maxDate.</sub> |
 |:seedling:  [**objectToDate**](/en/api/v1/objectToDate.md)  | 1.0.0 | Time/Date | <sub>Generate a object with date details.</sub> |
 |:seedling:  [**parseDate**](/en/api/v1/parseDate.md)  | 1.0.1 | Time/Date | <sub>Using a string and a format transform the string in date.</sub> |
+|:seedling:  [**timeToDate**](/en/api/v1/timeToDate.md)  | 1.0.1 | Time/Date | <sub>return the time between two dates, or a date and now</sub> |
 |:seedling:  [**validateYear**](/en/api/v1/validateYear.md)  | 1.0.0 | Time/Date | <sub>Can be current year or spend the year to validate</sub> |
->## Date 
-
-| Functions Name | version | Category | Description |
-|---|---|---|---|
-|:seedling:  [**timeToDate**](/en/api/v1/timeToDate.md)  | 1.0.0 | Date | <sub>@description</sub> |
 >## global 
 
 | Functions Name | version | Category | Description |
