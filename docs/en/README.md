@@ -6,22 +6,23 @@
 <p align="center">
     🍍 A small collection of tools for the development of javascript & NodeJS.
 </p>
-
 <p align="center">
     <a href="https://www.npmjs.com/package/js-packtools">
-        <img alt="npm" src="https://img.shields.io/npm/v/js-packtools.svg">
+        <img alt="npm" src="https://img.shields.io/npm/v/js-packtools.svg?logo=npm">
     </a>
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/jasp402/js-packtools?logo=github">
     <a href="https://travis-ci.org/jasp402/js-packtools">
-        <img alt="Build Status" src="https://travis-ci.org/jasp402/js-packtools.svg?branch=master">
+        <img alt="Travis (.org)" src="https://img.shields.io/travis/jasp402/js-packtools?logo=travis">
     </a>
     <a href="https://david-dm.org/jasp402/js-packtools">
         <img alt="Dependencies" src="https://david-dm.org/jasp402/js-packtools/status.svg">
     </a>
+    <img alt="npm" src="https://img.shields.io/npm/dt/js-packtools?logo=npm">
     <a href="https://trello.com/b/FMUpri2i/js-packtools">
-            <img alt="Trello" src="https://img.shields.io/badge/project-on%20Trello-blue.svg">
+            <img alt="Trello" src="https://img.shields.io/badge/project-on%20Trello-blue.svg?logo=trello">
     </a>
     <a href="https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
-        <img alt="Gitter" src="https://badges.gitter.im/js-packtools/community.svg">
+        <img alt="Gitter" src="https://img.shields.io/gitter/room/jasp402/js-packtools?logo=gitter">
     </a>
 </p>
 
@@ -44,21 +45,36 @@
 We have also incorporated a [WhatsApp](https://chat.whatsapp.com/BXDLjGNJaqN0NmzPQ3cjvH) group, with the entire development team if you want to be part of it.
 
 ## Requirement
-- nodejs
-- npm
+- [nodejs](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ## Installation
 
+can you use by default `npm`
 ```npm
 npm i js-packtools -S
 ```
 
-## How used?
+or your can use `yarn`
+```npm
+yarn add js-packtools
+```
+
+## how is it used
+Only instances the library and ready! Parentheses at the end allow you to pass values to the constructor.
 ```js
 const jsPackTools = require("js-packtools")();
 //ready to be used... easy, right?
 ```
-you can use the `info().names` function to display a list of available functions
+
+You can also order only the features you need. using By using the [destructuring assignment](https://javascript.info/destructuring-assignment) method, we can simplify things even more.
+```js
+const { capitalLetter, modStart } = require("js-packtools")();
+```
+
+#### - List available functions
+
+You can use the `jsPackTools.info().names` function to display a list of available functions
 
 ```js
  jsPackTools.info().names; 
@@ -75,11 +91,28 @@ you can use the `info().names` function to display a list of available functions
 //"everyOrNone"
 //"formatSeconds"
 // ... 
-
 ```
-Try it yourself in [https://runkit.com/embed/47xmru66fj0s](https://runkit.com/embed/47xmru66fj0s)
+<sub> Try it yourself in <a href="https://runkit.com/embed/47xmru66fj0s">https://runkit.com/embed/47xmru66fj0s</a></sub>
 
+#### - See a details of the functions
+Can use the name of function in info E.g. `jsPackTools.info().customDate`This generates in response an object like this
+```
+{
+    category    : "Time/Date"
+    description : "It's a date control. Without parameters give the current date, use the parameters to customize its functionality."
+    name        : "customDate"
+    test        : null
+    version     : "1.0.0"
+}
+```
+<sub> Try it yourself in <a href="https://runkit.com/embed/aqbxbxzkrkdw">https://runkit.com/embed/aqbxbxzkrkdw</a></sub>
 
+#### - Using one of these functions
+In Js-PackTools each function fulfills a specific objective, but it can solve hundreds of different problems.
+Each function has its section in the documentation that will allow you to know in detail what the possibilities of said function are.
+
+For example, the [validateYear()](https://jasp402.github.io/js-packtools/#/en/api/v1/validateYear) function can have many implications. (see image)
+![carbon (2)](https://user-images.githubusercontent.com/8978470/88459325-261c7880-ce5a-11ea-903d-2d537c446885.png)
 
 
 ## Content list

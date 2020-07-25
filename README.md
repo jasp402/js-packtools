@@ -67,6 +67,11 @@ const jsPackTools = require("js-packtools")();
 //ready to be used... easy, right?
 ```
 
+You can also order only the features you need. using By using the [destructuring assignment](https://javascript.info/destructuring-assignment) method, we can simplify things even more.
+```js
+const { capitalLetter, modStart } = require("js-packtools")();
+```
+
 #### - List available functions
 
 You can use the `jsPackTools.info().names` function to display a list of available functions
@@ -89,7 +94,7 @@ You can use the `jsPackTools.info().names` function to display a list of availab
 ```
 <sub> Try it yourself in <a href="https://runkit.com/embed/47xmru66fj0s">https://runkit.com/embed/47xmru66fj0s</a></sub>
 
-#### - see a details of the functions
+#### - See a details of the functions
 Can use the name of function in info E.g. `jsPackTools.info().customDate`This generates in response an object like this
 ```
 {
@@ -103,10 +108,12 @@ Can use the name of function in info E.g. `jsPackTools.info().customDate`This ge
 <sub> Try it yourself in <a href="https://runkit.com/embed/aqbxbxzkrkdw">https://runkit.com/embed/aqbxbxzkrkdw</a></sub>
 
 #### - Using one of these functions
-continuing with the example we can use `jsPackTools.customDate()`
-to see the details of the required parameters see the documentation of this function in [customDate](https://jasp402.github.io/js-packtools/#/en/api/v1/customDate)
+In Js-PackTools each function fulfills a specific objective, but it can solve hundreds of different problems.
+Each function has its section in the documentation that will allow you to know in detail what the possibilities of said function are.
 
----
+For example, the [validateYear()](https://jasp402.github.io/js-packtools/#/en/api/v1/validateYear) function can have many implications. (see image)
+![carbon (2)](https://user-images.githubusercontent.com/8978470/88459325-261c7880-ce5a-11ea-903d-2d537c446885.png)
+
 
 ## Content list
 The functions of this package are divided into categories. to make it easier to find a function that is out of line with your needs.
