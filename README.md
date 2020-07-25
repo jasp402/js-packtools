@@ -40,8 +40,6 @@
 
 👨‍🏫 This is a repository of utilities. What started out as a couple of ideas quickly turned into a class that grouped together various types of functionality. The intention of this package is to group a set of helpers and / or utilities, to facilitate routine work, especially related to Backend in node and webScraping.
 
----
-
 💬 Welcome to the **JS PackTools** documentation. It will help you get started fast. If you're having trouble, you can find help and answers on our [Gitter channel](https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge).
 We have also incorporated a [WhatsApp](https://chat.whatsapp.com/BXDLjGNJaqN0NmzPQ3cjvH) group, with the entire development team if you want to be part of it.
 
@@ -60,7 +58,7 @@ npm i js-packtools -S
 const jsPackTools = require("js-packtools")();
 //ready to be used... easy, right?
 ```
-you can use the `info()`. names function to display a list of available functions
+you can use the `info().names` function to display a list of available functions
 
 ```js
  jsPackTools.info().names; 
@@ -84,7 +82,7 @@ Try it yourself in [https://runkit.com/embed/47xmru66fj0s](https://runkit.com/em
 
 
 
-## Lista de contenido
+## Content list
 The functions of this package are divided into categories. to make it easier to find a function that is out of line with your needs.
 
 >## Arrays/Object 
@@ -138,18 +136,19 @@ The functions of this package are divided into categories. to make it easier to 
 |:seedling:  [**_log**](/en/api/v1/_log.md)  | 1.0.0 | global | <sub>It integrates the functions registry of errors and registry of executi...</sub> |
 
 
-:seedling: **Completado** <br>
-:fire: **En desarrollo** <br>
-:speech_balloon: **Bajo discución** <br>
+:seedling: **Completed** <br>
+:fire: **In Development** <br>
+:speech_balloon: **proposal** <br>
+⛔ **deprecated** <br>
 
-Por favor revise la [Documentación API](https://jasp402.github.io/js-packtools/#/en/api) Sección para ver todas las opciones disponibles.
+You can review the details of each function bif you have any questions about where to start contributing.y clicking on their links. for more information enter [Documentación API](https://jasp402.github.io/js-packtools/#/en/api).
 
-## Contribuyentes
-Echa un vistazo a nuestro documento de  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/es/contribute) para empezar a configurar el repositorio.
+## contributor
+Take a look at our document  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/es/contribute) to start configuring the repository.
+If you are looking for something to contribute. You can review our project in [Trello](https://trello.com/b/FMUpri2i/js-packtools) 
+You can also contact our channel [Gitter](https://gitter.im/js-packtools/community) if you have any questions about where to start contributing.
 
-Si buscas algo para aportar. Puede revisar nuestro proyecto en [Trello](https://trello.com/b/FMUpri2i/js-packtools) en el tablero "* Features *".  También puede comunicarse con nuestro canal de [Gitter](https://gitter.im/js-packtools/community) si tiene alguna pregunta sobre dónde comenzar a contribuir.
-
-> *Gracias a estas maravillosas personas (por su contribución)*
+> *Thanks to these people who have helped and motivated to improve this tool more and more.*
 
 |      |     |             |
 |------------|-------------|-------------|
@@ -157,6 +156,6 @@ Si buscas algo para aportar. Puede revisar nuestro proyecto en [Trello](https://
 
 
 ## License
-Ethis repository is under a license [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE)  <br>
+this repository is under a license [MIT](https://raw.githubusercontent.com/jasp402/js-packtools/master/LICENSE)  <br>
 **Copyright 2019** | All rights reserved to [**Jasp402**](http://jasp402.com/)
 
