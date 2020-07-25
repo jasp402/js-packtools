@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/jasp402/js-packtools/compare/v2.1.2...v2.2.0) (2020-07-25)
+
+
+### Features
+
+* se agegaron nuevos detalles  en la consulta ([867a97d](https://github.com/jasp402/js-packtools/commit/867a97de7f8f1ce0187213386f6178ba164e6f6d))
+
+
+### Bug Fixes
+
+* correction gobal ([d57a813](https://github.com/jasp402/js-packtools/commit/d57a8132e87e87dfea672644bbd7e67a744de7b4))
+
 ### [2.1.2](https://github.com/jasp402/js-packtools/compare/v2.1.1...v2.1.2) (2020-07-23)
 
 
