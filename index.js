@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.1.2 | last Update: Sat Jul 25 2020 01:01:30 GMT-0500 (GMT-05:00)
+ * {@version 2.2.5 | last Update: Thu Jul 30 2020 13:49:09 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			 = require(__dirname+'/constants');
@@ -22,7 +22,9 @@ const generateRageDate 	 = require('./lib/generateRageDate');
 const getFinalPath 		 = require('./lib/getFinalPath');
 const groupBy 			 = require('./lib/groupBy');
 const increaseDays 		 = require('./lib/increaseDays');
+const is 				 = require('./lib/is');
 const modStart 			 = require('./lib/modStart');
+const objectFilter 		 = require('./lib/objectFilter');
 const objectToDate 		 = require('./lib/objectToDate');
 const parseDate 		 = require('./lib/parseDate');
 const renameFiles 		 = require('./lib/renameFiles');
@@ -139,9 +141,23 @@ const sourceLib 		 = [
   "test": null
  },
  {
+  "name": "is",
+  "category": "validate",
+  "description": "It's a date control. Without parameters give the current date, use the parameters to customize its functionality.",
+  "version": "1.0.0",
+  "test": null
+ },
+ {
   "name": "modStart",
   "category": "String",
   "description": "Using a string to create a new string with new size.",
+  "version": "1.0.1",
+  "test": null
+ },
+ {
+  "name": "objectFilter",
+  "category": "Arrays/Object",
+  "description": "This fragment allows you to filter an object and return the key and its corresponding value",
   "version": "1.0.1",
   "test": null
  },
@@ -237,7 +253,9 @@ get generateRageDate() { return generateRageDate.bind(this) }
 get getFinalPath() { return getFinalPath.bind(this) }
 get groupBy() { return groupBy.bind(this) }
 get increaseDays() { return increaseDays.bind(this) }
+get is() { return is.bind(this) }
 get modStart() { return modStart.bind(this) }
+get objectFilter() { return objectFilter.bind(this) }
 get objectToDate() { return objectToDate.bind(this) }
 get parseDate() { return parseDate.bind(this) }
 get renameFiles() { return renameFiles.bind(this) }
