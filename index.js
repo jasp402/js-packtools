@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.2.5 | last Update: Thu Jul 30 2020 13:49:09 GMT-0500 (GMT-05:00)
+ * {@version 2.2.5 | last Update: Fri Jul 31 2020 14:37:07 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			 = require(__dirname+'/constants');
@@ -143,8 +143,8 @@ const sourceLib 		 = [
  {
   "name": "is",
   "category": "validate",
-  "description": "It's a date control. Without parameters give the current date, use the parameters to customize its functionality.",
-  "version": "1.0.0",
+  "description": "Is a function for evaluate to type of element",
+  "version": "1.0.1",
   "test": null
  },
  {
@@ -158,7 +158,7 @@ const sourceLib 		 = [
   "name": "objectFilter",
   "category": "Arrays/Object",
   "description": "This fragment allows you to filter an object and return the key and its corresponding value",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "test": null
  },
  {
@@ -183,7 +183,7 @@ const sourceLib 		 = [
   "test": null
  },
  {
-  "name": "modStart",
+  "name": "timeToDate",
   "category": "Time/Date",
   "description": "return the time between two dates, or a date and now",
   "version": "1.0.1",

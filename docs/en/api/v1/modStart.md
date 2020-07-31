@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.1 ` 
-` Category: String ` 
+` Category: ✍ String ` 
 
 ### Description 
 

@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: Arrays/Object ` 
+` Category: 🧾 Arrays/Object ` 
 
 ### Description 
 
@@ -15,7 +15,7 @@
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
 | **arr** | `array` | `` | _arr_ | 
-| **fn** | `function|boolean` | `` | _function or conditional for evaluation._ | 
+| **fn** | `function/boolean` | `` | _function or conditional for evaluation._ | 
 
 ### Example 
 

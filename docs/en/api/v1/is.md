@@ -1,27 +1,27 @@
 ## is 
   ```javascript
- is({constructor}_date, {constructor}_format) ⇒ string|Object 
+ is(type, value) ⇒ boolean 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: validate ` 
+ ` Version: 1.0.1 ` 
+` Category: ✔ validate ` 
 
 ### Description 
 
-?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
+?> Is a function for evaluate to type of element 
 
 ### Implementation 
 
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
-| **{constructor}_date** | `undefined` | ` new Date() ` | _date or Object Date by Default is current date._ | 
-| **{constructor}_format** | `undefined` | ` mm/dd/yyyy ` | _define the format that want to return._ | 
+| **type** | `string` | ` array/object/number/string/boolean ` | _Define type of element that want evaluate._ | 
+| **value** | `any` | ` ` | _Element to evaluate._ | 
 
 ### Example 
 
  ```javascript 
- var jsPackTools = require("js-packtools"); 
- let u = new jsPackTools(); 
- u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15 
+ const {is} = require("js-packtools");
+is('array', [1]); //true 
+is('object', [1]); //false 
  ```  
 

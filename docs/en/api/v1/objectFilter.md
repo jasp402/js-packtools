@@ -1,10 +1,10 @@
 ## objectFilter 
   ```javascript
- objectFilter(object, callback) ⇒ object 
+ objectFilter(dataSet, array) ⇒ undefined 
 ``` 
 
- ` Version: 1.0.1 ` 
-` Category: Arrays/Object ` 
+ ` Version: 1.1.0 ` 
+` Category: 🧾 Arrays/Object ` 
 
 ### Description 
 
@@ -14,12 +14,12 @@
 
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
-| **object** | `object` | `` | _object_ | 
-| **callback** | `array` | `` | _function or conditional for evaluation._ | 
+| **dataSet** | `array/object` | `  ` | _Object or array to object with dataSet_ | 
+| **array** | `array` | `  ` | _Array of the key names you want to get in the filter_ | 
 
 ### Example 
 
  ```javascript 
-  
+ @example 
  ```  
 
