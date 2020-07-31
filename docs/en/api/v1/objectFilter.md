@@ -20,6 +20,6 @@
 ### Example 
 
  ```javascript 
- @example 
+  
  ```  
 
