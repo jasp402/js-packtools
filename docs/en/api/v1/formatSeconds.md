@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.1 ` 
-` Category: Time/Date ` 
+` Category: ⏰ Time/Date ` 
 
 ### Description 
 

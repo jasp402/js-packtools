@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: Path/Files ` 
+` Category: 📁 Path/Files ` 
 
 ### Description 
 

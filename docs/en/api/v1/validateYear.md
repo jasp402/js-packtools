@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: Time/Date ` 
+` Category: ⏰ Time/Date ` 
 
 ### Description 
 
@@ -14,8 +14,8 @@
 
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
-| **date** | `string | object` | `` | _current date_ | 
-| **yearCompare** | `string | object` | `` | _year to compare or current year_ | 
+| **date** | `string/object` | `` | _current date_ | 
+| **yearCompare** | `string/object` | `` | _year to compare or current year_ | 
 | **operator** | `string` | `` | _operator to compare_ | 
 
 ### Example 

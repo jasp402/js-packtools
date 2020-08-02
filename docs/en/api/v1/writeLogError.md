@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: global ` 
+` Category: 🌐 global ` 
 
 ### Description 
 

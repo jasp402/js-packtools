@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: Time/Date ` 
+` Category: ⏰ Time/Date ` 
 
 ### Description 
 
@@ -14,7 +14,7 @@
 
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
-| **date** | `string|Date` | `` | _date_ | 
+| **date** | `string/Date` | `` | _date_ | 
 
 ### Example 
 

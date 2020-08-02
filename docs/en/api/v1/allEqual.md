@@ -4,7 +4,7 @@
 ``` 
 
  ` Version: 1.0.0 ` 
-` Category: Arrays/Object ` 
+` Category: 🧾 Arrays/Object ` 
 
 ### Description 
 

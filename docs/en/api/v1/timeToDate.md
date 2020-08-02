@@ -1,21 +1,21 @@
 ## timeToDate 
   ```javascript
- timeToDate({date/string}_toDate, {date/string}_sDate) ⇒ string 
+ timeToDate(_toDate, _sDate) ⇒ string 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: Date ` 
+ ` Version: 1.0.1 ` 
+` Category: ⏰ Time/Date ` 
 
 ### Description 
 
-?> @description 
+?> return the time between two dates, or a date and now 
 
 ### Implementation 
 
 | Param | Type | Default value | Description | 
 | --- | --- | --- | --- | 
-| **{date/string}_toDate** | `undefined` | `` | _target date_ | 
-| **{date/string}_sDate** | `undefined` | `` | _start date (default: now)_ | 
+| **_toDate** | `string/Date` | ` new Date() ` | _target date_ | 
+| **_sDate** | `string/Date` | ` new Date() ` | _start date (default: now)_ | 
 
 ### Example 
 
