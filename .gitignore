@@ -64,7 +64,7 @@ typings/
 /.idea
 /package-lock.json
 /DATA
-/compiler.js
+/scripts/compiler.js
 /template
 /docs/components
 yarn.lock
