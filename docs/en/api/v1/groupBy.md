@@ -1,25 +1,28 @@
 ## groupBy 
-  ```javascript
+
+```javascript
  groupBy(obj, key) ⇒ object 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: 🧾 Arrays/Object ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: 🧾 Arrays/Object` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Sort the object by placing the value of the assigned property as key 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **obj** | `object` | `` | _obj_ | 
-| **key** | `string` | `` | _key_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **obj** | `object` | `` | __ | 
+| **key** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

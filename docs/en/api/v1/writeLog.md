@@ -1,25 +1,28 @@
 ## writeLog 
-  ```javascript
+
+```javascript
  writeLog(msg, color) ⇒ void 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: 🌐 global ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: 🌐 global` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> write file .log in folder default of class. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **msg** | `string` | `` | _message_ | 
-| **color** | `string` | `` | _color for text_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **msg** | `string` | `` | __ | 
+| **color** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

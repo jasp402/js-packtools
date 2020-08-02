@@ -1,24 +1,27 @@
 ## deleteFile 
-  ```javascript
- deleteFile(path) ⇒ string 
+
+```javascript
+ deleteFile(path) ⇒ string  
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: 📁 Path/Files ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: 📁 Path/Files` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Check if the file exists before deleting 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **path** | `string` | `` | _Message to save in log_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **path** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

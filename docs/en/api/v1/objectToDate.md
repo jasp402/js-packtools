@@ -1,24 +1,27 @@
 ## objectToDate 
-  ```javascript
+
+```javascript
  objectToDate(strTime) ⇒ object 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: ⏰ Time/Date ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: ⏰ Time/Date` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Generate a object with date details. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **strTime** | `string` | `` | _strTime_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **strTime** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

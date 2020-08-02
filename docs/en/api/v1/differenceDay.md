@@ -1,26 +1,29 @@
 ## differenceDay 
-  ```javascript
- differenceDay(_startDate, _endDate, _initDate) ⇒ object 
+
+```javascript
+ differenceDay(_startDate, _endDate, _initDate) ⇒ object  
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: ⏰ Time/Date ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: ⏰ Time/Date` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> This simply clear the content a folder. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **_startDate** | `string` | `` | __startDate_ | 
-| **_endDate** | `string` | `` | _[format=mm/dd/yyyy] date end._ | 
-| **_initDate** | `boolean` | `` | _[boolean=true] include init date._ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **_startDate** | `string` | `` | __ | 
+| **_endDate** | `string` | `` | __ | 
+| **_initDate** | `boolean` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

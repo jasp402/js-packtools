@@ -1,24 +1,27 @@
 ## getFinalPath 
-  ```javascript
- getFinalPath(empty) ⇒ string 
+
+```javascript
+ getFinalPath() ⇒ string  
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: 📁 Path/Files ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: 📁 Path/Files` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Create structure of folders with parameters in constructor. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **empty** | `undefined` | `` | _empty_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **** | `empty` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

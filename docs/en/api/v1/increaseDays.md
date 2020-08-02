@@ -1,26 +1,29 @@
 ## increaseDays 
-  ```javascript
- increaseDays(startDate, days, maxDate) ⇒ object 
+
+```javascript
+ increaseDays(startDate, days, maxDate) ⇒ object  
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: ⏰ Time/Date ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: ⏰ Time/Date` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Add days to date, can defined a maxDate. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **startDate** | `string` | `` | _startDate_ | 
-| **days** | `number` | `` | _days_ | 
-| **maxDate** | `string` | `` | _maxDate_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **startDate** | `string` | `` | __ | 
+| **days** | `number` | `` | __ | 
+| **maxDate** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

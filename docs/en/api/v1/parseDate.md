@@ -1,26 +1,29 @@
 ## parseDate 
-  ```javascript
+
+```javascript
  parseDate(_sDate, _sFormat, _bType) ⇒ object 
 ``` 
 
- ` Version: 1.0.1 ` 
-` Category: ⏰ Time/Date ` 
+
+`📢 Version: 1.0.1`  `🏷️ Category: ⏰ Time/Date` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Using a string and a format transform the string in date. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **_sDate** | `string` | `` | _date in string._ | 
-| **_sFormat** | `string` | `` | _define the format to date._ | 
-| **_bType** | `boolean` | `` | _Type to return date. string or object date._ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **_sDate** | `string` | `` | __ | 
+| **_sFormat** | `string` | `` | __ | 
+| **_bType** | `boolean` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

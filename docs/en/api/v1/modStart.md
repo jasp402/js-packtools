@@ -1,26 +1,29 @@
 ## modStart 
-  ```javascript
+
+```javascript
  modStart(str, size, _str) ⇒ string 
 ``` 
 
- ` Version: 1.0.1 ` 
-` Category: ✍ String ` 
+
+`📢 Version: 1.0.1`  `🏷️ Category: ✍ String` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> Using a string to create a new string with new size. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **str** | `string` | `` | _default string._ | 
-| **size** | `number` | `` | _new length._ | 
-| **_str** | `string` | `` | _replacement string._ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **str** | `string` | `` | __ | 
+| **size** | `number` | `` | __ | 
+| **_str** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 

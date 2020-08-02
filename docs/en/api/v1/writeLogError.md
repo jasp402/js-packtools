@@ -1,26 +1,29 @@
 ## writeLogError 
-  ```javascript
+
+```javascript
  writeLogError(title, msg, color) ⇒ void 
 ``` 
 
- ` Version: 1.0.0 ` 
-` Category: 🌐 global ` 
+
+`📢 Version: 1.0.0`  `🏷️ Category: 🌐 global` `🎖️ Author: jasp402` 
 
 ### Description 
 
+
 ?> write file .log in folder default of class. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **title** | `string` | `` | _Title for exception_ | 
-| **msg** | `string` | `` | _Message_ | 
-| **color** | `string` | `` | _color for text (by Default darkRed)_ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **title** | `string` | `` | __ | 
+| **msg** | `string` | `` | __ | 
+| **color** | `string` | `` | __ | 
+
+
 
 ### Example 
 
- ```javascript 
-  
- ```  
+
+[runkit website](@example ':include :type=iframe width=100% height=100%')
+
 
