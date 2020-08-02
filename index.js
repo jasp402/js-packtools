@@ -2,227 +2,227 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.1 | last Update: Fri Jul 31 2020 15:03:58 GMT-0500 (GMT-05:00)
+ * {@version 2.3.1 | last Update: Sun Aug 02 2020 11:41:44 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
-const constant 			 = require(__dirname+'/constants');
-const assert 			 = require('assert');
-const allEqual 			 = require('./lib/allEqual');
-const capitalLetter 	 = require('./lib/capitalLetter');
-const clearFolder 		 = require('./lib/clearFolder');
-const createFolders 	 = require('./lib/createFolders');
-const csvToJson 		 = require('./lib/csvToJson');
-const customDate 		 = require('./lib/customDate');
-const dayOfYear 		 = require('./lib/dayOfYear');
-const deleteFile 		 = require('./lib/deleteFile');
-const differenceDay 	 = require('./lib/differenceDay');
-const everyOrNone 		 = require('./lib/everyOrNone');
-const formatSeconds 	 = require('./lib/formatSeconds');
-const generateRageDate 	 = require('./lib/generateRageDate');
-const getFinalPath 		 = require('./lib/getFinalPath');
-const groupBy 			 = require('./lib/groupBy');
-const increaseDays 		 = require('./lib/increaseDays');
-const is 				 = require('./lib/is');
-const modStart 			 = require('./lib/modStart');
-const objectFilter 		 = require('./lib/objectFilter');
-const objectToDate 		 = require('./lib/objectToDate');
-const parseDate 		 = require('./lib/parseDate');
-const renameFiles 		 = require('./lib/renameFiles');
-const timeToDate 		 = require('./lib/timeToDate');
-const validateDir 		 = require('./lib/validateDir');
-const validateYear 		 = require('./lib/validateYear');
-const writeLog 			 = require('./lib/writeLog');
-const writeLogError 	 = require('./lib/writeLogError');
-const _log 				 = require('./lib/_log');
+const constant 			   = require(__dirname+'/constants');
+const assert 			   = require('assert');
+const allEqual             = require('./lib/allEqual');
+const capitalLetter        = require('./lib/capitalLetter');
+const clearFolder          = require('./lib/clearFolder');
+const createFolders        = require('./lib/createFolders');
+const csvToJson            = require('./lib/csvToJson');
+const customDate           = require('./lib/customDate');
+const dayOfYear            = require('./lib/dayOfYear');
+const deleteFile           = require('./lib/deleteFile');
+const differenceDay        = require('./lib/differenceDay');
+const everyOrNone          = require('./lib/everyOrNone');
+const formatSeconds        = require('./lib/formatSeconds');
+const generateRageDate     = require('./lib/generateRageDate');
+const getFinalPath         = require('./lib/getFinalPath');
+const groupBy              = require('./lib/groupBy');
+const increaseDays         = require('./lib/increaseDays');
+const is                   = require('./lib/is');
+const modStart             = require('./lib/modStart');
+const objectFilter         = require('./lib/objectFilter');
+const objectToDate         = require('./lib/objectToDate');
+const parseDate            = require('./lib/parseDate');
+const renameFiles          = require('./lib/renameFiles');
+const timeToDate           = require('./lib/timeToDate');
+const validateDir          = require('./lib/validateDir');
+const validateYear         = require('./lib/validateYear');
+const writeLog             = require('./lib/writeLog');
+const writeLogError        = require('./lib/writeLogError');
+const _log                 = require('./lib/_log');
 const sourceLib 		 = [
  {
   "name": "allEqual",
   "category": "Arrays/Object",
   "description": "This snippet checks whether all elements of the array are equal.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "capitalLetter",
   "category": "String",
   "description": "capitalize the first letter of a sentence.",
   "version": "1.1.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "clearFolders",
   "category": "Path/Files",
   "description": "This simply clear the content a folder.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "createFolders",
   "category": "Path/Files",
   "description": "This create a folder whit sub-folder of date by default if param `withDate` is True.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "csvToJson",
   "category": "convert",
   "description": "This read a document CSV and convert in a Object Javascript (JSON).",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "customDate",
   "category": "Time/Date",
   "description": "It's a date control. Without parameters give the current date, use the parameters to customize its functionality.",
   "version": "1.0.0",
-  "test": null
+  "example": "var jsPackTools = require(\"js-packtools\"); \\n let u = new jsPackTools(); \\n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15"
  },
  {
   "name": "dayOfYear",
   "category": "Time/Date",
   "description": "This snippet gets the day of the year from a Date object.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "deleteFile",
   "category": "Path/Files",
   "description": "Check if the file exists before deleting",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "differenceDay",
   "category": "Time/Date",
   "description": "This simply clear the content a folder.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "everyOrNone",
   "category": "Arrays/Object",
   "description": "This snippet returns true if the predicate function returns true for all elements in a collection and false otherwise. \\n You can omit the second argument fn if you want to use Boolean as a default value.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "formatSeconds",
   "category": "Time/Date",
   "description": "This only format a value float",
   "version": "1.0.1",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "generateRageDate",
   "category": "Time/Date",
   "description": "This function allows you to separate a given date in the number of days assigned to it.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "getFinalPath",
   "category": "Path/Files",
   "description": "Create structure of folders with parameters in constructor.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "groupBy",
   "category": "Arrays/Object",
   "description": "Sort the object by placing the value of the assigned property as key",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "increaseDays",
   "category": "Time/Date",
   "description": "Add days to date, can defined a maxDate.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "is",
   "category": "validate",
   "description": "Is a function for evaluate to type of element",
   "version": "1.0.1",
-  "test": null
+  "example": "const {is} = require(\"js-packtools\");\\nis('array', [1]); //true \\nis('object', [1]); //false"
  },
  {
   "name": "modStart",
   "category": "String",
   "description": "Using a string to create a new string with new size.",
   "version": "1.0.1",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "objectFilter",
   "category": "Arrays/Object",
   "description": "This fragment allows you to filter an object and return the key and its corresponding value",
   "version": "1.1.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "objectToDate",
   "category": "Time/Date",
   "description": "Generate a object with date details.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "parseDate",
   "category": "Time/Date",
   "description": "Using a string and a format transform the string in date.",
   "version": "1.0.1",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "renameFiles",
   "category": "Path/Files",
   "description": "This function rename a batch of files with current date or token unique.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "timeToDate",
   "category": "Time/Date",
   "description": "return the time between two dates, or a date and now",
   "version": "1.0.1",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "validateDir",
   "category": "Path/Files",
   "description": "Validate if there is a route. if not, create this route.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "validateYear",
   "category": "Time/Date",
   "description": "Can be current year or spend the year to validate",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "writeLog",
   "category": "global",
   "description": "write file .log in folder default of class.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "writeLogError",
   "category": "global",
   "description": "write file .log in folder default of class.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  },
  {
   "name": "log",
   "category": "global",
   "description": "It integrates the functions registry of errors and registry of execution for the document of registry in his project.",
   "version": "1.0.0",
-  "test": null
+  "example": "@example"
  }
 ];
 class parameters {

@@ -1,78 +1,99 @@
 const pjson = require('../package.json');
 const fs    = require('fs');
 
+const PATH_TEST  = `${__dirname}/../test`;
+const PATH_LIB   = `${__dirname}/../lib`;
+const PATH_DOC   = `${__dirname}/../docs`;
+const PATH_INDEX = `${__dirname}/../index.js`;
+
 let constant = {
-    // --- Compiler
-    HEADER_API_DOC    : fs.readFileSync(`${__dirname}/../docs/components/_header_api_doc.md`, 'utf-8'),
-    TITLE_CLASS       : `class jsPackTools extends parameters { \n`,
-    HEADER_CLASS      : (version, date) => fs.readFileSync(`${__dirname}/template/header.js`, 'utf-8').replace('#version#', version).replace('#date#', date),
-    PARAMS_CLASS      : fs.readFileSync(`${__dirname}/../template/constructor.js`, 'utf-8'),
-    PROXY_CLASS       : fs.readFileSync(`${__dirname}/../template/fn_proxy.js`, 'utf-8').replace('function', ''),
+    HEADER_API_DOC  : fs.readFileSync(`${PATH_DOC}/components/_header_api_doc.md`, 'utf-8'),
+    CLASS_TITLE     : `class jsPackTools extends parameters { \n`,
+    CLASS_CONSTANT  : 'const constant \t\t\t   = require(__dirname+\'/constants\');\n',
+    CLASS_ASSERT    : 'const assert \t\t\t   = require(\'assert\');\n',
+    CLASS_FUNCTIONS : (moduleSpace, module) => `const ${moduleSpace} = require('./lib/${module}');\n`,
+    CLASS_GET_MODULE: module => `get ${module}() { return ${module}.bind(this) }\n`,
+    CLASS_INFO_DATA : (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].replace(`@${type} `, '') : null,
+    CLASS_SOURCE_LIB: arMethods => 'const sourceLib \t\t = ' + JSON.stringify(arMethods, null, ' ') + ';\n',
+    HEADER_CLASS    : (version, date) => fs.readFileSync(`${__dirname}/template/header.js`, 'utf-8').replace('#version#', version).replace('#date#', date),
+    PARAMS_CLASS    : fs.readFileSync(`${__dirname}/template/constructor.js`, 'utf-8'),
+    PROXY_CLASS     : fs.readFileSync(`${__dirname}/template/fn_proxy.js`, 'utf-8').replace('function', ''),
+    REGX            : type => new RegExp(`@${type}.*`, 'g'),
+    EMOJI_LIST      : {
+        'Arrays/Object': '🧾',
+        'String'       : '✍',
+        'Path/Files'   : '📁',
+        'convert'      : '↔',
+        'Time/Date'    : '⏰',
+        'global'       : '🌐',
+        'validate'     : '✔'
+    }
 };
 
-/**
- * @function compiler - It's a utilitary for create dynamically structure of class for JS-PackTools.
- * @returns {void}
- * @since 1.0.0
- */
 function _renderClassMain() {
+    const {modEnd}  = require('../index')();
+    console.log('Processing _renderClassMain()');
     let classBuild = '';
     let importMod  = '';
     let index      = '';
-    let arTest     = {};
     let arMethods  = [];
-    classBuild = constant.TITLE_CLASS;
-    importMod   += 'const constant \t\t\t = require(__dirname+\'/constants\');\n';
-    importMod   += 'const assert \t\t\t = require(\'assert\');\n';
-    fs.readdirSync(__dirname+'/test').forEach(modules => {
-        let module   = modules.split('.').shift().split('_')[1];
-        arTest[module] = './test/'+modules;
-    });
-    fs.readdirSync(__dirname+'/lib').forEach(modules => {
-        let module   = modules.split('.').shift();
-        let space    = module.length <= 4 ? "\t\t\t\t" : module.length <= 8 ? "\t\t\t" : module.length < 13 ? "\t\t" : "\t";
-        importMod   += `const ${module} ${space} = require('./lib/${module}');\n`;
-        classBuild  += `get ${module}() { return ${module}.bind(this) }\n` ;
+    classBuild     = constant.CLASS_TITLE;
+    importMod     += constant.CLASS_CONSTANT;
+    importMod     += constant.CLASS_ASSERT;
 
-        const data = fs.readFileSync(`./lib/${module}.js`, 'UTF-8');
+    fs.readdirSync(PATH_LIB).forEach(modules => {
+        let module  = modules.split('.').shift();
+        let space   = modEnd(module, 20);
+        const data  = fs.readFileSync(`${PATH_LIB}/${module}.js`, 'utf-8');
+        importMod  += constant.CLASS_FUNCTIONS(space, module);
+        classBuild += constant.CLASS_GET_MODULE(module);
         arMethods.push({
-            name:        data.match(/@function.*/g) ? data.match(/@function.*/g)[0].replace(/@function |\n/g,''):null,
-            category:    data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ',''):null,
-            description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ',''):null,
-            version:     data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ',''):null,
-            test:        arTest[module.replace('_','')]||null//arTest.filter(value=>!!value[module])[0]
+            name       : constant.CLASS_INFO_DATA(data, 'function'),
+            category   : constant.CLASS_INFO_DATA(data, 'augments'),
+            description: constant.CLASS_INFO_DATA(data, 'description'),
+            version    : constant.CLASS_INFO_DATA(data, 'version'),
+            example    : constant.CLASS_INFO_DATA(data, 'example'),
         });
-
     });
 
     classBuild += constant.PROXY_CLASS;
     classBuild += '}\n';
 
-    index += `${constant.HEADER_CLASS(pjson.version, new Date())}`;
+    index += constant.HEADER_CLASS(pjson.version, new Date());
     index += importMod;
-    index += 'const sourceLib \t\t = '+JSON.stringify(arMethods, null, ' ')+';\n';
+    index += constant.CLASS_SOURCE_LIB(arMethods);
     index += constant.PARAMS_CLASS;
     index += classBuild;
     index += 'module.exports = (params) => new jsPackTools(params);\n';
 
-    fs.writeFile("./index.js", index, function(err) {
+    fs.writeFile(PATH_INDEX, index, function(err) {
         if(err) return console.log(err);
         console.log("Generate index.js!");
     });
+
+    console.log('Completed _renderClassMain()');
+
+    return true;
 }
 function _renderAPIDoc(){
+    console.log('Proccesing _renderAPIDoc()');
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
         const getType = (str) =>  {
-            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void'];
+            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void', 'any', 'string|date'];
             return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
         };
 
         const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
         const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
+
             let tmp = {};
             param = param.replace('@param', '');
 
+            if (param.indexOf('{string|date}') > -1) {
+                tmp['type'] = 'string/Date';
+                param = param.replace('{string|date}', '');
+            }
             if (param.indexOf('{array}') > -1) {
                 tmp['type'] = 'array';
                 param = param.replace('{array}', '');
@@ -80,6 +101,10 @@ function _renderAPIDoc(){
             if (param.indexOf('{string}') > -1) {
                 tmp['type'] = 'string';
                 param = param.replace('{string}', '');
+            }
+            if (param.indexOf('{any}') > -1) {
+                tmp['type'] = 'any';
+                param = param.replace('{any}', '');
             }
             if (param.indexOf('{boolean}') > -1) {
                 tmp['type'] = 'boolean';
@@ -90,20 +115,20 @@ function _renderAPIDoc(){
                 param = param.replace('{number}', '');
             }
             if (param.indexOf('{string | object}') > -1) {
-                tmp['type'] = 'string | object';
+                tmp['type'] = 'string/object';
                 param = param.replace('{string | object}', '');
-            }
-            if (param.indexOf('{string|Date}') > -1) {
-                tmp['type'] = 'string|Date';
-                param = param.replace('{string|Date}', '');
             }
             if (param.indexOf('{object}') > -1) {
                 tmp['type'] = 'object';
                 param = param.replace('{object}', '');
             }
             if (param.indexOf('{function|boolean}') > -1) {
-                tmp['type'] = 'function|boolean';
+                tmp['type'] = 'function/boolean';
                 param = param.replace('{function|boolean}', '');
+            }
+            if (param.indexOf('{array|object}') > -1) {
+                tmp['type'] = 'array/object';
+                param = param.replace('{array|object}', '');
             }
             if (param.indexOf('{int}') > -1) {
                 tmp['type'] = 'int';
@@ -139,12 +164,12 @@ function _renderAPIDoc(){
     });
     docs.forEach(doc=>{
         const {name, version, arParams, returns, category, description, example} = doc;
-        console.log(arParams);
+        console.log('-------->', arParams[0].name);
         const _cd_ = '\`\`\`';
         let write = `## ${name} \n  `;
         write += `${_cd_}javascript\n ${name}(${arParams.map(param=>param.name).join(', ')}) ⇒ ${returns.type} \n${_cd_} \n\n `;
         write += `\` Version: ${version} \` \n`;
-        write += `\` Category: ${category} \` \n\n`;
+        write += `\` Category: ${constant.EMOJI_LIST[category]} ${category} \` \n\n`;
         write += `### Description \n\n`;
         write += `?> ${description} \n\n`;
         write += `### Implementation \n\n`;
@@ -157,20 +182,23 @@ function _renderAPIDoc(){
 
         fs.writeFile(`./docs/en/api/v1/${name}.md`, write, function(err) {
             if(err) return console.log(err);
-            //console.log("Generate Documentation.js!");
+            console.log("Generate Documentation.js!");
         });
     });
+    console.log('Completed _renderAPIDoc()');
+    return true;
 }
 function _renderCategory(){
+    console.log('Proccesing _renderCategory()');
     const utils = require("../index")();
-    const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
+    const docs = fs.readdirSync(PATH_LIB).map(modules => {
 
         const getType = (str) =>  {
             let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void'];
             return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
         };
 
-        const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
+        const data = fs.readFileSync(`${PATH_LIB}/${modules}`, 'UTF-8');
         const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
             let tmp = {};
             param = param.replace('@param', '');
@@ -182,6 +210,10 @@ function _renderCategory(){
             if (param.indexOf('{string}') > -1) {
                 tmp['type'] = 'string';
                 param = param.replace('{string}', '');
+            }
+            if (param.indexOf('{any}') > -1) {
+                tmp['type'] = 'any';
+                param = param.replace('{any}', '');
             }
             if (param.indexOf('{boolean}') > -1) {
                 tmp['type'] = 'boolean';
@@ -195,17 +227,21 @@ function _renderCategory(){
                 tmp['type'] = 'string | object';
                 param = param.replace('{string | object}', '');
             }
-            if (param.indexOf('{string|Date}') > -1) {
-                tmp['type'] = 'string|Date';
-                param = param.replace('{string|Date}', '');
+            if (param.indexOf('{string|date}') > -1) {
+                tmp['type'] = 'string | Date';
+                param = param.replace('{string|date}', '');
             }
             if (param.indexOf('{object}') > -1) {
                 tmp['type'] = 'object';
                 param = param.replace('{object}', '');
             }
             if (param.indexOf('{function|boolean}') > -1) {
-                tmp['type'] = 'function|boolean';
+                tmp['type'] = 'function | boolean';
                 param = param.replace('{function|boolean}', '');
+            }
+            if (param.indexOf('{array|object}') > -1) {
+                tmp['type'] = 'array | object';
+                param = param.replace('{array|object}', '');
             }
             if (param.indexOf('{int}') > -1) {
                 tmp['type'] = 'int';
@@ -239,7 +275,7 @@ function _renderCategory(){
 
     let write = constant.HEADER_API_DOC+"\n\n";
     Object.keys(categories).map(categoryKey=>{
-        write += `>## ${categoryKey} \n\n`;
+        write += `>## ${constant.EMOJI_LIST[categoryKey]} ${categoryKey} \n\n`;
         write += `| Functions Name | version | Category | Description |\n`;
         write += `|---|---|---|---|\n`;
         categories[categoryKey].map(fn=>{
@@ -247,15 +283,17 @@ function _renderCategory(){
             write += `|🌱  [**${fn.name}**](/en/api/v1/${fn.name}.md)  | ${fn.version} | ${fn.category} | <sub>${fn.description.slice(0,70)}${suspensive}</sub> |\n`;
         });
     });
-""
-    fs.writeFile(`./docs/en/api.md`, write, function(err) {
+
+    fs.writeFile(`${PATH_DOC}/en/api.md`, write, function(err) {
         if(err) return console.log(err);
         //console.log("Generate Documentation.js!");
     });
-
+    console.log('Completed _renderCategory()');
+    return true;
 }
 function _renderListOfContent(){
-    const {groupBy, capitalLetter} = require("../index")();
+    console.log('Proccesing _renderListOfContent()');
+    const {groupBy, capitalLetter} = require("./index")();
 
     const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
@@ -330,18 +368,11 @@ function _renderListOfContent(){
         }
     });
     let categories = groupBy(docs,"category");
-    let emojiCategories = {
-        'Arrays/Object': '🧾',
-        'String'       : '✍',
-        'Path/Files'   : '📁',
-        'convert'      : '↔',
-        'Time/Date'    : '⏰',
-        'global'       : '🌐'
-    };
+
     let write = ``;
 
     Object.keys(categories).map(categoryKey=>{
-        write +=`\n>## ${emojiCategories[categoryKey.trim()]} ${capitalLetter(categoryKey)} \n`;
+        write +=`\n>## ${constant.EMOJI_LIST[categoryKey.trim()]} ${capitalLetter(categoryKey)} \n`;
         write += `| Functions Name | version | Category | Description |\n`;
         write += `|---|---|---|---|\n`;
         categories[categoryKey].map(fn=>{
@@ -351,18 +382,11 @@ function _renderListOfContent(){
     });
 
     console.log(write);
-
-
+    console.log('Completed _renderListOfContent()');
+    return true;
 }
 
-/* Compile index.js with new features added in the lib folder */
-// _renderClassMain();
-
-/* Update all documentation in /docs/en/api/v1/  */
-// _renderAPIDoc();
-
-/* Generate category in ./docs/en/api.md */
-// _renderCategory();
-
-/* Generate list of content for README.md */
-_renderListOfContent();
+// _renderClassMain();     /* Compile index.js with new features added in the lib folder */
+// _renderCategory();      /* Generate category in ./docs/en/api.md */
+// _renderAPIDoc();        /* Update all documentation in /docs/en/api/v1/  */
+// _renderListOfContent(); /* Generate list of content for README.md */
