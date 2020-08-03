@@ -1,13 +1,13 @@
-## customDate 
+## ⏰ customDate 
 
 ```javascript
  customDate(_date, _format, _addDay, {boolean} _type) ⇒ string|Object  
 ``` 
 
 
-`📢 Version: 1.0.0`  `🏷️ Category: ⏰ Time/Date` `🎖️ Author: jasp402` 
+`📢 Version: 1.0.0`  `🏷️ Category: Time/Date` `🎖️ Author: jasp402` 
 
-### Description 
+### 📝 Description 
 
 
 ?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
@@ -22,9 +22,14 @@
 
 
 
-### Example 
+### 🧪 Example 
 
 
-[runkit website](var jsPackTools = require("js-packtools"); \n let u = new jsPackTools(); \n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15 ':include :type=iframe width=100% height=100%')
+![LABEL](var jsPackTools = require("js-packtools"); \n let u = new jsPackTools(); \n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15 ':include :type=code')
 
 
+
+
+[![image](https://user-images.githubusercontent.com/8978470/89190058-8603d500-d566-11ea-914f-284448e5a1b6.png)](https://npm.runkit.com/js-packtools) 
+ 
+Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)

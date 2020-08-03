@@ -1,22 +1,21 @@
-## 🧾 groupBy 
+## 📁 clearFolders 
 
 ```javascript
- groupBy(obj, key) ⇒ object 
+ clearFolders(path) ⇒ object  
 ``` 
 
 
-`📢 Version: 1.0.0`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
+`📢 Version: 1.0.0`  `🏷️ Category: Path/Files` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
 
-?> Sort the object by placing the value of the assigned property as key 
+?> This simply clear the content a folder. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **obj** | `object` | `` | __ | 
-| **key** | `string` | `` | __ | 
+| **path** | `string` | `` | __ | 
 
 
 

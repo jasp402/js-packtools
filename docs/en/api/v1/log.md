@@ -1,22 +1,23 @@
-## 🧾 groupBy 
+## 🌐 log 
 
 ```javascript
- groupBy(obj, key) ⇒ object 
+ log(_message, _fileName, _color) ⇒ string  
 ``` 
 
 
-`📢 Version: 1.0.0`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
+`📢 Version: 1.0.0`  `🏷️ Category: global` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
 
-?> Sort the object by placing the value of the assigned property as key 
+?> It integrates the functions registry of errors and registry of execution for the document of registry in his project. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **obj** | `object` | `` | __ | 
-| **key** | `string` | `` | __ | 
+| **_message** | `string` | `` | __ | 
+| **_fileName** | `string` | `` | __ | 
+| **_color** | `string` | `` | __ | 
 
 
 

@@ -1,22 +1,23 @@
-## 🧾 groupBy 
+## ✍ modEnd 
 
 ```javascript
- groupBy(obj, key) ⇒ object 
+ modEnd(str, size, _str) ⇒ string 
 ``` 
 
 
-`📢 Version: 1.0.0`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
+`📢 Version: 1.0.1`  `🏷️ Category: String` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
 
-?> Sort the object by placing the value of the assigned property as key 
+?> Using a string to create a new string with new size inverse to modStart. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **obj** | `object` | `` | __ | 
-| **key** | `string` | `` | __ | 
+| **str** | `string` | `` | __ | 
+| **size** | `number` | `` | __ | 
+| **_str** | `string` | `` | __ | 
 
 
 
