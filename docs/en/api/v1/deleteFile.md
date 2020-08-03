@@ -13,9 +13,6 @@
 ?> Check if the file exists before deleting 
 
 
-!> Check if the file exists before deleting 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [deleteFile](https://github.com/jasp402/js-packtools/blob/master/lib/deleteFile.js) 
+!> See source code on **GitHub** [deleteFile.js](https://github.com/jasp402/js-packtools/blob/master/lib/deleteFile.js) 
 

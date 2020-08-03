@@ -13,9 +13,6 @@
 ?> This function allows you to separate a given date in the number of days assigned to it. 
 
 
-!> This function allows you to separate a given date in the number of days assigned to it. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **lastDate** | `string` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [generateRageDate](https://github.com/jasp402/js-packtools/blob/master/lib/generateRageDate.js) 
+!> See source code on **GitHub** [generateRageDate.js](https://github.com/jasp402/js-packtools/blob/master/lib/generateRageDate.js) 
 

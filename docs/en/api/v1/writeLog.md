@@ -13,9 +13,6 @@
 ?> write file .log in folder default of class. 
 
 
-!> write file .log in folder default of class. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **msg** | `string` | `` | __ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [writeLog](https://github.com/jasp402/js-packtools/blob/master/lib/writeLog.js) 
+!> See source code on **GitHub** [writeLog.js](https://github.com/jasp402/js-packtools/blob/master/lib/writeLog.js) 
 

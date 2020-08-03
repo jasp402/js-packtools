@@ -13,9 +13,6 @@
 ?> Sort the object by placing the value of the assigned property as key 
 
 
-!> Sort the object by placing the value of the assigned property as key 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **obj** | `object` | `` | __ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [groupBy](https://github.com/jasp402/js-packtools/blob/master/lib/groupBy.js) 
+!> See source code on **GitHub** [groupBy.js](https://github.com/jasp402/js-packtools/blob/master/lib/groupBy.js) 
 

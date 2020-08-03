@@ -13,9 +13,6 @@
 ?> This simply clear the content a folder. 
 
 
-!> This simply clear the content a folder. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **_startDate** | `string` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [differenceDay](https://github.com/jasp402/js-packtools/blob/master/lib/differenceDay.js) 
+!> See source code on **GitHub** [differenceDay.js](https://github.com/jasp402/js-packtools/blob/master/lib/differenceDay.js) 
 

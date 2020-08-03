@@ -13,9 +13,6 @@
 ?> This only format a value float 
 
 
-!> This only format a value float 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **time** | `number` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [formatSeconds](https://github.com/jasp402/js-packtools/blob/master/lib/formatSeconds.js) 
+!> See source code on **GitHub** [formatSeconds.js](https://github.com/jasp402/js-packtools/blob/master/lib/formatSeconds.js) 
 

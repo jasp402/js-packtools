@@ -13,9 +13,6 @@
 ?> This fragment allows you to filter an object and return the key and its corresponding value 
 
 
-!> This fragment allows you to filter an object and return the key and its corresponding value 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **dataSet** | `array/object` | `  ` | _Object or array to object with dataSet_ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [objectFilter](https://github.com/jasp402/js-packtools/blob/master/lib/objectFilter.js) 
+!> See source code on **GitHub** [objectFilter.js](https://github.com/jasp402/js-packtools/blob/master/lib/objectFilter.js) 
 

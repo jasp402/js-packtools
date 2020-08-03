@@ -13,9 +13,6 @@
 ?> Create structure of folders with parameters in constructor. 
 
 
-!> Create structure of folders with parameters in constructor. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **** | `empty` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [getFinalPath](https://github.com/jasp402/js-packtools/blob/master/lib/getFinalPath.js) 
+!> See source code on **GitHub** [getFinalPath.js](https://github.com/jasp402/js-packtools/blob/master/lib/getFinalPath.js) 
 

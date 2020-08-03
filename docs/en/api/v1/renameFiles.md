@@ -13,9 +13,6 @@
 ?> This function rename a batch of files with current date or token unique. 
 
 
-!> This function rename a batch of files with current date or token unique. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
@@ -38,5 +35,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [renameFiles](https://github.com/jasp402/js-packtools/blob/master/lib/renameFiles.js) 
+!> See source code on **GitHub** [renameFiles.js](https://github.com/jasp402/js-packtools/blob/master/lib/renameFiles.js) 
 

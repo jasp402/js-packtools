@@ -13,9 +13,6 @@
 ?> Using a string to create a new string with new size inverse to modStart. 
 
 
-!> Using a string to create a new string with new size inverse to modStart. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **str** | `string` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [modEnd](https://github.com/jasp402/js-packtools/blob/master/lib/modEnd.js) 
+!> See source code on **GitHub** [modEnd.js](https://github.com/jasp402/js-packtools/blob/master/lib/modEnd.js) 
 

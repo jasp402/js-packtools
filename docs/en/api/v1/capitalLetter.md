@@ -13,9 +13,6 @@
 ?> capitalize the first letter of a sentence. 
 
 
-!> capitalize the first letter of a sentence. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **str** | `string` | ` ` | _any word or sentence_ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [capitalLetter](https://github.com/jasp402/js-packtools/blob/master/lib/capitalLetter.js) 
+!> See source code on **GitHub** [capitalLetter.js](https://github.com/jasp402/js-packtools/blob/master/lib/capitalLetter.js) 
 

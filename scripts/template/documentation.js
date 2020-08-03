@@ -8,7 +8,6 @@ ${___}javascript\n ${name}(${params}) ⇒ ${returns} \n${___} \n\n
 \`📢 Version: ${version}\`  \`🏷️ Category: ${category}\` \`🎖️ Author: jasp402\` \n
 ### 📝 Description \n\n
 ?> ${description} \n\n
-!> ${description} \n\n
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 ${paramsTable}
@@ -20,7 +19,7 @@ ${paramsTable}
 [![image](https://user-images.githubusercontent.com/8978470/89190058-8603d500-d566-11ea-914f-284448e5a1b6.png)](https://npm.runkit.com/js-packtools) \n 
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)\n
 
-!> source code [${name}](https://github.com/jasp402/js-packtools/blob/master/lib/${name}.js) 
+!> See source code on **GitHub** [${name}.js](https://github.com/jasp402/js-packtools/blob/master/lib/${name}.js) 
 
 `;
 

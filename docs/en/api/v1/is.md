@@ -13,9 +13,6 @@
 ?> Is a function for evaluate to type of element 
 
 
-!> Is a function for evaluate to type of element 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **type** | `string` | ` array/object/number/string/boolean ` | _Define type of element that want evaluate._ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [is](https://github.com/jasp402/js-packtools/blob/master/lib/is.js) 
+!> See source code on **GitHub** [is.js](https://github.com/jasp402/js-packtools/blob/master/lib/is.js) 
 

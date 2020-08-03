@@ -13,9 +13,6 @@
 ?> This read a document CSV and convert in a Object Javascript (JSON). 
 
 
-!> This read a document CSV and convert in a Object Javascript (JSON). 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **_csv** | `string` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [csvToJson](https://github.com/jasp402/js-packtools/blob/master/lib/csvToJson.js) 
+!> See source code on **GitHub** [csvToJson.js](https://github.com/jasp402/js-packtools/blob/master/lib/csvToJson.js) 
 

@@ -13,9 +13,6 @@
 ?> Add days to date, can defined a maxDate. 
 
 
-!> Add days to date, can defined a maxDate. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **startDate** | `string` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [increaseDays](https://github.com/jasp402/js-packtools/blob/master/lib/increaseDays.js) 
+!> See source code on **GitHub** [increaseDays.js](https://github.com/jasp402/js-packtools/blob/master/lib/increaseDays.js) 
 

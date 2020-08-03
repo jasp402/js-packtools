@@ -13,9 +13,6 @@
 ?> return the time between two dates, or a date and now 
 
 
-!> return the time between two dates, or a date and now 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **_toDate** | `string/date` | ` new Date() ` | _target date_ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [timeToDate](https://github.com/jasp402/js-packtools/blob/master/lib/timeToDate.js) 
+!> See source code on **GitHub** [timeToDate.js](https://github.com/jasp402/js-packtools/blob/master/lib/timeToDate.js) 
 

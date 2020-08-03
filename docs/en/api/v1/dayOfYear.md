@@ -13,9 +13,6 @@
 ?> This snippet gets the day of the year from a Date object. 
 
 
-!> This snippet gets the day of the year from a Date object. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **date** | `string/date` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [dayOfYear](https://github.com/jasp402/js-packtools/blob/master/lib/dayOfYear.js) 
+!> See source code on **GitHub** [dayOfYear.js](https://github.com/jasp402/js-packtools/blob/master/lib/dayOfYear.js) 
 

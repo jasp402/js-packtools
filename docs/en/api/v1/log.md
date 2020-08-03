@@ -13,9 +13,6 @@
 ?> It integrates the functions registry of errors and registry of execution for the document of registry in his project. 
 
 
-!> It integrates the functions registry of errors and registry of execution for the document of registry in his project. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **_message** | `string` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [log](https://github.com/jasp402/js-packtools/blob/master/lib/log.js) 
+!> See source code on **GitHub** [log.js](https://github.com/jasp402/js-packtools/blob/master/lib/log.js) 
 

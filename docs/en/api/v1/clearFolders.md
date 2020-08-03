@@ -13,9 +13,6 @@
 ?> This simply clear the content a folder. 
 
 
-!> This simply clear the content a folder. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [clearFolders](https://github.com/jasp402/js-packtools/blob/master/lib/clearFolders.js) 
+!> See source code on **GitHub** [clearFolders.js](https://github.com/jasp402/js-packtools/blob/master/lib/clearFolders.js) 
 

@@ -13,9 +13,6 @@
 ?> This snippet checks whether all elements of the array are equal. 
 
 
-!> This snippet checks whether all elements of the array are equal. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **arr** | `array` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [allEqual](https://github.com/jasp402/js-packtools/blob/master/lib/allEqual.js) 
+!> See source code on **GitHub** [allEqual.js](https://github.com/jasp402/js-packtools/blob/master/lib/allEqual.js) 
 

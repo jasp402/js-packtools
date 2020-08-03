@@ -13,9 +13,6 @@
 ?> Generate a object with date details. 
 
 
-!> Generate a object with date details. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **strTime** | `string` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [objectToDate](https://github.com/jasp402/js-packtools/blob/master/lib/objectToDate.js) 
+!> See source code on **GitHub** [objectToDate.js](https://github.com/jasp402/js-packtools/blob/master/lib/objectToDate.js) 
 

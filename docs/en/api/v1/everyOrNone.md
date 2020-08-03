@@ -13,9 +13,6 @@
 ?> This snippet returns true if the predicate function returns true for all elements in a collection and false otherwise. \n You can omit the second argument fn if you want to use Boolean as a default value. 
 
 
-!> This snippet returns true if the predicate function returns true for all elements in a collection and false otherwise. \n You can omit the second argument fn if you want to use Boolean as a default value. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **arr** | `array` | `` | __ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [everyOrNone](https://github.com/jasp402/js-packtools/blob/master/lib/everyOrNone.js) 
+!> See source code on **GitHub** [everyOrNone.js](https://github.com/jasp402/js-packtools/blob/master/lib/everyOrNone.js) 
 

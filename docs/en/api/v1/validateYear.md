@@ -13,9 +13,6 @@
 ?> Can be current year or spend the year to validate 
 
 
-!> Can be current year or spend the year to validate 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **date** | `string/object` | `` | __ | 
@@ -37,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [validateYear](https://github.com/jasp402/js-packtools/blob/master/lib/validateYear.js) 
+!> See source code on **GitHub** [validateYear.js](https://github.com/jasp402/js-packtools/blob/master/lib/validateYear.js) 
 

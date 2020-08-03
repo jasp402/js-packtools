@@ -13,9 +13,6 @@
 ?> This create a folder whit sub-folder of date by default if param `withDate` is True. 
 
 
-!> This create a folder whit sub-folder of date by default if param `withDate` is True. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
@@ -36,5 +33,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [createFolders](https://github.com/jasp402/js-packtools/blob/master/lib/createFolders.js) 
+!> See source code on **GitHub** [createFolders.js](https://github.com/jasp402/js-packtools/blob/master/lib/createFolders.js) 
 

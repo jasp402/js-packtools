@@ -13,9 +13,6 @@
 ?> Validate if there is a route. if not, create this route. 
 
 
-!> Validate if there is a route. if not, create this route. 
-
-
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> source code [validateDir](https://github.com/jasp402/js-packtools/blob/master/lib/validateDir.js) 
+!> See source code on **GitHub** [validateDir.js](https://github.com/jasp402/js-packtools/blob/master/lib/validateDir.js) 
 
