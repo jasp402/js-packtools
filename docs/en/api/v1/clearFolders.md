@@ -15,7 +15,7 @@
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **path** | `string` | `` | __ | 
+| **path** | `string` | ` ` | __ | 
 
 
 

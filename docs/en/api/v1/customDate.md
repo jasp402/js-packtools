@@ -1,7 +1,7 @@
 ## ⏰ customDate 
 
 ```javascript
- customDate(_date, _format, _addDay, {boolean} _type) ⇒ string|Object  
+ customDate(_date, _format, _addDay, _type) ⇒ string|Object  
 ``` 
 
 
@@ -18,7 +18,7 @@
 | **_date** | `string` | ` new Date() ` | _date or Object Date by Default is current date._ | 
 | **_format** | `string` | ` mm/dd/yyyy ` | _define the format that want to return._ | 
 | **_addDay** | `int` | ` 0 ` | _count of days that add to date o current date_ | 
-| **{boolean} _type** | `boolean_type-false~methodtoreturnstringorObjectDate` | ` false ` | _method to return {string} or {Object Date}_ | 
+| **_type** | `boolean` | ` false ` | _method to return `string` or `Object Date`_ | 
 
 
 
