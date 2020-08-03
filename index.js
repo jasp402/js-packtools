@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.1 | last Update: Mon Aug 03 2020 09:25:52 GMT-0500 (GMT-05:00)
+ * {@version 2.3.2 | last Update: Mon Aug 03 2020 10:34:43 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			   = require(__dirname+'/constants');
@@ -56,7 +56,7 @@ const sourceLib 		 = [
   "name": "capitalLetter",
   "category": "String",
   "description": "capitalize the first letter of a sentence.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "example": "https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/674c7135f93dec30cfbef482a6def3b62576a7cd/capitalLetter.js",
   "arParams": [
    {
