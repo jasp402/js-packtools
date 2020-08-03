@@ -2,6 +2,426 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.2](https://github.com/jasp402/js-packtools/compare/v1.9.1...v2.3.2) (2020-08-03)
+
+
+### Bug Fixes
+
+* _renderClassMain() Optimized ([5d3d04f](https://github.com/jasp402/js-packtools/commit/5d3d04f31220b7a57a84ca17f230485c244c2d22))
+* 🎉 dependency free ([8268e38](https://github.com/jasp402/js-packtools/commit/8268e3812c4bab91198e5031c81434839e7b1769))
+* add category ([@augments](https://github.com/augments)) ([c8a3bda](https://github.com/jasp402/js-packtools/commit/c8a3bdae8c2cd0d81c4970121f2845f9822e3165))
+* add compiler in Core ([8a52f48](https://github.com/jasp402/js-packtools/commit/8a52f48656396fe66305ca37a4ec5bf4fb7ff15d))
+* add observations ([cf4405c](https://github.com/jasp402/js-packtools/commit/cf4405c08471e7457aefebf372f9fd0d0d55e188))
+* adjustment README.md ([bbe2f78](https://github.com/jasp402/js-packtools/commit/bbe2f78918b08fe5caeb4d0170d2fa07ac4b673b))
+* completed script elements ([995600a](https://github.com/jasp402/js-packtools/commit/995600a067dce10ae7b16a1fad2b1a1373dc41bf))
+* correction gobal ([d57a813](https://github.com/jasp402/js-packtools/commit/d57a8132e87e87dfea672644bbd7e67a744de7b4))
+* correction in all test site. replace ([f28bf0e](https://github.com/jasp402/js-packtools/commit/f28bf0e524401de8b137bce83c625880b499612d))
+* correction in formatSeconds.js ([31782e7](https://github.com/jasp402/js-packtools/commit/31782e703cdec954d53a1a03d62dd718d7d8963d))
+* correction in params description, add new url for examples. used gist of github ([985ac42](https://github.com/jasp402/js-packtools/commit/985ac423e1da274befbaa6493f23976823ffcbc4))
+* correction in test customDate.test.js ([4569c63](https://github.com/jasp402/js-packtools/commit/4569c63d2db6a4d3f30ce2a1ca133ee9fd3478e0))
+* correction on function is() ([0f8d585](https://github.com/jasp402/js-packtools/commit/0f8d5857951f379b880878edc78e504c5d12f10f))
+* correction on version ([b11593b](https://github.com/jasp402/js-packtools/commit/b11593b659c12fc6c0bcc905bc3fe6acdf137a8e))
+* correction README.md ([c8c2131](https://github.com/jasp402/js-packtools/commit/c8c21318f8675bda179f2a1205ddc9a4767b9659))
+* debug error, global.test.js. validate year is outdated year. ([bde6eb6](https://github.com/jasp402/js-packtools/commit/bde6eb68ed5c388f073143adc4f47dfdfced4766))
+* debug error, in global.test.js (function differenceDay) ([856f235](https://github.com/jasp402/js-packtools/commit/856f2352baf1d3b4405b2f1338c6338dd38ce56f))
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+* debug error, test logError ([7c43e0d](https://github.com/jasp402/js-packtools/commit/7c43e0db544a369b49b345437e74fb7f0e32689c))
+* delete files in Spanish and deleted example that are not used ([1cbbbae](https://github.com/jasp402/js-packtools/commit/1cbbbae06277250c8a91e70cba9ae218f20aa529))
+* deleted global.test.js is no required. ([12217eb](https://github.com/jasp402/js-packtools/commit/12217ebf8956619935f5678f78e1ca755a9fdd37))
+* full integration of timeToDate() ([adf9be6](https://github.com/jasp402/js-packtools/commit/adf9be67db0e7143cca2524cb81462e7900f9fc9))
+* general changes ([bc656e6](https://github.com/jasp402/js-packtools/commit/bc656e6a1222cc433c6b6967981abd683ddf5d0e))
+* ingnore yarn.lock file ([22a4620](https://github.com/jasp402/js-packtools/commit/22a46203d3d4483c08b34d2ab761aef237644c41))
+* minor correction to version ([c4d3cd3](https://github.com/jasp402/js-packtools/commit/c4d3cd344dfb9e47d58649e513d020b07f11da9b))
+* MochaJS version 8.0 causes error with Travis-CI ([dffe6cd](https://github.com/jasp402/js-packtools/commit/dffe6cd2a185d63f6c1e051de8bee4e8bee5d297))
+* new structure auto generate with compiler.js ([f1108fd](https://github.com/jasp402/js-packtools/commit/f1108fd65184989735b8f5fdccc30125e6669406))
+* refactization of compiler.js ([3e8eef7](https://github.com/jasp402/js-packtools/commit/3e8eef7da66fdb2b7f6d7c6dcf5d2a9fac407b9f))
+* removed ~~compiler.js~~ ([f4a296e](https://github.com/jasp402/js-packtools/commit/f4a296edbf520fe0b94abd8f2c3889f35f1d5386))
+* removed lodash in formatSeconds.js used modStart() function ([4b6e6be](https://github.com/jasp402/js-packtools/commit/4b6e6beae9a2fcced9a6ed2ea28766f876a4e77d))
+* Update .gitignore ([4dd230b](https://github.com/jasp402/js-packtools/commit/4dd230b17936ed28a248a5e4d10fd7ecbc431205))
+* update CHANGELOG.md, index.js and package.json to version 2.0 ([bbee7dc](https://github.com/jasp402/js-packtools/commit/bbee7dcf5b91c5d901185faefcde8eccf547b271))
+* update constants.js refectorzation ([cb727ec](https://github.com/jasp402/js-packtools/commit/cb727ec75a78cdf35e6b91b3e74c76820b50b99d))
+* update dev dependencies. ([e871785](https://github.com/jasp402/js-packtools/commit/e871785d58c4fc7019e17c22e1da10e5ce25e5e1))
+* update documentation ([154dff5](https://github.com/jasp402/js-packtools/commit/154dff5c4d22d0cb5bc524294135dcede2ee22a8))
+* Update documentation for all function ([74a73bb](https://github.com/jasp402/js-packtools/commit/74a73bb32fa26bff0f40c32a01063a11f9ef5a1a))
+* Update documentation.js ([192d684](https://github.com/jasp402/js-packtools/commit/192d6841a84c3ec3c29b99cb7bd6fedfabc10350))
+* update function objectFilter.js correction in Object.fromEntries ([4772598](https://github.com/jasp402/js-packtools/commit/4772598f816214e11ce735b4705ae761ec6da515))
+* update index.js with new compiler ([2c133fe](https://github.com/jasp402/js-packtools/commit/2c133fec73257b47e165541d8b14752feee54e33))
+* update on README.md ([732a278](https://github.com/jasp402/js-packtools/commit/732a2781eeebb4291a3296d24814afbbc824e861))
+* update on README.md categories with emoji ([22b14aa](https://github.com/jasp402/js-packtools/commit/22b14aafc8cf7cb45a7b1a2e27f686bcf54300e8))
+* update on README.md upload correct image validateYear() ([32373d1](https://github.com/jasp402/js-packtools/commit/32373d1b90d290294c5355a8e3003acacc58088b))
+* Update readme ([6c01884](https://github.com/jasp402/js-packtools/commit/6c018845a064a06b22776834f47a7007ba3ec75b))
+* Update Replace "assert.equal" with "assert.strictEqual" [more info](https://github.com/googleapis/gapic-generator/issues/2154) ([8756e00](https://github.com/jasp402/js-packtools/commit/8756e00f50618f165814581bb5a2800fc0983434))
+* update version formatSeconds() in documentation ([d7de3fb](https://github.com/jasp402/js-packtools/commit/d7de3fbb9bf2fd0a7d658fba79993161df266c34))
+
+
+### Features
+
+* compiler.js generate new structure for index.js with instance automatically class ([d309f4b](https://github.com/jasp402/js-packtools/commit/d309f4b91ab4dd23efd56e179ea907b940936a88))
+* se agegaron nuevos detalles  en la consulta ([867a97d](https://github.com/jasp402/js-packtools/commit/867a97de7f8f1ce0187213386f6178ba164e6f6d))
+
+
+* merge commit in Master (#26) (#27) ([5a99ba9](https://github.com/jasp402/js-packtools/commit/5a99ba992ab57fdd800b340e03ab13e0d491cff6)), closes [#26](https://github.com/jasp402/js-packtools/issues/26) [#27](https://github.com/jasp402/js-packtools/issues/27) [#24](https://github.com/jasp402/js-packtools/issues/24) [#24](https://github.com/jasp402/js-packtools/issues/24) [-part#2](https://github.com/-part/issues/2) [#24](https://github.com/jasp402/js-packtools/issues/24) [-part#3](https://github.com/-part/issues/3)
+
+
+### BREAKING CHANGES
+
+* Complete change in the structure of the Constructor.
+                 - A compiler was implemented to generate the class dynamically.
+                 - The getFinalPath function was added
+                 - the variable const "c" was changed to "constant"
+                 - Update in documentation
+
+* chore(release): 0.10.8
+* Complete change in the structure of the Constructor.
+                 - A compiler was implemented to generate the class dynamically.
+                 - The getFinalPath function was added
+                 - the variable const "c" was changed to "constant"
+                 - Update in documentation
+
+* chore(release): 0.10.9
+
+* BREAKING CHANGE
+
+* chore(release): 0.10.10
+
+* feat(new-version): Refactorization absolute
+* new structure of jsDoc in all function.
+
+* chore(release): 0.11.0
+* force change of version.
+
+* chore(release): 1.0.1
+
+* feat: compiler automatically generates the index.js file
+
+* chore(release): 1.1.0
+
+* fix: correct minor in test and function CreateFolders
+
+* chore(release): 1.1.1
+
+* fix: Removed console.log in getFinalPath.
+
+* fix: correction variable c for constant
+
+* feat: writeLogError add throw Exception. update test for WriteLogError
+
+* chore(release): 1.2.0
+
+* fix: text formatting
+
+* feat: New function allEqual(). This snippet checks whether all elements of the array are equal.
+
+* feat: New function allEqual(). This snippet checks whether all elements of the array are equal.
+
+* chore(release): 1.3.0
+
+* feat: add test in object of method info()
+
+* fix: correction in constructor params folderAutoDate change for folderWithDate.
+- getFinalPath correction path
+
+* feat: completed test for:
+- everyOrNone
+- getFinalPath
+- groupBy
+- increaseDays
+- _log
+- objectToDate
+
+* chore(release): 1.4.0
+
+* fix: removed dependency `imap-simple`.
+
+* chore(release): 1.4.1
+
+* feat: unos detalles pendiente para haerlo un sabado o dimingo add funtionality dayOfYear.js
+
+* feat: refactoring compiler.js - Part 1
+
+* fix: ignore data folder  add command file
+
+* chore(release): 1.5.0
+
+* fix: working in compiler.js create function render documentation
+
+* fix: update compiler.js and add documentation in folder english
+
+* fix: add documentation in folder english
+
+* chore(release): 1.6.0
+
+* fix: add dayOfYear() in class JS-PackTools
+
+* chore(release): 1.6.1
+
+* fix: Update render.js and update documentation
+
+* chore(release): 1.6.2
+
+* feat: add new function renameFiles()
+
+* chore(release): 1.7.0
+
+* fix: Update order to test
+
+* chore(release): 1.7.1
+
+* fiX: delete variable arMethods
+
+* feat: new function capitalLetter.js
+
+* chore(release): 1.9.0
+
+* fix: update function capitalLetter.js
+
+* chore(release): 1.9.1
+
+* fix: debug error, not allowed object date as parameters
+
+* fix: debug error, test logError
+
+* fix: debug error, global.test.js. validate year is outdated year.
+
+* fix: Update Replace "assert.equal" with "assert.strictEqual" [more info](https://github.com/googleapis/gapic-generator/issues/2154)
+
+* fix: debug error, in global.test.js (function differenceDay)
+
+* Update Readme
+
+* chore(deps-dev): bump standard-version from 5.0.2 to 8.0.1
+
+Bumps [standard-version](https://github.com/conventional-changelog/standard-version) from 5.0.2 to 8.0.1.
+- [Release notes](https://github.com/conventional-changelog/standard-version/releases)
+- [Changelog](https://github.com/conventional-changelog/standard-version/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/conventional-changelog/standard-version/compare/v5.0.2...v8.0.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+* Update Reade
+
+translate all documentation into English
+
+* Create modStart, update parseDate to use modStart
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Diego <andres.dafg@gmail.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Diego <andres.dafg@gmail.com>
+
+
+
+# [3.0.0](https://github.com/jasp402/js-packtools/compare/v1.9.1...v3.0.0) (2020-08-03)
+
+
+### Bug Fixes
+
+* _renderClassMain() Optimized ([5d3d04f](https://github.com/jasp402/js-packtools/commit/5d3d04f31220b7a57a84ca17f230485c244c2d22))
+* 🎉 dependency free ([8268e38](https://github.com/jasp402/js-packtools/commit/8268e3812c4bab91198e5031c81434839e7b1769))
+* add category ([@augments](https://github.com/augments)) ([c8a3bda](https://github.com/jasp402/js-packtools/commit/c8a3bdae8c2cd0d81c4970121f2845f9822e3165))
+* add compiler in Core ([8a52f48](https://github.com/jasp402/js-packtools/commit/8a52f48656396fe66305ca37a4ec5bf4fb7ff15d))
+* add observations ([cf4405c](https://github.com/jasp402/js-packtools/commit/cf4405c08471e7457aefebf372f9fd0d0d55e188))
+* adjustment README.md ([bbe2f78](https://github.com/jasp402/js-packtools/commit/bbe2f78918b08fe5caeb4d0170d2fa07ac4b673b))
+* completed script elements ([995600a](https://github.com/jasp402/js-packtools/commit/995600a067dce10ae7b16a1fad2b1a1373dc41bf))
+* correction gobal ([d57a813](https://github.com/jasp402/js-packtools/commit/d57a8132e87e87dfea672644bbd7e67a744de7b4))
+* correction in all test site. replace ([f28bf0e](https://github.com/jasp402/js-packtools/commit/f28bf0e524401de8b137bce83c625880b499612d))
+* correction in formatSeconds.js ([31782e7](https://github.com/jasp402/js-packtools/commit/31782e703cdec954d53a1a03d62dd718d7d8963d))
+* correction in params description, add new url for examples. used gist of github ([985ac42](https://github.com/jasp402/js-packtools/commit/985ac423e1da274befbaa6493f23976823ffcbc4))
+* correction in test customDate.test.js ([4569c63](https://github.com/jasp402/js-packtools/commit/4569c63d2db6a4d3f30ce2a1ca133ee9fd3478e0))
+* correction on function is() ([0f8d585](https://github.com/jasp402/js-packtools/commit/0f8d5857951f379b880878edc78e504c5d12f10f))
+* correction on version ([b11593b](https://github.com/jasp402/js-packtools/commit/b11593b659c12fc6c0bcc905bc3fe6acdf137a8e))
+* correction README.md ([c8c2131](https://github.com/jasp402/js-packtools/commit/c8c21318f8675bda179f2a1205ddc9a4767b9659))
+* debug error, global.test.js. validate year is outdated year. ([bde6eb6](https://github.com/jasp402/js-packtools/commit/bde6eb68ed5c388f073143adc4f47dfdfced4766))
+* debug error, in global.test.js (function differenceDay) ([856f235](https://github.com/jasp402/js-packtools/commit/856f2352baf1d3b4405b2f1338c6338dd38ce56f))
+* debug error, not allowed object date as parameters ([4cf47c8](https://github.com/jasp402/js-packtools/commit/4cf47c805e4a538d6a4f37eae62c455ca859a821))
+* debug error, test logError ([7c43e0d](https://github.com/jasp402/js-packtools/commit/7c43e0db544a369b49b345437e74fb7f0e32689c))
+* delete files in Spanish and deleted example that are not used ([1cbbbae](https://github.com/jasp402/js-packtools/commit/1cbbbae06277250c8a91e70cba9ae218f20aa529))
+* deleted global.test.js is no required. ([12217eb](https://github.com/jasp402/js-packtools/commit/12217ebf8956619935f5678f78e1ca755a9fdd37))
+* full integration of timeToDate() ([adf9be6](https://github.com/jasp402/js-packtools/commit/adf9be67db0e7143cca2524cb81462e7900f9fc9))
+* general changes ([bc656e6](https://github.com/jasp402/js-packtools/commit/bc656e6a1222cc433c6b6967981abd683ddf5d0e))
+* ingnore yarn.lock file ([22a4620](https://github.com/jasp402/js-packtools/commit/22a46203d3d4483c08b34d2ab761aef237644c41))
+* minor correction to version ([c4d3cd3](https://github.com/jasp402/js-packtools/commit/c4d3cd344dfb9e47d58649e513d020b07f11da9b))
+* MochaJS version 8.0 causes error with Travis-CI ([dffe6cd](https://github.com/jasp402/js-packtools/commit/dffe6cd2a185d63f6c1e051de8bee4e8bee5d297))
+* new structure auto generate with compiler.js ([f1108fd](https://github.com/jasp402/js-packtools/commit/f1108fd65184989735b8f5fdccc30125e6669406))
+* refactization of compiler.js ([3e8eef7](https://github.com/jasp402/js-packtools/commit/3e8eef7da66fdb2b7f6d7c6dcf5d2a9fac407b9f))
+* removed ~~compiler.js~~ ([f4a296e](https://github.com/jasp402/js-packtools/commit/f4a296edbf520fe0b94abd8f2c3889f35f1d5386))
+* removed lodash in formatSeconds.js used modStart() function ([4b6e6be](https://github.com/jasp402/js-packtools/commit/4b6e6beae9a2fcced9a6ed2ea28766f876a4e77d))
+* Update .gitignore ([4dd230b](https://github.com/jasp402/js-packtools/commit/4dd230b17936ed28a248a5e4d10fd7ecbc431205))
+* update CHANGELOG.md, index.js and package.json to version 2.0 ([bbee7dc](https://github.com/jasp402/js-packtools/commit/bbee7dcf5b91c5d901185faefcde8eccf547b271))
+* update constants.js refectorzation ([cb727ec](https://github.com/jasp402/js-packtools/commit/cb727ec75a78cdf35e6b91b3e74c76820b50b99d))
+* update dev dependencies. ([e871785](https://github.com/jasp402/js-packtools/commit/e871785d58c4fc7019e17c22e1da10e5ce25e5e1))
+* update documentation ([154dff5](https://github.com/jasp402/js-packtools/commit/154dff5c4d22d0cb5bc524294135dcede2ee22a8))
+* Update documentation for all function ([74a73bb](https://github.com/jasp402/js-packtools/commit/74a73bb32fa26bff0f40c32a01063a11f9ef5a1a))
+* Update documentation.js ([192d684](https://github.com/jasp402/js-packtools/commit/192d6841a84c3ec3c29b99cb7bd6fedfabc10350))
+* update function objectFilter.js correction in Object.fromEntries ([4772598](https://github.com/jasp402/js-packtools/commit/4772598f816214e11ce735b4705ae761ec6da515))
+* update index.js with new compiler ([2c133fe](https://github.com/jasp402/js-packtools/commit/2c133fec73257b47e165541d8b14752feee54e33))
+* update on README.md ([732a278](https://github.com/jasp402/js-packtools/commit/732a2781eeebb4291a3296d24814afbbc824e861))
+* update on README.md categories with emoji ([22b14aa](https://github.com/jasp402/js-packtools/commit/22b14aafc8cf7cb45a7b1a2e27f686bcf54300e8))
+* update on README.md upload correct image validateYear() ([32373d1](https://github.com/jasp402/js-packtools/commit/32373d1b90d290294c5355a8e3003acacc58088b))
+* Update readme ([6c01884](https://github.com/jasp402/js-packtools/commit/6c018845a064a06b22776834f47a7007ba3ec75b))
+* Update Replace "assert.equal" with "assert.strictEqual" [more info](https://github.com/googleapis/gapic-generator/issues/2154) ([8756e00](https://github.com/jasp402/js-packtools/commit/8756e00f50618f165814581bb5a2800fc0983434))
+* update version formatSeconds() in documentation ([d7de3fb](https://github.com/jasp402/js-packtools/commit/d7de3fbb9bf2fd0a7d658fba79993161df266c34))
+
+
+### Features
+
+* compiler.js generate new structure for index.js with instance automatically class ([d309f4b](https://github.com/jasp402/js-packtools/commit/d309f4b91ab4dd23efd56e179ea907b940936a88))
+* se agegaron nuevos detalles  en la consulta ([867a97d](https://github.com/jasp402/js-packtools/commit/867a97de7f8f1ce0187213386f6178ba164e6f6d))
+
+
+* merge commit in Master (#26) (#27) ([5a99ba9](https://github.com/jasp402/js-packtools/commit/5a99ba992ab57fdd800b340e03ab13e0d491cff6)), closes [#26](https://github.com/jasp402/js-packtools/issues/26) [#27](https://github.com/jasp402/js-packtools/issues/27) [#24](https://github.com/jasp402/js-packtools/issues/24) [#24](https://github.com/jasp402/js-packtools/issues/24) [-part#2](https://github.com/-part/issues/2) [#24](https://github.com/jasp402/js-packtools/issues/24) [-part#3](https://github.com/-part/issues/3)
+
+
+### BREAKING CHANGES
+
+* Complete change in the structure of the Constructor.
+                 - A compiler was implemented to generate the class dynamically.
+                 - The getFinalPath function was added
+                 - the variable const "c" was changed to "constant"
+                 - Update in documentation
+
+* chore(release): 0.10.8
+* Complete change in the structure of the Constructor.
+                 - A compiler was implemented to generate the class dynamically.
+                 - The getFinalPath function was added
+                 - the variable const "c" was changed to "constant"
+                 - Update in documentation
+
+* chore(release): 0.10.9
+
+* BREAKING CHANGE
+
+* chore(release): 0.10.10
+
+* feat(new-version): Refactorization absolute
+* new structure of jsDoc in all function.
+
+* chore(release): 0.11.0
+* force change of version.
+
+* chore(release): 1.0.1
+
+* feat: compiler automatically generates the index.js file
+
+* chore(release): 1.1.0
+
+* fix: correct minor in test and function CreateFolders
+
+* chore(release): 1.1.1
+
+* fix: Removed console.log in getFinalPath.
+
+* fix: correction variable c for constant
+
+* feat: writeLogError add throw Exception. update test for WriteLogError
+
+* chore(release): 1.2.0
+
+* fix: text formatting
+
+* feat: New function allEqual(). This snippet checks whether all elements of the array are equal.
+
+* feat: New function allEqual(). This snippet checks whether all elements of the array are equal.
+
+* chore(release): 1.3.0
+
+* feat: add test in object of method info()
+
+* fix: correction in constructor params folderAutoDate change for folderWithDate.
+- getFinalPath correction path
+
+* feat: completed test for:
+- everyOrNone
+- getFinalPath
+- groupBy
+- increaseDays
+- _log
+- objectToDate
+
+* chore(release): 1.4.0
+
+* fix: removed dependency `imap-simple`.
+
+* chore(release): 1.4.1
+
+* feat: unos detalles pendiente para haerlo un sabado o dimingo add funtionality dayOfYear.js
+
+* feat: refactoring compiler.js - Part 1
+
+* fix: ignore data folder  add command file
+
+* chore(release): 1.5.0
+
+* fix: working in compiler.js create function render documentation
+
+* fix: update compiler.js and add documentation in folder english
+
+* fix: add documentation in folder english
+
+* chore(release): 1.6.0
+
+* fix: add dayOfYear() in class JS-PackTools
+
+* chore(release): 1.6.1
+
+* fix: Update render.js and update documentation
+
+* chore(release): 1.6.2
+
+* feat: add new function renameFiles()
+
+* chore(release): 1.7.0
+
+* fix: Update order to test
+
+* chore(release): 1.7.1
+
+* fiX: delete variable arMethods
+
+* feat: new function capitalLetter.js
+
+* chore(release): 1.9.0
+
+* fix: update function capitalLetter.js
+
+* chore(release): 1.9.1
+
+* fix: debug error, not allowed object date as parameters
+
+* fix: debug error, test logError
+
+* fix: debug error, global.test.js. validate year is outdated year.
+
+* fix: Update Replace "assert.equal" with "assert.strictEqual" [more info](https://github.com/googleapis/gapic-generator/issues/2154)
+
+* fix: debug error, in global.test.js (function differenceDay)
+
+* Update Readme
+
+* chore(deps-dev): bump standard-version from 5.0.2 to 8.0.1
+
+Bumps [standard-version](https://github.com/conventional-changelog/standard-version) from 5.0.2 to 8.0.1.
+- [Release notes](https://github.com/conventional-changelog/standard-version/releases)
+- [Changelog](https://github.com/conventional-changelog/standard-version/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/conventional-changelog/standard-version/compare/v5.0.2...v8.0.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+* Update Reade
+
+translate all documentation into English
+
+* Create modStart, update parseDate to use modStart
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Diego <andres.dafg@gmail.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Diego <andres.dafg@gmail.com>
+
+
+
 ## [2.3.1](https://github.com/jasp402/js-packtools/compare/v1.9.1...v2.3.1) (2020-07-31)
 
 
