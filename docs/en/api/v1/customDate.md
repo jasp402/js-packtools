@@ -13,6 +13,9 @@
 ?> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
 
 
+!> It's a date control. Without parameters give the current date, use the parameters to customize its functionality. 
+
+
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **_date** | `string` | ` new Date() ` | _date or Object Date by Default is current date._ | 
@@ -33,3 +36,7 @@
 [![image](https://user-images.githubusercontent.com/8978470/89190058-8603d500-d566-11ea-914f-284448e5a1b6.png)](https://npm.runkit.com/js-packtools) 
  
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
+
+
+!> source code [customDate](https://github.com/jasp402/js-packtools/blob/master/lib/customDate.js) 
+
