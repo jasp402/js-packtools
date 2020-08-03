@@ -1,7 +1,7 @@
-## 🌐 writeLogError 
+## 🌐 log 
 
 ```javascript
- writeLogError(title, msg, color) ⇒ void 
+ log(_message, _fileName, _color) ⇒ string  
 ``` 
 
 
@@ -10,14 +10,14 @@
 ### 📝 Description 
 
 
-?> write file .log in folder default of class. 
+?> It integrates the functions registry of errors and registry of execution for the document of registry in his project. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **title** | `string` | `` | __ | 
-| **msg** | `string` | `` | __ | 
-| **color** | `string` | `` | __ | 
+| **_message** | `string` | `` | __ | 
+| **_fileName** | `string` | `` | __ | 
+| **_color** | `string` | `` | __ | 
 
 
 
@@ -34,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> See source code on **GitHub** [writeLogError.js](https://github.com/jasp402/js-packtools/blob/master/lib/writeLogError.js) 
+!> See source code on **GitHub** [log.js](https://github.com/jasp402/js-packtools/blob/master/lib/log.js) 
 

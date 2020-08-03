@@ -1,4 +1,5 @@
 const pjson = require('../package.json');
+const docs = require('./template/documentation');
 const fs    = require('fs');
 
 const PATH_TEST  = `${__dirname}/../test`;
@@ -7,19 +8,21 @@ const PATH_DOC   = `${__dirname}/../docs`;
 const PATH_INDEX = `${__dirname}/../index.js`;
 
 let constant = {
-    HEADER_API_DOC  : fs.readFileSync(`${PATH_DOC}/components/_header_api_doc.md`, 'utf-8'),
-    CLASS_TITLE     : `class jsPackTools extends parameters { \n`,
-    CLASS_CONSTANT  : 'const constant \t\t\t   = require(__dirname+\'/constants\');\n',
-    CLASS_ASSERT    : 'const assert \t\t\t   = require(\'assert\');\n',
-    CLASS_FUNCTIONS : (moduleSpace, module) => `const ${moduleSpace} = require('./lib/${module}');\n`,
-    CLASS_GET_MODULE: module => `get ${module}() { return ${module}.bind(this) }\n`,
-    CLASS_INFO_DATA : (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].replace(`@${type} `, '') : null,
-    CLASS_SOURCE_LIB: arMethods => 'const sourceLib \t\t = ' + JSON.stringify(arMethods, null, ' ') + ';\n',
-    HEADER_CLASS    : (version, date) => fs.readFileSync(`${__dirname}/template/header.js`, 'utf-8').replace('#version#', version).replace('#date#', date),
-    PARAMS_CLASS    : fs.readFileSync(`${__dirname}/template/constructor.js`, 'utf-8'),
-    PROXY_CLASS     : fs.readFileSync(`${__dirname}/template/fn_proxy.js`, 'utf-8').replace('function', ''),
-    REGX            : type => new RegExp(`@${type}.*`, 'g'),
-    EMOJI_LIST      : {
+    HEADER_API_DOC   : fs.readFileSync(`${PATH_DOC}/components/_header_api_doc.md`, 'utf-8'),
+    CLASS_TITLE      : `class jsPackTools extends parameters { \n`,
+    CLASS_CONSTANT   : 'const constant \t\t\t   = require(__dirname+\'/constants\');\n',
+    CLASS_ASSERT     : 'const assert \t\t\t   = require(\'assert\');\n',
+    CLASS_FUNCTIONS  : (moduleSpace, module) => `const ${moduleSpace} = require('./lib/${module}');\n`,
+    CLASS_GET_MODULE : module => `get ${module}() { return ${module}.bind(this) }\n`,
+    CLASS_INFO_PARAMS: (data, type) => data.match(constant.REGX(type)) ? data.match(constant.REGX(type)) : ['empty'],
+    CLASS_INFO_DATA  : (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].replace(`@${type} `, '') : null,
+    CLASS_INFO_RETURN: (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].split('-')[0].replace(`@${type} `, '').replace(/\{|\}/g, '') : null,
+    CLASS_SOURCE_LIB : arMethods => 'const sourceLib \t\t = ' + JSON.stringify(arMethods.map(data => delete data['params'] && data), null, ' ') + ';\n',
+    HEADER_CLASS     : (version, date) => fs.readFileSync(`${__dirname}/template/header.js`, 'utf-8').replace('#version#', version).replace('#date#', date),
+    PARAMS_CLASS     : fs.readFileSync(`${__dirname}/template/constructor.js`, 'utf-8'),
+    PROXY_CLASS      : fs.readFileSync(`${__dirname}/template/fn_proxy.js`, 'utf-8').replace('function', ''),
+    REGX             : type => new RegExp(`@${type}.*`, 'g'),
+    EMOJI_LIST       : {
         'Arrays/Object': '🧾',
         'String'       : '✍',
         'Path/Files'   : '📁',
@@ -30,13 +33,26 @@ let constant = {
     }
 };
 
+function extractParams(param) {
+    param           = param.replace('@param ', '');
+    const typeParam = param.match(/\{(.*)\}/g) ? param.match(/\{(.*)\}/g)[0] : param;
+    return {
+        'name'       : param.split('-')[0].replace(typeParam, '').trim(),
+        'type'       : typeParam.replace(/\{|\}/g, '').replace(/\|/g, '/').replace(/ /g, ''),
+        'description': param.indexOf("~") > -1 ? param.split('~').pop().trim() : '',
+        'default'    : param.indexOf("~") > -1 ? param.split('-').pop().split('~')[0] : ''
+    };
+}
+
 function _renderClassMain() {
-    const {modEnd}  = require('../index')();
     console.log('Processing _renderClassMain()');
+    const modEnd  = require('../lib/modEnd');
+
     let classBuild = '';
     let importMod  = '';
     let index      = '';
     let arMethods  = [];
+
     classBuild     = constant.CLASS_TITLE;
     importMod     += constant.CLASS_CONSTANT;
     importMod     += constant.CLASS_ASSERT;
@@ -47,12 +63,22 @@ function _renderClassMain() {
         const data  = fs.readFileSync(`${PATH_LIB}/${module}.js`, 'utf-8');
         importMod  += constant.CLASS_FUNCTIONS(space, module);
         classBuild += constant.CLASS_GET_MODULE(module);
+
         arMethods.push({
             name       : constant.CLASS_INFO_DATA(data, 'function'),
             category   : constant.CLASS_INFO_DATA(data, 'augments'),
             description: constant.CLASS_INFO_DATA(data, 'description'),
             version    : constant.CLASS_INFO_DATA(data, 'version'),
             example    : constant.CLASS_INFO_DATA(data, 'example'),
+            arParams   : constant.CLASS_INFO_PARAMS(data, 'param').map(extractParams),
+            returns    : constant.CLASS_INFO_RETURN(data, 'returns')
+        });
+    });
+
+    // --- CREATE DOCUMENTATION ---
+    arMethods.forEach(doc=>{
+        fs.writeFile(`${PATH_DOC}/en/api/v1/${doc.name}.md`, docs(doc, constant), function(err) {
+            if(err) return console.log(err);
         });
     });
 
@@ -75,119 +101,7 @@ function _renderClassMain() {
 
     return true;
 }
-function _renderAPIDoc(){
-    console.log('Proccesing _renderAPIDoc()');
-    const docs = fs.readdirSync(__dirname + '/lib').map(modules => {
 
-        const getType = (str) =>  {
-            let options = ['boolean', 'object', 'array', 'string', 'number', 'string|Object','void', 'any', 'string|date'];
-            return options.filter(option=>(str.indexOf(`{${option}}`)>-1));
-        };
-
-        const data = fs.readFileSync(`./lib/${modules}`, 'UTF-8');
-        const params = (data.match(/@param.*/g) ? data.match(/@param.*/g) : ['empty']).map(param => {
-
-            let tmp = {};
-            param = param.replace('@param', '');
-
-            if (param.indexOf('{string|date}') > -1) {
-                tmp['type'] = 'string/Date';
-                param = param.replace('{string|date}', '');
-            }
-            if (param.indexOf('{array}') > -1) {
-                tmp['type'] = 'array';
-                param = param.replace('{array}', '');
-            }
-            if (param.indexOf('{string}') > -1) {
-                tmp['type'] = 'string';
-                param = param.replace('{string}', '');
-            }
-            if (param.indexOf('{any}') > -1) {
-                tmp['type'] = 'any';
-                param = param.replace('{any}', '');
-            }
-            if (param.indexOf('{boolean}') > -1) {
-                tmp['type'] = 'boolean';
-                param = param.replace('{boolean}', '');
-            }
-            if (param.indexOf('{number}') > -1) {
-                tmp['type'] = 'number';
-                param = param.replace('{number}', '');
-            }
-            if (param.indexOf('{string | object}') > -1) {
-                tmp['type'] = 'string/object';
-                param = param.replace('{string | object}', '');
-            }
-            if (param.indexOf('{object}') > -1) {
-                tmp['type'] = 'object';
-                param = param.replace('{object}', '');
-            }
-            if (param.indexOf('{function|boolean}') > -1) {
-                tmp['type'] = 'function/boolean';
-                param = param.replace('{function|boolean}', '');
-            }
-            if (param.indexOf('{array|object}') > -1) {
-                tmp['type'] = 'array/object';
-                param = param.replace('{array|object}', '');
-            }
-            if (param.indexOf('{int}') > -1) {
-                tmp['type'] = 'int';
-                param = param.replace('{int}', '');
-            }
-            if (param.indexOf('{null}') > -1) {
-                tmp['type'] = 'null';
-                param = param.replace('{null}', '');
-            }
-
-            tmp['name'] = param.split('-')[0].replace(/\s+/g, '');
-            tmp['description'] = param.indexOf("~") > -1 ? param.split('~').pop().trim() : param.split('-').pop().trim();
-            tmp['default'] = param.indexOf("~")>-1 ? param.split('-').pop().split('~')[0] : "";
-            return tmp;
-        });
-        const returns = (data.match(/@returns.*/g) ? data.match(/@returns.*/g) : ['empty']).map(re=>{
-            let tmp = {};
-            re = re.replace('@returns', '');
-            tmp['type'] = getType(re)[0];
-            tmp['description'] = re.indexOf('-')>-1 ? re.split('-')[1] : '';
-            return tmp;
-        });
-
-        return {
-            name: modules.split('.').shift(),
-            version: data.match(/@version.*/g) ? data.match(/@version.*/g)[0].replace('@version ', '') : null,
-            category: data.match(/@augments.*/g) ? data.match(/@augments.*/g)[0].replace('@augments ', '') : null,
-            description: data.match(/@description.*/g) ? data.match(/@description.*/g)[0].replace('@description ', '') : null,
-            example: data.match(/@example.*/g) ? data.match(/@example.*/g)[0].replace('@example ', '') : null,
-            arParams: params,
-            returns: returns[0],
-        }
-    });
-    docs.forEach(doc=>{
-        const {name, version, arParams, returns, category, description, example} = doc;
-        console.log('-------->', arParams[0].name);
-        const _cd_ = '\`\`\`';
-        let write = `## ${name} \n  `;
-        write += `${_cd_}javascript\n ${name}(${arParams.map(param=>param.name).join(', ')}) ⇒ ${returns.type} \n${_cd_} \n\n `;
-        write += `\` Version: ${version} \` \n`;
-        write += `\` Category: ${constant.EMOJI_LIST[category]} ${category} \` \n\n`;
-        write += `### Description \n\n`;
-        write += `?> ${description} \n\n`;
-        write += `### Implementation \n\n`;
-        write += `| Param | Type | Default value | Description | \n`;
-        write += `| --- | --- | --- | --- | \n`;
-        write += arParams.map(param=>`| **${param.name}** | \`${param.type}\` | \`${param.default}\` | _${param.description}_ | `).join('\n');
-        write += `\n\n`;
-        write += `### Example \n\n`;
-        write += ` \`\`\`javascript \n ${example ? example.replace(/\\n/g,"\n") : ""} \n \`\`\`  \n\n`;
-
-        fs.writeFile(`./docs/en/api/v1/${name}.md`, write, function(err) {
-            if(err) return console.log(err);
-            console.log("Generate Documentation.js!");
-        });
-    });
-    console.log('Completed _renderAPIDoc()');
-    return true;
-}
 function _renderCategory(){
     console.log('Proccesing _renderCategory()');
     const utils = require("../index")();
@@ -386,7 +300,7 @@ function _renderListOfContent(){
     return true;
 }
 
-// _renderClassMain();     /* Compile index.js with new features added in the lib folder */
+_renderClassMain();     /* Compile index.js with new features added in the lib folder */
 // _renderCategory();      /* Generate category in ./docs/en/api.md */
 // _renderAPIDoc();        /* Update all documentation in /docs/en/api/v1/  */
 // _renderListOfContent(); /* Generate list of content for README.md */

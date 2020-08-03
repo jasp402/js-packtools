@@ -1,7 +1,7 @@
-## 📁 renameFiles 
+## 📁 clearFolders 
 
 ```javascript
- renameFiles(path, name, opts, rand) ⇒ void 
+ clearFolders(path) ⇒ object  
 ``` 
 
 
@@ -10,15 +10,12 @@
 ### 📝 Description 
 
 
-?> This function rename a batch of files with current date or token unique. 
+?> This simply clear the content a folder. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
 | **path** | `string` | `` | __ | 
-| **name** | `string` | `` | __ | 
-| **opts** | `number` | ` date `or` token `or` null ` | _Unique identifier for each file in the folder null = self increasing_ | 
-| **rand** | `number` | ` 1 `or` 2 ` | _1 = Suffix or 2 = Prefix_ | 
 
 
 
@@ -35,5 +32,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> See source code on **GitHub** [renameFiles.js](https://github.com/jasp402/js-packtools/blob/master/lib/renameFiles.js) 
+!> See source code on **GitHub** [clearFolders.js](https://github.com/jasp402/js-packtools/blob/master/lib/clearFolders.js) 
 

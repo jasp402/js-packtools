@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.1 | last Update: Sun Aug 02 2020 11:41:44 GMT-0500 (GMT-05:00)
+ * {@version 2.3.3 | last Update: Mon Aug 03 2020 10:39:36 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			   = require(__dirname+'/constants');
@@ -23,6 +23,7 @@ const getFinalPath         = require('./lib/getFinalPath');
 const groupBy              = require('./lib/groupBy');
 const increaseDays         = require('./lib/increaseDays');
 const is                   = require('./lib/is');
+const modEnd               = require('./lib/modEnd');
 const modStart             = require('./lib/modStart');
 const objectFilter         = require('./lib/objectFilter');
 const objectToDate         = require('./lib/objectToDate');
@@ -40,189 +41,640 @@ const sourceLib 		 = [
   "category": "Arrays/Object",
   "description": "This snippet checks whether all elements of the array are equal.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "arr",
+    "type": "array",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "boolean"
  },
  {
   "name": "capitalLetter",
   "category": "String",
   "description": "capitalize the first letter of a sentence.",
-  "version": "1.1.0",
-  "example": "@example"
+  "version": "1.1.1",
+  "example": "https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/674c7135f93dec30cfbef482a6def3b62576a7cd/capitalLetter.js",
+  "arParams": [
+   {
+    "name": "str",
+    "type": "string",
+    "description": "any word or sentence",
+    "default": " "
+   },
+   {
+    "name": "all",
+    "type": "boolean",
+    "description": "if true, capitalize all words.",
+    "default": " false "
+   }
+  ],
+  "returns": "string "
  },
  {
   "name": "clearFolders",
   "category": "Path/Files",
   "description": "This simply clear the content a folder.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "path",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object "
  },
  {
   "name": "createFolders",
   "category": "Path/Files",
   "description": "This create a folder whit sub-folder of date by default if param `withDate` is True.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "path",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "withDate",
+    "type": "boolean",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "boolean"
  },
  {
   "name": "csvToJson",
   "category": "convert",
   "description": "This read a document CSV and convert in a Object Javascript (JSON).",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "_csv",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string"
  },
  {
   "name": "customDate",
   "category": "Time/Date",
   "description": "It's a date control. Without parameters give the current date, use the parameters to customize its functionality.",
   "version": "1.0.0",
-  "example": "var jsPackTools = require(\"js-packtools\"); \\n let u = new jsPackTools(); \\n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15"
+  "example": "var jsPackTools = require(\"js-packtools\"); \\n let u = new jsPackTools(); \\n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15",
+  "arParams": [
+   {
+    "name": "_date",
+    "type": "string",
+    "description": "date or Object Date by Default is current date.",
+    "default": " new Date() "
+   },
+   {
+    "name": "_format",
+    "type": "string",
+    "description": "define the format that want to return.",
+    "default": " mm/dd/yyyy "
+   },
+   {
+    "name": "_addDay",
+    "type": "int",
+    "description": "count of days that add to date o current date",
+    "default": " 0 "
+   },
+   {
+    "name": "{boolean} _type",
+    "type": "boolean_type-false~methodtoreturnstringorObjectDate",
+    "description": "method to return {string} or {Object Date}",
+    "default": " false "
+   }
+  ],
+  "returns": "string|Object "
  },
  {
   "name": "dayOfYear",
   "category": "Time/Date",
   "description": "This snippet gets the day of the year from a Date object.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "date",
+    "type": "string/date",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "number "
  },
  {
   "name": "deleteFile",
   "category": "Path/Files",
   "description": "Check if the file exists before deleting",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "path",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string "
  },
  {
   "name": "differenceDay",
   "category": "Time/Date",
   "description": "This simply clear the content a folder.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "_startDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_endDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_initDate",
+    "type": "boolean",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object "
  },
  {
   "name": "everyOrNone",
   "category": "Arrays/Object",
   "description": "This snippet returns true if the predicate function returns true for all elements in a collection and false otherwise. \\n You can omit the second argument fn if you want to use Boolean as a default value.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "arr",
+    "type": "array",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "fn",
+    "type": "function/boolean",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "boolean"
  },
  {
   "name": "formatSeconds",
   "category": "Time/Date",
   "description": "This only format a value float",
   "version": "1.0.1",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "time",
+    "type": "number",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string"
  },
  {
   "name": "generateRageDate",
   "category": "Time/Date",
   "description": "This function allows you to separate a given date in the number of days assigned to it.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "lastDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "splitDay",
+    "type": "number",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "endDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "array"
  },
  {
   "name": "getFinalPath",
   "category": "Path/Files",
   "description": "Create structure of folders with parameters in constructor.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "",
+    "type": "empty",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string "
  },
  {
   "name": "groupBy",
   "category": "Arrays/Object",
   "description": "Sort the object by placing the value of the assigned property as key",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "obj",
+    "type": "object",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "key",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object"
  },
  {
   "name": "increaseDays",
   "category": "Time/Date",
   "description": "Add days to date, can defined a maxDate.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "startDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "days",
+    "type": "number",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "maxDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object "
  },
  {
   "name": "is",
   "category": "validate",
   "description": "Is a function for evaluate to type of element",
   "version": "1.0.1",
-  "example": "const {is} = require(\"js-packtools\");\\nis('array', [1]); //true \\nis('object', [1]); //false"
+  "example": "const {is} = require(\"js-packtools\");\\nis('array', [1]); //true \\nis('object', [1]); //false",
+  "arParams": [
+   {
+    "name": "type",
+    "type": "string",
+    "description": "Define type of element that want evaluate.",
+    "default": " array/object/number/string/boolean "
+   },
+   {
+    "name": "value",
+    "type": "any",
+    "description": "Element to evaluate.",
+    "default": " "
+   }
+  ],
+  "returns": "boolean "
+ },
+ {
+  "name": "modEnd",
+  "category": "String",
+  "description": "Using a string to create a new string with new size inverse to modStart.",
+  "version": "1.0.1",
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "str",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "size",
+    "type": "number",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_str",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string"
  },
  {
   "name": "modStart",
   "category": "String",
   "description": "Using a string to create a new string with new size.",
   "version": "1.0.1",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "str",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "size",
+    "type": "number",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_str",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string"
  },
  {
   "name": "objectFilter",
   "category": "Arrays/Object",
   "description": "This fragment allows you to filter an object and return the key and its corresponding value",
   "version": "1.1.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "dataSet",
+    "type": "array/object",
+    "description": "Object or array to object with dataSet",
+    "default": "  "
+   },
+   {
+    "name": "array",
+    "type": "array",
+    "description": "Array of the key names you want to get in the filter",
+    "default": "  "
+   }
+  ],
+  "returns": "array|object"
  },
  {
   "name": "objectToDate",
   "category": "Time/Date",
   "description": "Generate a object with date details.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "strTime",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object"
  },
  {
   "name": "parseDate",
   "category": "Time/Date",
   "description": "Using a string and a format transform the string in date.",
   "version": "1.0.1",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "_sDate",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_sFormat",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_bType",
+    "type": "boolean",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "object"
  },
  {
   "name": "renameFiles",
   "category": "Path/Files",
   "description": "This function rename a batch of files with current date or token unique.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "path",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "name",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "opts",
+    "type": "number",
+    "description": "Unique identifier for each file in the folder null = self increasing",
+    "default": " date `or` token `or` null "
+   },
+   {
+    "name": "rand",
+    "type": "number",
+    "description": "1 = Suffix or 2 = Prefix",
+    "default": " 1 `or` 2 "
+   }
+  ],
+  "returns": "void"
  },
  {
   "name": "timeToDate",
   "category": "Time/Date",
   "description": "return the time between two dates, or a date and now",
   "version": "1.0.1",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "_toDate",
+    "type": "string/date",
+    "description": "target date",
+    "default": " new Date() "
+   },
+   {
+    "name": "_sDate",
+    "type": "string/date",
+    "description": "start date (default: now)",
+    "default": " new Date() "
+   }
+  ],
+  "returns": "string"
  },
  {
   "name": "validateDir",
   "category": "Path/Files",
   "description": "Validate if there is a route. if not, create this route.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "path",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "boolean"
  },
  {
   "name": "validateYear",
   "category": "Time/Date",
   "description": "Can be current year or spend the year to validate",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "date",
+    "type": "string/object",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "yearCompare",
+    "type": "string/object",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "operator",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "boolean"
  },
  {
   "name": "writeLog",
   "category": "global",
   "description": "write file .log in folder default of class.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "msg",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "color",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "void"
  },
  {
   "name": "writeLogError",
   "category": "global",
   "description": "write file .log in folder default of class.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "title",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "msg",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "color",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "void"
  },
  {
   "name": "log",
   "category": "global",
   "description": "It integrates the functions registry of errors and registry of execution for the document of registry in his project.",
   "version": "1.0.0",
-  "example": "@example"
+  "example": "@example",
+  "arParams": [
+   {
+    "name": "_message",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_fileName",
+    "type": "string",
+    "description": "",
+    "default": ""
+   },
+   {
+    "name": "_color",
+    "type": "string",
+    "description": "",
+    "default": ""
+   }
+  ],
+  "returns": "string "
  }
 ];
 class parameters {
@@ -254,6 +706,7 @@ get getFinalPath() { return getFinalPath.bind(this) }
 get groupBy() { return groupBy.bind(this) }
 get increaseDays() { return increaseDays.bind(this) }
 get is() { return is.bind(this) }
+get modEnd() { return modEnd.bind(this) }
 get modStart() { return modStart.bind(this) }
 get objectFilter() { return objectFilter.bind(this) }
 get objectToDate() { return objectToDate.bind(this) }

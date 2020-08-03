@@ -1,26 +1,38 @@
-## parseDate 
-  ```javascript
+## ⏰ parseDate 
+
+```javascript
  parseDate(_sDate, _sFormat, _bType) ⇒ object 
 ``` 
 
- ` Version: 1.0.1 ` 
-` Category: ⏰ Time/Date ` 
 
-### Description 
+`📢 Version: 1.0.1`  `🏷️ Category: Time/Date` `🎖️ Author: jasp402` 
+
+### 📝 Description 
+
 
 ?> Using a string and a format transform the string in date. 
 
-### Implementation 
 
-| Param | Type | Default value | Description | 
-| --- | --- | --- | --- | 
-| **_sDate** | `string` | `` | _date in string._ | 
-| **_sFormat** | `string` | `` | _define the format to date._ | 
-| **_bType** | `boolean` | `` | _Type to return date. string or object date._ | 
+| Param | Type | Default value | Description |
+| --- | --- | --- | --- |
+| **_sDate** | `string` | `` | __ | 
+| **_sFormat** | `string` | `` | __ | 
+| **_bType** | `boolean` | `` | __ | 
 
-### Example 
 
- ```javascript 
-  
- ```  
+
+### 🧪 Example 
+
+
+![LABEL](@example ':include :type=code')
+
+
+
+
+[![image](https://user-images.githubusercontent.com/8978470/89190058-8603d500-d566-11ea-914f-284448e5a1b6.png)](https://npm.runkit.com/js-packtools) 
+ 
+Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
+
+
+!> See source code on **GitHub** [parseDate.js](https://github.com/jasp402/js-packtools/blob/master/lib/parseDate.js) 
 

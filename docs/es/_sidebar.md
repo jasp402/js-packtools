@@ -1,5 +1,0 @@
-* [Guía de inicio](/es/)
-* [API Docs](/es/api.md)
-* [ayuda & Soporte](/es/help.md)
-* [Contribuyentes](/es/contribute.md)
-* [Donantes](/es/donate.md)

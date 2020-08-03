@@ -1,21 +1,23 @@
-## 📁 deleteFile 
+## ✍ modEnd 
 
 ```javascript
- deleteFile(path) ⇒ string  
+ modEnd(str, size, _str) ⇒ string 
 ``` 
 
 
-`📢 Version: 1.0.0`  `🏷️ Category: Path/Files` `🎖️ Author: jasp402` 
+`📢 Version: 1.0.1`  `🏷️ Category: String` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
 
-?> Check if the file exists before deleting 
+?> Using a string to create a new string with new size inverse to modStart. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **path** | `string` | `` | __ | 
+| **str** | `string` | `` | __ | 
+| **size** | `number` | `` | __ | 
+| **_str** | `string` | `` | __ | 
 
 
 
@@ -32,5 +34,5 @@
 Use **RunKit** for run this example, only copy and paste in [RunKit](https://npm.runkit.com/js-packtools)
 
 
-!> See source code on **GitHub** [deleteFile.js](https://github.com/jasp402/js-packtools/blob/master/lib/deleteFile.js) 
+!> See source code on **GitHub** [modEnd.js](https://github.com/jasp402/js-packtools/blob/master/lib/modEnd.js) 
 
