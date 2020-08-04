@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.10](https://github.com/jasp402/js-packtools/compare/v2.3.9...v2.3.10) (2020-08-04)
+
+
+### Bug Fixes
+
+* update url in documentation _sidebar.md ([cafcb70](https://github.com/jasp402/js-packtools/commit/cafcb704f5e7dc8039d04f286c82aa5a263fff41))
+
+
+
 ## [2.3.9](https://github.com/jasp402/js-packtools/compare/v2.3.8...v2.3.9) (2020-08-04)
 
 
