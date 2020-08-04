@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.5 | last Update: Tue Aug 04 2020 09:13:11 GMT-0500 (GMT-05:00)
+ * {@version 2.3.5 | last Update: Tue Aug 04 2020 14:09:50 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			   = require(__dirname+'/constants');
@@ -380,9 +380,9 @@ const sourceLib 		 = [
  {
   "name": "jsonToCsv",
   "category": "convert",
-  "description": "Is a function for evaluate to type of element",
+  "description": "Function for convert JSON to CSV",
   "version": "1.0.1",
-  "example": "const {is} = require(\"js-packtools\");\\nis('array', [1]); //true \\nis('object', [1]); //false",
+  "example": "@example",
   "arParams": [
    {
     "name": "dataJson",
@@ -403,7 +403,7 @@ const sourceLib 		 = [
     "default": " , "
    }
   ],
-  "returns": "boolean "
+  "returns": "string "
  },
  {
   "name": "modEnd",

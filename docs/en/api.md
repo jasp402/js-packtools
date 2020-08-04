@@ -1,20 +1,7 @@
 # API Doc
-#### JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
-<p>
-    <a href="https://www.npmjs.com/package/js-packtools">
-        <img alt="npm" src="https://img.shields.io/npm/v/js-packtools.svg">
-    </a>
-    <a href="https://travis-ci.org/jasp402/js-packtools">
-        <img alt="Build Status" src="https://travis-ci.org/jasp402/js-packtools.svg?branch=master">
-    </a>
-    <a href="https://david-dm.org/jasp402/js-packtools">
-        <img alt="Dependencies" src="https://david-dm.org/jasp402/js-packtools/status.svg">
-    </a>    
-    <a href="https://gitter.im/js-packtools/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
-        <img alt="Gitter" src="https://badges.gitter.im/js-packtools/community.svg">
-    </a>
-</p>
 
+JS-PackTools contains multiple functions that we group by categories to make it easier to find what you need. Each function contains details of its operation and example. you just have to click on the function you need and you will get all the information.
+___
 >## 🧾 Arrays/Object 
 
 | Functions Name | version | Category | Description |
@@ -27,13 +14,14 @@
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|🌱  [**capitalLetter**](/en/api/v1/capitalLetter.md)  | 1.1.0 | String | <sub>capitalize the first letter of a sentence.</sub> |
+|🌱  [**capitalLetter**](/en/api/v1/capitalLetter.md)  | 1.1.1 | String | <sub>capitalize the first letter of a sentence.</sub> |
+|🌱  [**modEnd**](/en/api/v1/modEnd.md)  | 1.0.1 | String | <sub>Using a string to create a new string with new size inverse to modStar...</sub> |
 |🌱  [**modStart**](/en/api/v1/modStart.md)  | 1.0.1 | String | <sub>Using a string to create a new string with new size.</sub> |
 >## 📁 Path/Files 
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|🌱  [**clearFolder**](/en/api/v1/clearFolder.md)  | 1.0.0 | Path/Files | <sub>This simply clear the content a folder.</sub> |
+|🌱  [**clearFolders**](/en/api/v1/clearFolders.md)  | 1.0.0 | Path/Files | <sub>This simply clear the content a folder.</sub> |
 |🌱  [**createFolders**](/en/api/v1/createFolders.md)  | 1.0.0 | Path/Files | <sub>This create a folder whit sub-folder of date by default if param `with...</sub> |
 |🌱  [**deleteFile**](/en/api/v1/deleteFile.md)  | 1.0.0 | Path/Files | <sub>Check if the file exists before deleting</sub> |
 |🌱  [**getFinalPath**](/en/api/v1/getFinalPath.md)  | 1.0.0 | Path/Files | <sub>Create structure of folders with parameters in constructor.</sub> |
@@ -44,6 +32,7 @@
 | Functions Name | version | Category | Description |
 |---|---|---|---|
 |🌱  [**csvToJson**](/en/api/v1/csvToJson.md)  | 1.0.0 | convert | <sub>This read a document CSV and convert in a Object Javascript (JSON).</sub> |
+|🌱  [**jsonToCsv**](/en/api/v1/jsonToCsv.md)  | 1.0.1 | convert | <sub>Function for convert JSON to CSV</sub> |
 >## ⏰ Time/Date 
 
 | Functions Name | version | Category | Description |
@@ -69,4 +58,10 @@
 |---|---|---|---|
 |🌱  [**writeLog**](/en/api/v1/writeLog.md)  | 1.0.0 | global | <sub>write file .log in folder default of class.</sub> |
 |🌱  [**writeLogError**](/en/api/v1/writeLogError.md)  | 1.0.0 | global | <sub>write file .log in folder default of class.</sub> |
-|🌱  [**_log**](/en/api/v1/_log.md)  | 1.0.0 | global | <sub>It integrates the functions registry of errors and registry of executi...</sub> |
+|🌱  [**log**](/en/api/v1/log.md)  | 1.0.0 | global | <sub>It integrates the functions registry of errors and registry of executi...</sub> |
+
+___
+:seedling: **Completed** <br>
+:fire: **In Development** <br>
+:speech_balloon: **proposal** <br>
+⛔ **deprecated** <br>

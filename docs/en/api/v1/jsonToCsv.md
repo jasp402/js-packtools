@@ -1,7 +1,7 @@
 ## ↔ jsonToCsv 
 
 ```javascript
- jsonToCsv(dataJson, dirPath, delimiter) ⇒ boolean  
+ jsonToCsv(dataJson, dirPath, delimiter) ⇒ string  
 ``` 
 
 
@@ -10,7 +10,7 @@
 ### 📝 Description 
 
 
-?> Is a function for evaluate to type of element 
+?> Function for convert JSON to CSV 
 
 
 | Param | Type | Default value | Description |
@@ -24,7 +24,7 @@
 ### 🧪 Example 
 
 
-![LABEL](const {is} = require("js-packtools");\nis('array', [1]); //true \nis('object', [1]); //false ':include :type=code')
+![LABEL](@example ':include :type=code')
 
 
 
