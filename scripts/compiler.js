@@ -81,7 +81,7 @@ function generateListOfContent(arMethods){
         write += `|---|---|---|---|\n`;
         categories[categoryKey].map(fn=>{
             let suspensive = fn.description.length > 70 ? "..." : "";
-            write += `|🌱  [**${fn.name}**](/en/api/v1/${fn.name}.md)  | ${fn.version} | ${fn.category} | <sub>${fn.description.slice(0,70)}${suspensive}</sub> |\n`;
+            write += `|🌱  [**${fn.name}**](https://jasp402.github.io/js-packtools/#/en/api/v1/${fn.name}) | ${fn.version} | ${fn.category} | <sub>${fn.description.slice(0,70)}${suspensive}</sub> |\n`;
         });
     });
 
