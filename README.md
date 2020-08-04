@@ -117,6 +117,8 @@ For example, the [validateYear()](https://jasp402.github.io/js-packtools/#/en/ap
 ## Content list
 The functions of this package are divided into categories. to make it easier to find a function that is out of line with your needs.
 
+___
+
 >## 🧾 Arrays/Object 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
@@ -166,6 +168,7 @@ The functions of this package are divided into categories. to make it easier to 
 |🌱  [**writeLogError**](https://jasp402.github.io/js-packtools/#/en/api/v1/writeLogError)  | 1.0.0 | global | <sub>write file .log in folder default of class.</sub> |
 |🌱  [**_log**](https://jasp402.github.io/js-packtools/#/en/api/v1/_log)  | 1.0.0 | global | <sub>It integrates the functions registry of errors and registry of executi...</sub> |
 
+___
 
 :seedling: **Completed** <br>
 :fire: **In Development** <br>
