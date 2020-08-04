@@ -175,7 +175,7 @@ The functions of this package are divided into categories. to make it easier to 
 You can review the details of each function bif you have any questions about where to start contributing.y clicking on their links. for more information enter [Documentación API](https://jasp402.github.io/js-packtools/#/en/api).
 
 ## contributor
-Take a look at our document  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/es/contribute) to start configuring the repository.
+Take a look at our document  [CONTRIBUTING.md](https://jasp402.github.io/js-packtools/#/en/contribute) to start configuring the repository.
 If you are looking for something to contribute. You can review our project in [Trello](https://trello.com/b/FMUpri2i/js-packtools) 
 You can also contact our channel [Gitter](https://gitter.im/js-packtools/community) if you have any questions about where to start contributing.
 

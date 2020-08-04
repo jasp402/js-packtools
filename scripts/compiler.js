@@ -11,7 +11,6 @@ const PATH_README  = `${__dirname}/../README.md`;
 const PATH_API_DOC = `${__dirname}/../docs/en/api.md`;
 
 let constant = {
-    HEADER_API_DOC   : fs.readFileSync(`${PATH_DOC}/components/_header_api_doc.md`, 'utf-8'),
     CLASS_TITLE      : `class jsPackTools extends parameters { \n`,
     CLASS_CONSTANT   : 'const constant \t\t\t   = require(__dirname+\'/constants\');\n',
     CLASS_ASSERT     : 'const assert \t\t\t   = require(\'assert\');\n',
