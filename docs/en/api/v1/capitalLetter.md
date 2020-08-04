@@ -23,7 +23,7 @@
 ### 🧪 Example 
 
 
-![LABEL](https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/674c7135f93dec30cfbef482a6def3b62576a7cd/capitalLetter.js ':include :type=code')
+![LABEL](https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/capitalLetter.js ':include :type=code')
 
 
 

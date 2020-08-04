@@ -25,7 +25,7 @@
 ### 🧪 Example 
 
 
-![LABEL](var jsPackTools = require("js-packtools"); \n let u = new jsPackTools(); \n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15 ':include :type=code')
+![LABEL](var jsPackTools = require("js-packtools"); \n let u = new jsPackTools(); \n u.customDate('05/01/2019', 'yyyy-mm-dd', 15, false);  // => 2019-05-15raw/customDate.js ':include :type=code')
 
 
 

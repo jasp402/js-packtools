@@ -23,7 +23,9 @@
 ### 🧪 Example 
 
 
-![LABEL](@example ':include :type=code')
+``` 
+ ⚠️Example missing 
+```
 
 
 

@@ -23,7 +23,7 @@
 ### 🧪 Example 
 
 
-![LABEL](const {is} = require("js-packtools");\nis('array', [1]); //true \nis('object', [1]); //false ':include :type=code')
+![LABEL](const {is} = require("js-packtools");\nis('array', [1]); //true \nis('object', [1]); //falseraw/is.js ':include :type=code')
 
 
 
