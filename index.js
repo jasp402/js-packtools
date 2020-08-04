@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.4 | last Update: Mon Aug 03 2020 11:54:07 GMT-0500 (GMT-05:00)
+ * {@version 2.3.5 | last Update: Tue Aug 04 2020 09:13:11 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			   = require(__dirname+'/constants');
@@ -23,6 +23,7 @@ const getFinalPath         = require('./lib/getFinalPath');
 const groupBy              = require('./lib/groupBy');
 const increaseDays         = require('./lib/increaseDays');
 const is                   = require('./lib/is');
+const jsonToCsv            = require('./lib/jsonToCsv');
 const modEnd               = require('./lib/modEnd');
 const modStart             = require('./lib/modStart');
 const objectFilter         = require('./lib/objectFilter');
@@ -377,6 +378,34 @@ const sourceLib 		 = [
   "returns": "boolean "
  },
  {
+  "name": "jsonToCsv",
+  "category": "convert",
+  "description": "Is a function for evaluate to type of element",
+  "version": "1.0.1",
+  "example": "const {is} = require(\"js-packtools\");\\nis('array', [1]); //true \\nis('object', [1]); //false",
+  "arParams": [
+   {
+    "name": "dataJson",
+    "type": "array",
+    "description": "Array with dataSet.",
+    "default": " [] "
+   },
+   {
+    "name": "dirPath",
+    "type": "string",
+    "description": "Dir path for out file csv.",
+    "default": " "
+   },
+   {
+    "name": "delimiter",
+    "type": "string",
+    "description": "Character delimiter .",
+    "default": " , "
+   }
+  ],
+  "returns": "boolean "
+ },
+ {
   "name": "modEnd",
   "category": "String",
   "description": "Using a string to create a new string with new size inverse to modStart.",
@@ -689,7 +718,8 @@ class parameters {
         this.nameWriteLogError = ("nameWriteLogError" in config)    ? config.nameWriteLogError + '.log' : 'logError.log';
         this.logFormatDate     = ("logFormatDate" in config)        ? config.logFormatDate              : 'yyyy-mm-dd ~h:m:i';    //=> yyyy-mm-dd | hh:mm:sss
     }
-}class jsPackTools extends parameters { 
+}
+class jsPackTools extends parameters { 
 get allEqual() { return allEqual.bind(this) }
 get capitalLetter() { return capitalLetter.bind(this) }
 get clearFolder() { return clearFolder.bind(this) }
@@ -706,6 +736,7 @@ get getFinalPath() { return getFinalPath.bind(this) }
 get groupBy() { return groupBy.bind(this) }
 get increaseDays() { return increaseDays.bind(this) }
 get is() { return is.bind(this) }
+get jsonToCsv() { return jsonToCsv.bind(this) }
 get modEnd() { return modEnd.bind(this) }
 get modStart() { return modStart.bind(this) }
 get objectFilter() { return objectFilter.bind(this) }
