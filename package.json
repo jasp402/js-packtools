@@ -32,7 +32,7 @@
   "homepage": "https://github.com/jasp402/js-packtools#readme",
   "devDependencies": {
     "mocha": "^6.1.4",
-    "standard-version": "^8.0.2"
+    "standard-version": "^8.0.1"
   },
   "dependencies": {}
 }
