@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.15](https://github.com/jasp402/js-packtools/compare/v2.3.14...v2.3.15) (2020-08-05)
+
+
+### Bug Fixes
+
+* update allEqual.js add examples generate documentation ([4ab3e09](https://github.com/jasp402/js-packtools/commit/4ab3e09e58a74866a4774c407d8e388249f28ab1))
+
+
+
 ## [2.3.14](https://github.com/jasp402/js-packtools/compare/v2.3.13...v2.3.14) (2020-08-05)
 
 
