@@ -6,7 +6,7 @@ ___
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|🌱  [**allEqual**](https://jasp402.github.io/js-packtools/#/en/api/v1/allEqual) | 1.0.0 | Arrays/Object | <sub>This snippet checks whether all elements of the array are equal.</sub> |
+|🌱  [**allEqual**](https://jasp402.github.io/js-packtools/#/en/api/v1/allEqual) | 2.0.0 | Arrays/Object | <sub>This snippet checks whether all elements of the array are equal.</sub> |
 |🌱  [**everyOrNone**](https://jasp402.github.io/js-packtools/#/en/api/v1/everyOrNone) | 1.0.0 | Arrays/Object | <sub>This snippet returns true if the predicate function returns true for a...</sub> |
 |🌱  [**groupBy**](https://jasp402.github.io/js-packtools/#/en/api/v1/groupBy) | 1.0.0 | Arrays/Object | <sub>Sort the object by placing the value of the assigned property as key</sub> |
 |🌱  [**objectFilter**](https://jasp402.github.io/js-packtools/#/en/api/v1/objectFilter) | 1.1.0 | Arrays/Object | <sub>This fragment allows you to filter an object and return the key and it...</sub> |
@@ -14,7 +14,7 @@ ___
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|🌱  [**capitalLetter**](https://jasp402.github.io/js-packtools/#/en/api/v1/capitalLetter) | 1.1.1 | String | <sub>capitalize the first letter of a sentence.</sub> |
+|🌱  [**capitalLetter**](https://jasp402.github.io/js-packtools/#/en/api/v1/capitalLetter) | 2.0.0 | String | <sub>capitalize the first letter of a sentence or all letters if second par...</sub> |
 |🌱  [**modEnd**](https://jasp402.github.io/js-packtools/#/en/api/v1/modEnd) | 1.0.1 | String | <sub>Using a string to create a new string with new size inverse to modStar...</sub> |
 |🌱  [**modStart**](https://jasp402.github.io/js-packtools/#/en/api/v1/modStart) | 1.0.1 | String | <sub>Using a string to create a new string with new size.</sub> |
 >## 📁 Path/Files 

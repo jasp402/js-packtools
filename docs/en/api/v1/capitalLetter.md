@@ -1,29 +1,30 @@
 ## ✍ capitalLetter 
 
 ```javascript
- capitalLetter(str, all) ⇒ string  
+ capitalLetter(arg) ⇒ string  
 ``` 
 
 
-`📢 Version: 1.1.1`  `🏷️ Category: String` `🎖️ Author: jasp402` 
+`📢 Version: 2.0.0`  `🏷️ Category: String` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
 
-?> capitalize the first letter of a sentence. 
+?> capitalize the first letter of a sentence or all letters if second parameters is `true`. 
 
 
 | Param | Type | Default value | Description |
 | --- | --- | --- | --- |
-| **str** | `string` | ` ` | _any word or sentence_ | 
-| **all** | `boolean` | ` false ` | _if true, capitalize all words._ | 
+| **arg** | `array/string/boolean` | ` string/boolean ` | _any word or sentence_ | 
 
 
 
 ### 🧪 Example 
 
 
-![LABEL](https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/capitalLetter.js ':include :type=code')
+![LABEL]( https://gist.githubusercontent.com/jasp402/baad045d810c9c22450ff33bec3e8217/raw/0-e.g.__capitalLetter.js ':include :type=code')
+
+![LABEL]( https://gist.githubusercontent.com/jasp402/2a72358a90bd433cd15e700d62190def/raw/1-e.g.__capitalLetter.js ':include :type=code')
 
 
 
