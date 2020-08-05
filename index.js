@@ -2,7 +2,7 @@
  * JS-PackTools. Is a little toolBox for developer specifically with webScraping and format date and text
  * @module JS-PackTools | API Doc
  * @author Jesús A. Pérez S.
- * {@version 2.3.13 | last Update: Wed Aug 05 2020 16:11:36 GMT-0500 (GMT-05:00)
+ * {@version 2.3.14 | last Update: Wed Aug 05 2020 16:47:03 GMT-0500 (GMT-05:00)
  * {@link https://github.com/jasp402/js-packtools}
  */
 const constant 			   = require(__dirname+'/constants');
@@ -41,9 +41,10 @@ const sourceLib 		 = [
   "name": "allEqual",
   "category": "Arrays/Object",
   "description": "This snippet checks whether all elements of the array are equal.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "example": [
-   "@example"
+   "@example https://gist.githubusercontent.com/jasp402/843cef2cd949d68b1223b5048b7e20ed/raw/626ff63fe4fb2dfc4f55c9003b803b928274d8d8/0-e.g.allEqual.js",
+   "@example https://gist.githubusercontent.com/jasp402/af8070a7f48fe8c092b70d141487cda1/raw/05617e1da01fd066b670247da9d189085e2d038d/1-e.g.allEqual.js"
   ],
   "arParams": [
    {
