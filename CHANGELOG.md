@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.18](https://github.com/jasp402/js-packtools/compare/v2.3.17...v2.3.18) (2020-08-18)
+
+
+### Bug Fixes
+
+* correccion en objectFilter.js ([8738887](https://github.com/jasp402/js-packtools/commit/8738887c4c4dfb6e69cde501e077cd511a693ab6))
+
 ### [2.3.17](https://github.com/jasp402/js-packtools/compare/v2.3.16...v2.3.17) (2020-08-18)
 
 ### [2.3.15](https://github.com/jasp402/js-packtools/compare/v2.3.14...v2.3.15) (2020-08-05)
