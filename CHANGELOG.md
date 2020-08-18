@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.17](https://github.com/jasp402/js-packtools/compare/v2.3.16...v2.3.17) (2020-08-18)
+
+### [2.3.15](https://github.com/jasp402/js-packtools/compare/v2.3.14...v2.3.15) (2020-08-05)
+
+
+### Bug Fixes
+
+* update allEqual.js add examples generate documentation ([4ab3e09](https://github.com/jasp402/js-packtools/commit/4ab3e09e58a74866a4774c407d8e388249f28ab1))
+
+### [2.3.14](https://github.com/jasp402/js-packtools/compare/v2.3.13...v2.3.14) (2020-08-05)
+
+
+### Bug Fixes
+
+* update documentation ([ecaf50f](https://github.com/jasp402/js-packtools/commit/ecaf50ff240b03d67fd2b5aee9c0c36206541efe))
+* update function allEqual.js use Array.prototype ([4aa7dcc](https://github.com/jasp402/js-packtools/commit/4aa7dcc46ce4cdfce643815594ad824e07245b0c))
+* update function capitalLetter.js used Srting.prototype ([cdc780f](https://github.com/jasp402/js-packtools/commit/cdc780fa20476177978cdf44de36d47b2e751b3e))
+
 ### [2.3.15](https://github.com/jasp402/js-packtools/compare/v2.3.14...v2.3.15) (2020-08-05)
 
 
