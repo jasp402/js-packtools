@@ -1,47 +1,26 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [2.3.16](https://github.com/jasp402/js-packtools/compare/v2.2.5...v2.3.16) (2020-08-18)
-
-
-### Features
-
-* add modEnd function ([e2e99b1](https://github.com/jasp402/js-packtools/commit/e2e99b18d16d29cfd8ac6d653a806cc78321d4f3))
-* new function objectFilter.js add into library ([40fddc6](https://github.com/jasp402/js-packtools/commit/40fddc6608d0e3491c7451ecc4f9ad030f45b0e9))
-* new function objectFilter.js corrections and add text. ([e09922a](https://github.com/jasp402/js-packtools/commit/e09922af25bb13aa8973160f6dd328e9ea2f67f5))
+## [2.3.15](https://github.com/jasp402/js-packtools/compare/v2.3.14...v2.3.15) (2020-08-05)
 
 
 ### Bug Fixes
 
-* _renderClassMain() Optimized ([5d3d04f](https://github.com/jasp402/js-packtools/commit/5d3d04f31220b7a57a84ca17f230485c244c2d22))
-* add compiler in Core ([8a52f48](https://github.com/jasp402/js-packtools/commit/8a52f48656396fe66305ca37a4ec5bf4fb7ff15d))
-* completed script elements ([995600a](https://github.com/jasp402/js-packtools/commit/995600a067dce10ae7b16a1fad2b1a1373dc41bf))
-* correccion de error generado por inconsistencia en en objectFilter.js Object.formEntries() ([123bd5f](https://github.com/jasp402/js-packtools/commit/123bd5f191bf696522f0a5011ecbbdbe76982c70))
-* correction in params description, add new url for examples. used gist of github ([985ac42](https://github.com/jasp402/js-packtools/commit/985ac423e1da274befbaa6493f23976823ffcbc4))
-* correction in to documentation ([11a9617](https://github.com/jasp402/js-packtools/commit/11a961779336cb1b581c7cc717f61c90aa060627))
-* correction on function is() ([0f8d585](https://github.com/jasp402/js-packtools/commit/0f8d5857951f379b880878edc78e504c5d12f10f))
-* correction on version ([b11593b](https://github.com/jasp402/js-packtools/commit/b11593b659c12fc6c0bcc905bc3fe6acdf137a8e))
-* correction version ([cfa5c99](https://github.com/jasp402/js-packtools/commit/cfa5c99ce8c8879cb102fd0156db52126e60d66f))
-* correction version ([6d2e789](https://github.com/jasp402/js-packtools/commit/6d2e7896ff2c3a7350d527746e62fdc0f3ca418c))
-* corrections in jsonToCsv.js add header ([6c17e95](https://github.com/jasp402/js-packtools/commit/6c17e95b3e02207fbe215b750dc3cb367a1087ab))
-* delete api doc v0.1 ([36e0a16](https://github.com/jasp402/js-packtools/commit/36e0a16ccd1bb6e64f405e799cb509cc44877dc9))
-* delete files in Spanish and deleted example that are not used ([1cbbbae](https://github.com/jasp402/js-packtools/commit/1cbbbae06277250c8a91e70cba9ae218f20aa529))
-* delete package-lock.json ([e698410](https://github.com/jasp402/js-packtools/commit/e698410523e4fa02fdf4c248f099c58e13072127))
-* documentation for all function ([b8f3f5b](https://github.com/jasp402/js-packtools/commit/b8f3f5b7fa92aa58786c39d7a3dfb20b94abab76))
-* update compiler.js add changes in index.js, README.md and api.md ([ef0a195](https://github.com/jasp402/js-packtools/commit/ef0a1954ff4aad200a8a591bb473a22cc185f816))
-* Update documentation for all function ([74a73bb](https://github.com/jasp402/js-packtools/commit/74a73bb32fa26bff0f40c32a01063a11f9ef5a1a))
-* update documentation.js ([d902861](https://github.com/jasp402/js-packtools/commit/d902861f8bb9ac972557c467eab7ca465a304532))
-* Update documentation.js ([6c06896](https://github.com/jasp402/js-packtools/commit/6c06896f78f0cea6e6fb846d277965a871fe5408))
-* Update documentation.js ([192d684](https://github.com/jasp402/js-packtools/commit/192d6841a84c3ec3c29b99cb7bd6fedfabc10350))
-* update function objectFilter.js correction in Object.fromEntries ([4772598](https://github.com/jasp402/js-packtools/commit/4772598f816214e11ce735b4705ae761ec6da515))
-* Update readme ([6c01884](https://github.com/jasp402/js-packtools/commit/6c018845a064a06b22776834f47a7007ba3ec75b))
-* Update README.md ([4c33e57](https://github.com/jasp402/js-packtools/commit/4c33e570e77579c721df359d282eea4709ee9f0a))
-* update url in categories ([4bacc00](https://github.com/jasp402/js-packtools/commit/4bacc00f7eff373f15d3505a7044a6a354592da3))
-* update url in documentation _sidebar.md ([cafcb70](https://github.com/jasp402/js-packtools/commit/cafcb704f5e7dc8039d04f286c82aa5a263fff41))
-* update version ([e80323f](https://github.com/jasp402/js-packtools/commit/e80323f9a440bec9c55c6c8ace552269aba76d02))
-* update version ([4bb02f3](https://github.com/jasp402/js-packtools/commit/4bb02f3337ecaba0d9dc5a154607623d755556d7))
-* update version ([cddedbb](https://github.com/jasp402/js-packtools/commit/cddedbb762e0857ba347635810b4bbf92c4d418b))
+* update allEqual.js add examples generate documentation ([4ab3e09](https://github.com/jasp402/js-packtools/commit/4ab3e09e58a74866a4774c407d8e388249f28ab1))
+
+
+
+## [2.3.14](https://github.com/jasp402/js-packtools/compare/v2.3.13...v2.3.14) (2020-08-05)
+
+
+### Bug Fixes
+
+* update documentation ([ecaf50f](https://github.com/jasp402/js-packtools/commit/ecaf50ff240b03d67fd2b5aee9c0c36206541efe))
+* update function allEqual.js use Array.prototype ([4aa7dcc](https://github.com/jasp402/js-packtools/commit/4aa7dcc46ce4cdfce643815594ad824e07245b0c))
+* update function capitalLetter.js used Srting.prototype ([cdc780f](https://github.com/jasp402/js-packtools/commit/cdc780fa20476177978cdf44de36d47b2e751b3e))
+
+
 
 ## [2.3.13](https://github.com/jasp402/js-packtools/compare/v2.3.12...v2.3.13) (2020-08-04)
 

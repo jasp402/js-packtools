@@ -17,6 +17,7 @@ let constant = {
     CLASS_FUNCTIONS  : (moduleSpace, module) => `const ${moduleSpace} = require('./lib/${module}');\n`,
     CLASS_GET_MODULE : module => `get ${module}() { return ${module}.bind(this) }\n`,
     CLASS_INFO_PARAMS: (data, type) => data.match(constant.REGX(type)) ? data.match(constant.REGX(type)) : ['empty'],
+    CLASS_INFO_EXAMPLES: (data, type) => data.match(constant.REGX(type)) ? data.match(constant.REGX(type)) : ['empty'],
     CLASS_INFO_DATA  : (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].replace(`@${type} `, '') : null,
     CLASS_INFO_RETURN: (data, type) => data.match(constant.REGX(type)).length ? data.match(constant.REGX(type))[0].split('-')[0].replace(`@${type} `, '').replace(/\{|\}/g, '') : null,
     CLASS_SOURCE_LIB : arMethods => 'const sourceLib \t\t = ' + JSON.stringify(arMethods.map(data => delete data['params'] && data), null, ' ') + ';\n',
@@ -128,7 +129,7 @@ function _build() {
             category   : constant.CLASS_INFO_DATA(data, 'augments'),
             description: constant.CLASS_INFO_DATA(data, 'description'),
             version    : constant.CLASS_INFO_DATA(data, 'version'),
-            example    : constant.CLASS_INFO_DATA(data, 'example'),
+            example    : constant.CLASS_INFO_EXAMPLES(data, 'example'),
             arParams   : constant.CLASS_INFO_PARAMS(data, 'param').map(extractParams),
             returns    : constant.CLASS_INFO_RETURN(data, 'returns')
         });
