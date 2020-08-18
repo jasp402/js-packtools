@@ -5,7 +5,7 @@
 ``` 
 
 
-`📢 Version: 1.1.0`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
+`📢 Version: 1.1.2`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 

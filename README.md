@@ -122,10 +122,10 @@ ___
 
 | Functions Name | version | Category | Description |
 |---|---|---|---|
-|🌱  [**allEqual**](https://jasp402.github.io/js-packtools/#/en/api/v1/allEqual) | 2.0.1 | Arrays/Object | <sub>This snippet checks whether all elements of the array are equal.</sub> |
+|🌱  [**allEqual**](https://jasp402.github.io/js-packtools/#/en/api/v1/allEqual) | 2.0.0 | Arrays/Object | <sub>This snippet checks whether all elements of the array are equal.</sub> |
 |🌱  [**everyOrNone**](https://jasp402.github.io/js-packtools/#/en/api/v1/everyOrNone) | 1.0.0 | Arrays/Object | <sub>This snippet returns true if the predicate function returns true for a...</sub> |
 |🌱  [**groupBy**](https://jasp402.github.io/js-packtools/#/en/api/v1/groupBy) | 1.0.0 | Arrays/Object | <sub>Sort the object by placing the value of the assigned property as key</sub> |
-|🌱  [**objectFilter**](https://jasp402.github.io/js-packtools/#/en/api/v1/objectFilter) | 1.1.0 | Arrays/Object | <sub>This fragment allows you to filter an object and return the key and it...</sub> |
+|🌱  [**objectFilter**](https://jasp402.github.io/js-packtools/#/en/api/v1/objectFilter) | 1.1.2 | Arrays/Object | <sub>This fragment allows you to filter an object and return the key and it...</sub> |
 >## ✍ String 
 
 | Functions Name | version | Category | Description |

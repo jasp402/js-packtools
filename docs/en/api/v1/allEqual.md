@@ -5,7 +5,7 @@
 ``` 
 
 
-`📢 Version: 2.0.1`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
+`📢 Version: 2.0.0`  `🏷️ Category: Arrays/Object` `🎖️ Author: jasp402` 
 
 ### 📝 Description 
 
@@ -22,9 +22,9 @@
 ### 🧪 Example 
 
 
-![LABEL]( https://gist.githubusercontent.com/jasp402/843cef2cd949d68b1223b5048b7e20ed/raw/0-e.g.__allEqual.js ':include :type=code')
-
-![LABEL]( https://gist.githubusercontent.com/jasp402/af8070a7f48fe8c092b70d141487cda1/raw/1-e.g.__allEqual.js ':include :type=code')
+``` 
+ ⚠️Example missing 
+```
 
 
 
